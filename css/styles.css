@@ -3898,74 +3898,103 @@ td:last-child {
 
 /* ===================================================================
  * # ABOUT
- *
- *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: var(--vspace-7);
+    padding-top: 1rem; /* minimal space from previous section */
     color      : var(--color-3);
 }
 
-/* --------------------------------------------------------------------
- * ## about blocks
- * -------------------------------------------------------------------- */
-.s-about__blocks {
-    margin-top: var(--vspace-3);
-}
-
-.s-about__blocks .s-about__block-title {
-    margin-top   : 0;
-    margin-bottom: var(--vspace-1);
-    padding-left : 1.45rem;
-    position     : relative;
-}
-
-.s-about__blocks .s-about__block-title::before {
-    content         : "";
-    height          : 0.7em;
-    width           : 3px;
-    background-color: var(--color-1);
-    transform       : translateY(-50%);
-    position        : absolute;
-    left            : 0;
-    top             : 50%;
-}
-
-.s-about__list {
-    list-style : none;
-    font-size  : calc(var(--text-size) * 1.05);
-    margin-left: 0;
-}
-
-.s-about__list a {
-    color: var(--color-text);
-}
-
-.s-about__list li {
-    font-weight  : 500;
-    margin-bottom: var(--vspace-0_625);
-    padding-left : 0;
-}
-
-.s-about__list span {
-    display    : block;
-    font-size  : var(--text-sm);
-    font-weight: 300;
-    line-height: 1.2;
-    color      : var(--color-text-light) !important;
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
+/* -------------------------------------------------------------------
+ * About Section Blocks
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-    .s-about {
-        padding-top: var(--vspace-5);
+.s-about__blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;       /* reduce space between Vision/Mission and Core Values */
+    margin-top: 0;
+}
+
+/* Group Vision + Mission */
+.s-about__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;         /* minimal gap between Vision and Mission */
+    align-items: start;
+}
+
+/* -------------------------------------------------------------------
+ * Hero Titles
+ * ------------------------------------------------------------------- */
+.s-about__block-title {
+    font-family: var(--font-1);
+    font-weight: 900;
+    font-size: 6rem;         /* ridiculously big */
+    text-align: center;
+    line-height: 1.05;       /* tighter line height */
+    margin-bottom: 1rem;     /* small gap to content */
+}
+
+/* -------------------------------------------------------------------
+ * Core Values Grid
+ * ------------------------------------------------------------------- */
+.s-about__core-values {
+    text-align: center;
+    margin-top: 1rem;         /* very close to Vision/Mission */
+    margin-bottom: 8rem;      /* plenty of space before next section */
+}
+
+.s-about__core-values .s-about__block-title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.s-about__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    gap: 2rem;                             /* tighten items vertically */
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------
+ * Responsive Adjustments
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .s-about__group {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .s-about__block-title {
+        font-size: 4.5rem;
+    }
+
+    .s-about__core-values .s-about__block-title {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .s-about__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
     }
 }
 
+@media screen and (max-width: 600px) {
+    .s-about__block-title {
+        font-size: 3.5rem;
+    }
 
+    .s-about__core-values .s-about__block-title {
+        font-size: 3rem;
+    }
+
+    .s-about__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
 /* ===================================================================
  * # WORKS
  *
