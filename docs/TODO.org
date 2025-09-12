@@ -1,0 +1,6 @@
+- Home page green wave asset isn't a vector (it pixelates)
+- Bold ~Vision~ ~Mission~ and ~Core Values~ for Readability
+- ~Products and services~ polish text
+- ~Our Founders~ and ~Dev team~ prettify and insert assets
+- add ~Tech stack~ design by cristina
+- ~Contacts~ insert text
