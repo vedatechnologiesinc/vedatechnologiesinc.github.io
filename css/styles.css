@@ -4426,6 +4426,233 @@ td:last-child {
   line-height: 1.8;
 }
 
+/* =================== Development Stack =================== */
+/* Base / wrapper for the renamed section */
+.s-development-stack {
+    padding: 6rem 0;
+    background-color: #f5f5f5;  /* lighter / inverted background */
+    text-align: center;
+    color: #333; /* dark text */
+}
+
+/* Section header overrides if needed */
+.s-development-stack .section-header .text-display-title {
+    color: #222;
+}
+
+.s-development-stack .attention-getter {
+    color: #555;
+}
+
+/* Icon container */
+.stack-icon-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stack-icon-container img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Items layout */
+.dev-stack-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.dev-stack-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.05); /* very light overlay of dark, so inverted */
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    color: #222; /* dark text */
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.1),
+                inset 0px -2px 4px rgba(255,255,255,0.4); /* adjust shadows for inverted look */
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dev-stack-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title / heading in each card */
+.dev-stack-item h5 {
+    font-family: "Domine-Bold", Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #111; /* darker heading text */
+}
+
+.dev-stack-item p {
+    font-family: "Public Sans-Regular", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444; /* medium dark text for paragraph */
+}
+
+/* =================== Autoplay Carousel =================== */
+/* Slider styling taken/adapted from CodePen */
+
+.slider {
+    background: #2e2e2a;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px; /* adjust as needed */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* adjust width or use 100% for responsiveness */
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(to right, rgba(46,46,42,1), rgba(46,46,42,0));
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14); /* number_of_slides * single_slide_width * duplicated */
+  animation: scroll 40s linear infinite; /* speed & smoothness */
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Keyframes for scroll animation */
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+/* ===================================================================
+ * # FOOTER
+ *
+ *
+ * ------------------------------------------------------------------- */
+.s-footer {
+    --bottom-padding: var(--vspace-2_5);
+    background-color: var(--color-3);
+    margin-top      : auto;
+    padding-top     : var(--vspace-6);
+    padding-bottom  : var(--bottom-padding);
+    color           : var(--color-gray-15);
+}
+
+.s-footer h5 {
+    color     : white;
+    margin-top: 0;
+}
+
+.s-footer__block {
+    margin-bottom: var(--vspace-0_5);
+}
+
+.s-footer__block a {
+    color: var(--color-gray-12);
+}
+
+.s-footer__block a:focus,
+.s-footer__block a:hover {
+    color: white;
+}
+
+.s-footer__about {
+    padding-top: var(--vspace-0_25);
+}
+
+.s-footer__about>* {
+    width: min(100%, 560px);
+}
+
+.s-footer__buttons {
+    --color-btn-stroke           : white;
+    --color-btn-stroke-text      : white;
+    --color-btn-stroke-hover     : white;
+    --color-btn-stroke-hover-text: var(--color-text-dark);
+    margin-top                   : var(--vspace-0_75);
+    margin-bottom                : var(--vspace-2_5);
+}
+
+.s-footer__bottom {
+    font-size  : calc(var(--text-size) * 0.8);
+    color      : rgba(255, 255, 255, 0.2);
+    padding-top: var(--vspace-1_25);
+    margin-top : var(--vspace-0_75);
+    position   : relative;
+}
+
+.s-footer__bottom::before {
+    content         : "";
+    display         : block;
+    height          : 1px;
+    width           : calc(100% - 2 * var(--gutter));
+    background-color: rgba(255, 255, 255, 0.04);
+    position        : absolute;
+    top             : 0;
+    left            : var(--gutter);
+}
+
+.s-footer__social svg path,
+.s-footer__social svg circle {
+    fill      : var(--color-gray-15);
+    transition: all 0.5s;
+}
+
+.s-footer .link-list {
+    list-style : none;
+    margin-left: 0;
+}
+
+.s-footer .link-list li {
+    padding: 0;
+}
+
+.s-footer .link-list a {
+    color : var(--color-gray-15);
+    border: none;
+}
+
+.s-footer .link-list a:focus,
+.s-footer .link-list a:hover {
+    color: white;
+}
+
+
 /* =================== Responsive =================== */
 
 /* Medium screens */
@@ -4546,7 +4773,7 @@ td:last-child {
 }
 
 /* ==================================================
- * Services Section
+ * Products and Services Section
  * ================================================== */
 .s-services {
     padding: 6rem 0;
