@@ -3117,6 +3117,7 @@ td:last-child {
 .s-header__menu-links .current a {
     color: black;
 }
+/* Contact button inside navbar */
 .s-header__menu-links li:last-child a {
     background-color   : var(--color-1);   /* your green */
     color              : var(--color-white);
@@ -3299,9 +3300,24 @@ td:last-child {
     }
 
     .s-header__menu-links a {
-        font-size : 1.1rem;
-        padding   : 0.8rem 0;
+        font-size : 1.4rem;   /* larger for mobile */
+        font-weight: 600;
+        padding   : 1rem 0;
         display   : block;
+    }
+
+    .s-header__menu-links li:last-child a {
+        background-color: var(--color-1);
+        color           : white;
+        font-weight     : 600;
+        margin-top      : 1rem;
+        padding         : 1rem;
+        border-radius   : 4px;
+        font-size       : 1.5rem;
+    }
+
+    .s-header__menu-links li:last-child a:hover {
+        background-color: var(--color-1-light);
     }
 
     .s-header__contact {
@@ -3461,9 +3477,7 @@ td:last-child {
     bottom        : 0;
     width         : 100%;
     height        : 100%;
-    background    : linear-gradient(0deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
-    opacity       : 0.3;
 }
 
 .s-intro__content-media img {
