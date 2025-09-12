@@ -2871,6 +2871,19 @@ td:last-child {
     }
 }
 
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section-header .attention-getter {
+  font-size: 1.6rem;
+  color: #555;
+  max-width: 700px;  /* ensures text doesn't stretch too wide */
+  margin: 0 auto;    /* centers the description */
+  line-height: 1.6;
+}
+
 @media screen and (max-width: 800px) {
     .testimonials__slide {
         text-align: center;
@@ -4207,7 +4220,372 @@ td:last-child {
         width: 100%;
     }
 }
+/* =================== Section Styling =================== */
+.s-team,
+.s-founders {
+  padding: 140px 3rem;
+  text-align: center;
+  background: transparent;
+}
 
+.section-header {
+  margin-bottom: 6rem;
+}
+
+.section-header h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  color: #111;
+}
+
+.section-header .attention-getter {
+  font-size: 2.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* =================== Founders Section =================== */
+.founders-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+
+.founder-card {
+  flex: 0 0 900px;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 30px 100px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  align-items: stretch;
+  position: relative;
+}
+
+/* Offset cards for diagonal feel */
+.founders-row .founder-card:nth-child(odd) {
+  transform: translateX(4%);
+}
+
+.founders-row .founder-card:nth-child(even) {
+  transform: translateX(-4%);
+}
+
+.founder-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 45px 120px rgba(0,0,0,0.3);
+}
+
+/* Image Section */
+.founder-image {
+  width: 50%;
+  min-height: 550px;
+  background: #e9eeee;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.founder-image img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Text Section */
+.founder-content {
+  width: 50%;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.founder-content h3 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  color: #111;
+  line-height: 1.1;
+}
+
+.founder-content h4 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.founder-content p {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #444;
+}
+
+/* =================== Development Team =================== */
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  flex: 0 0 350px;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 68px rgba(0,0,0,0.25);
+}
+
+.team-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.team-content {
+  padding: 3rem 2.5rem;
+}
+
+.team-content h3 {
+  font-size: 2.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.team-content h4 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.team-content p {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* =================== Responsive =================== */
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .founder-card {
+    flex: 0 0 85%;
+  }
+  .founder-content h3 {
+    font-size: 3.6rem;
+  }
+  .founder-content h4 {
+    font-size: 1.8rem;
+  }
+  .founder-content p {
+    font-size: 1.5rem;
+  }
+  .team-card {
+    flex: 0 0 45%;
+  }
+  .team-content h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .founders-row,
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .founder-card {
+    flex-direction: column;
+    width: 95%;
+    max-width: 95%;
+    transform: none !important; /* remove offset on mobile */
+  }
+  .founder-image {
+    width: 100%;
+    height: 420px;
+  }
+  .founder-content {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+  .founder-content h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .founder-content h4 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .founder-content p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .team-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  .team-content h3 {
+    font-size: 2rem;
+  }
+  .team-content h4 {
+    font-size: 1.4rem;
+  }
+  .team-content p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .founder-image {
+    height: 280px;
+  }
+  .founder-content h3 {
+    font-size: 2.4rem;
+  }
+  .founder-content h4 {
+    font-size: 1.4rem;
+  }
+  .founder-content p {
+    font-size: 1.2rem;
+  }
+  .team-content h3 {
+    font-size: 1.8rem;
+  }
+  .team-content h4 {
+    font-size: 1.2rem;
+  }
+  .team-content p {
+    font-size: 1.1rem;
+  }
+}
+/* Offset cards for stronger diagonal feel */
+.founders-row .founder-card:nth-child(odd) {
+  transform: translateX(8%);
+}
+
+.founders-row .founder-card:nth-child(even) {
+  transform: translateX(-8%);
+}
+
+/* Hover effect stays the same */
+.founder-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 45px 120px rgba(0,0,0,0.3);
+}
+
+/* Small screens: remove offset for stacking */
+@media (max-width: 768px) {
+  .founder-card {
+    transform: none !important;
+  }
+}
+
+/* ==================================================
+ * Services Section
+ * ================================================== */
+.s-services {
+    padding: 6rem 0;
+    background-color: #282828; /* dark background */
+    text-align: center;
+}
+/* Services card image container */
+.service-icon-container {
+  background-color: #3a3a3a; /* lighter grey than section bg */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon-container img {
+  max-width: 100px;
+  height: auto;
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.service-items__item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    color: #ffffff;
+    box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
+                inset 0px -2px 4px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-items__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-items__item h5 {
+    font-family: "Domine-Bold", Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.service-items__item p {
+    font-family: "Public Sans-Regular", Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    display: block;
+}
 
 /* ===================================================================
  * # FOOTER
