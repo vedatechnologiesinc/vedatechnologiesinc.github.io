@@ -60,9 +60,10 @@
  * ------------------------------------------------------------------ */
 
 :root {
-  --font-1: "Domine-Bold", Helvetica;
-  --font-2: "Public Sans-Regular", Helvetica;
-    --font-mono:"Barlow-Regular", Helvetica;
+--font-1: "Public Sans", Sans-serif;
+    --font-2: "Castoro", Serif;
+
+    --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
 :root {
