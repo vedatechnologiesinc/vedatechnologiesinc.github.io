@@ -3779,7 +3779,7 @@ td:last-child {
 
     .s-intro__content-title {
         font-size: clamp(4.2rem, 8.2vw, 8.8rem);
-        color    : white;
+        color    : black;
     }
 
     .s-intro__content-title br {
@@ -3787,12 +3787,12 @@ td:last-child {
     }
 
     .s-intro__content-btns {
-        --color-btn                  : white;
-        --color-btn-text             : var(--color-text-dark);
+        --color-btn                  : black;
+        --color-btn-text             : white;
         --color-btn-hover            : var(--color-1);
         --color-btn-hover-text       : white;
-        --color-btn-stroke           : white;
-        --color-btn-stroke-text      : white;
+        --color-btn-stroke           : black;
+        --color-btn-stroke-text      : black;
         --color-btn-stroke-hover     : white;
         --color-btn-stroke-hover-text: var(--color-text-dark);
         padding-right                : 0;
@@ -3852,7 +3852,7 @@ td:last-child {
     }
 
     .s-intro__btn-download .btn--stroke:hover {
-        color: white;
+        color: black;
     }
 
     .s-intro__btn-download .btn--stroke:hover::after {
