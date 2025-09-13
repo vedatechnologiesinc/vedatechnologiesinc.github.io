@@ -4662,21 +4662,23 @@ z-index: 2;
 
 
 .stack-icon-container img {
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
 }
 
 /* Items layout */
 .dev-stack-items {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .dev-stack-item {
-    flex: 1 1 250px;
-    max-width: 300px;
+    flex: 1 1 200px;
+    max-width: max-content;
+    max-height: 280px;
+    border-radius: 10px;
     background-color: rgba(7, 59, 58, 0.1);
              inset 0px 2px 4px rgba(7, 59, 58, 0.5),
               0 8px 32px rgba(0,0,0,0.2);
