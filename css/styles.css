@@ -3898,103 +3898,251 @@ td:last-child {
 
 /* ===================================================================
  * # ABOUT
+ *
+ *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 3rem; /* minimal space from previous section */
+    padding-top: var(--vspace-7);
     color      : var(--color-3);
+    position: relative;
 }
 
-/* -------------------------------------------------------------------
- * About Section Blocks
- * ------------------------------------------------------------------- */
+/* --------------------------------------------------------------------
+ * ## about blocks
+ * -------------------------------------------------------------------- */
 .s-about__blocks {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;       /* reduce space between Vision/Mission and Core Values */
-    margin-top: 0;
+    margin-top: var(--vspace-3);
 }
 
-/* Group Vision + Mission */
-.s-about__group {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1rem;         /* minimal gap between Vision and Mission */
-    align-items: start;
+.s-about__blocks .s-about__block-title {
+    margin-top   : 0;
+    margin-bottom: var(--vspace-1);
+    padding-left : 1.45rem;
+    position     : relative;
 }
 
-/* -------------------------------------------------------------------
- * Hero Titles
+.s-about__blocks .s-about__block-title::before {
+    content         : "";
+    height          : 0.7em;
+    width           : 3px;
+    background-color: var(--color-1);
+    transform       : translateY(-50%);
+    position        : absolute;
+    left            : 0;
+    top             : 50%;
+}
+
+.s-about__list {
+    list-style : none;
+    font-size  : calc(var(--text-size) * 1.05);
+    margin-left: 0;
+}
+
+.s-about__list a {
+    color: var(--color-text);
+}
+
+.s-about__list li {
+    font-weight  : 500;
+    margin-bottom: var(--vspace-0_625);
+    padding-left : 0;
+}
+
+.s-about__list span {
+    display    : block;
+    font-size  : var(--text-sm);
+    font-weight: 300;
+    line-height: 1.2;
+    color      : var(--color-text-light) !important;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about
  * ------------------------------------------------------------------- */
-.s-about__block-title {
-    font-family: var(--font-1);
-    font-weight: 900;
-    font-size: 6rem;         /* ridiculously big */
+@media screen and (max-width: 800px) {
+    .s-about {
+        padding-top: var(--vspace-5);
+    }
+}
+
+
+
+.mission-vision-section {
     text-align: center;
-    line-height: 1.05;       /* tighter line height */
-    margin-bottom: 1rem;     /* small gap to content */
+    width: 100%;
+    height: 640px;
+    position: relative;
 }
 
-/* -------------------------------------------------------------------
- * Core Values Grid
- * ------------------------------------------------------------------- */
-.s-about__core-values {
+
+.mission-vision-section h2 {
+    font-size: 28px;
+    margin: 30px 0 5px 0;
+}
+
+.mission-vision-section .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.mission-vision-section .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mission-vision-section .mission {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 50px;       
+}
+
+
+.mission-vision-section .vision {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: end;
+    box-sizing: border-box;
+    position: relative;     
+}
+
+.mission-vision-section .text {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.mission-vision-section .mission {
+background: black;
+color: white;
+}
+
+.mission-vision-section .vision {
+background: white;
+color: black;
+}
+
+.mission-vision-section .circle {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 250px;
+height: 250px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 3rem;
+font-weight: bold;
+z-index: 2;
+}
+
+
+.mission-vision-section .mission-circle {
+    top: 0;
+    background: black;
+    color: white;
+}
+
+.mission-vision-section .vision-circle {  
+    bottom: 0;          
+    transform: translate(-50%, -56%); 
+    background: white;
+    color: black;
+}
+
+
+.mission-vision-section .decor {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  z-index: 1; 
+}
+
+
+.mission-vision-section .mission-decor {
+  bottom: 0;          
+  transform: translate(0%, -55%);
+  left: 0;
+}
+
+.mission-vision-section .vision-decor {
+  top: 0;
+  right: 0;
+}
+
+
+/* responsive  */
+@media (max-width: 768px) {
+  .mission-vision-section {
+    height: auto;
+  }
+
+  .mission-vision-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-vision-section .mission,
+  .mission-vision-section .vision {
+    width: 100%;
+    padding: 30px 20px;
     text-align: center;
-    margin-top: 1rem;         /* very close to Vision/Mission */
-    margin-bottom: 8rem;      /* plenty of space before next section */
+    position: relative;   
+    z-index: 1;           
+    overflow: visible;    
+  }
+
+ 
+  .mission-vision-section .mission-circle,
+  .mission-vision-section .vision-circle {
+    position: relative;   
+    z-index: 5;           
+    transform: none;
+    width: 120px;
+    height: 120px;
+    font-size: 1.2rem;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle-container {
+    margin-top: -60px;
+    margin-right: 265px; 
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    z-index: 5; 
+  }
+ 
+  .mission-vision-section .mission {
+    text-align: left;
+  }
+  .mission-vision-section .vision {
+    text-align: right;
+  }
 }
 
-.s-about__core-values .s-about__block-title {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-}
 
-.s-about__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
-    gap: 2rem;                             /* tighten items vertically */
-    justify-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-/* -------------------------------------------------------------------
- * Responsive Adjustments
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 1024px) {
-    .s-about__group {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .s-about__block-title {
-        font-size: 4.5rem;
-    }
-
-    .s-about__core-values .s-about__block-title {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .s-about__grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .s-about__block-title {
-        font-size: 3.5rem;
-    }
-
-    .s-about__core-values .s-about__block-title {
-        font-size: 3rem;
-    }
-
-    .s-about__grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
 /* ===================================================================
  * # WORKS
  *
@@ -4250,6 +4398,7 @@ td:last-child {
         width: 100%;
     }
 }
+
 /* =================== Section Styling =================== */
 .s-team,
 .s-founders {
@@ -4276,6 +4425,8 @@ td:last-child {
   margin: 0 auto;
   line-height: 1.6;
 }
+
+
 
 /* =================== Founders Section =================== */
 .founders-row {
@@ -4320,17 +4471,14 @@ td:last-child {
   min-height: 550px;
   background: #e9eeee;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
 .founder-image img {
-  width: 120%;
+  width: auto;
   height: 100%;
   object-fit: cover;
-  border-radius: 0;
+  object-position: bottom;
 }
 
 /* Text Section */
@@ -4364,67 +4512,118 @@ td:last-child {
 }
 
 /* =================== Development Team =================== */
+/* Row layout */
 .team-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   margin-top: 3rem;
 }
 
 .team-card {
-  flex: 0 0 350px;
-  max-width: 480px;
-  background: #fff;
+  position: relative;
+  flex: 1 1 300px;       
+  max-width: 340px;      
+  aspect-ratio: 2 / 3;   
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  background-color: rgba(7, 59, 58, 0.1); 
+  box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.5),
+              inset 0px 2px 4px rgba(7, 59, 58, 0.5),
+              0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(25px) brightness(100%);
+  -webkit-backdrop-filter: blur(25px) brightness(100%);
+  overflow: visible; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
 
 .team-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 28px 68px rgba(0,0,0,0.25);
+  box-shadow: 0 28px 68px rgba(0,0,0,0.35);
 }
 
+.team-card {
+  position: relative;
+  width: 336px;
+  height: 490px;
+  border-radius: 20px;
+  background-color: rgba(7, 59, 58, 0.1);
+  box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.5),
+              inset 0px 2px 4px rgba(7, 59, 58, 0.5),
+              0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(25px) brightness(100%);
+  -webkit-backdrop-filter: blur(25px) brightness(100%);
+  overflow: visible; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1; 
+}
+
+
 .team-image {
+  position: absolute;
+  top: -70px; 
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  aspect-ratio: 4/3;
-  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  overflow: visible; 
 }
 
 .team-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
+  height: auto; 
+  object-fit: contain; 
+  object-position: top center; 
 }
+
 
 .team-content {
-  padding: 3rem 2.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem;
+  text-align: center;
+  z-index: 3; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+
 .team-content h3 {
-  font-size: 2.6rem;
-  margin-bottom: 0.8rem;
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0.2rem 0; 
   color: #111;
 }
 
 .team-content h4 {
-  font-size: 1.8rem;
-  color: #555;
-  margin-bottom: 1.2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #444;
+  margin: 0.2rem 0 0.4rem 0; 
 }
 
 .team-content p {
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.1875rem;
   color: #333;
-  line-height: 1.8;
+  line-height: 1.3;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
 }
+
 
 /* =================== Development Stack =================== */
 .stack-row {
@@ -4780,27 +4979,61 @@ td:last-child {
 }
 
 /* ==================================================
- * Products and Services Section
+ * Services Section
  * ================================================== */
 .s-services {
+    position: relative; 
     padding: 6rem 0;
     background-color: #282828; /* dark background */
     text-align: center;
+    overflow: hidden; 
 }
-/* Services card image container */
+
+.s-services::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 266.44px;   
+    height: 267px;
+    background: url("../images/design-3.png") no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.s-services::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 531.89px;   
+    height: 267px;
+    background: url("/mockup-vti/images/design-2.png") no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
 .service-icon-container {
-  background-color: #3a3a3a; /* lighter grey than section bg */
-  padding: 20px;
-  border-radius: 8px;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: rgba(58, 58, 58, 0.6); 
+    padding: 20px;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: inset 0px 2px 6px rgba(255, 255, 255, 0.1),
+                inset 0px -2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .service-icon-container img {
-  max-width: 100px;
-  height: auto;
+    max-width: 100px;
+    height: auto;
 }
 
 .service-items {
@@ -4834,6 +5067,7 @@ td:last-child {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #ffffff;
+    text-align: left;
 }
 
 .service-items__item p {
@@ -4841,6 +5075,7 @@ td:last-child {
     font-size: 15px;
     line-height: 1.6;
     color: #ddd;
+    text-align: left; 
 }
 
 .service-icon img {
@@ -4850,6 +5085,7 @@ td:last-child {
     margin: 0 auto 1rem;
     display: block;
 }
+
 
 /* ===================================================================
  * # FOOTER
