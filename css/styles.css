@@ -3900,7 +3900,7 @@ td:last-child {
  * # ABOUT
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 1rem; /* minimal space from previous section */
+    padding-top: 3rem; /* minimal space from previous section */
     color      : var(--color-3);
 }
 
@@ -4427,12 +4427,19 @@ td:last-child {
 }
 
 /* =================== Development Stack =================== */
-/* Base / wrapper for the renamed section */
+.stack-row {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
 .s-development-stack {
     padding: 6rem 0;
-    background-color: #f5f5f5;  /* lighter / inverted background */
+    background-color: #ffffff;
     text-align: center;
-    color: #333; /* dark text */
+    color: #333; /* text */
 }
 
 /* Section header overrides if needed */
@@ -4471,7 +4478,7 @@ td:last-child {
 .dev-stack-item {
     flex: 1 1 250px;
     max-width: 300px;
-    background-color: rgba(0, 0, 0, 0.05); /* very light overlay of dark, so inverted */
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     color: #222; /* dark text */
