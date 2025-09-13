@@ -4634,8 +4634,6 @@ z-index: 2;
 }
 
 
-
-
 .s-stack .attention-getter {
   color: #555;
   font-size: 2.2rem;
@@ -4690,19 +4688,20 @@ z-index: 2;
   height: auto;
   max-width: 140px;
   max-height: 160px;
+  object-fit: cover;
   object-fit: contain;
 }
 
 /* Card title */
 .dev-stack-item h5 {
   font-family: "Domine-Bold", Helvetica, sans-serif;
-  font-size: 1.35rem;       /* slightly larger */
+  font-size: 3rem;       /* slightly larger */
   font-weight: 700;         /* stronger bold */
   margin: 0.5rem 0;         /* more breathing room */
   color: #111;
   letter-spacing: 0.5px;    /* adds clarity */
-  text-transform: uppercase;/* more emphasis */
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15); /* subtle depth */
+  text-transform: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 /* -----------------------
@@ -4749,17 +4748,16 @@ z-index: 2;
   }
 }
 /* =================== Autoplay Carousel =================== */
-/* Slider styling taken/adapted from CodePen */
 
 .slider {
-  background: #2e2e2a;
-  box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.5),
-              inset 0px 2px 4px rgba(7, 59, 58, 0.5),
-              0 8px 32px rgba(0,0,0,0.2);  height: 100px; /* adjust as needed */
+  background: #fffff;
+  box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.5),
+              inset 0px 2px 4px rgba(255, 255, 255, 0.5),
+              0 8px 32px rgba(255,255,255,0.2);  height: 100px; /* adjust as needed */
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%; /* adjust width or use 100% for responsiveness */
+  width: 100%;
 }
 
 .slider::before,
@@ -4769,7 +4767,7 @@ z-index: 2;
   top: 0;
   width: 200px;
   height: 100px;
-  background: linear-gradient(to right, rgba(46,46,42,1), rgba(46,46,42,0));
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
   z-index: 2;
 }
 
