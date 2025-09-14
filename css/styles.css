@@ -4644,8 +4644,6 @@ td:last-child {
   box-shadow:
               0 28px 68px rgba(0,0,0,0.35); /* Outer shadow for lift */
 }
-<<<<<<< HEAD
-||||||| 4fa1d65
 
 /* Icon container */
 .stack-icon-container {
@@ -4677,39 +4675,6 @@ td:last-child {
   text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
-=======
-
-/* Icon container */
-.stack-icon-container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.stack-icon-container img {
-  width: 100%;
-  height: auto;
-  max-width: 140px;
-  max-height: 160px;
-  object-fit: cover;
-  object-fit: contain;
-}
-
-/* Card title */
-.dev-stack-item h5 {
-  font-family: var(--font-1);
-  font-size: 3rem;       /* slightly larger */
-  font-weight: 700;         /* stronger bold */
-  margin: 0.5rem 0;         /* more breathing room */
-  color: #111;
-  letter-spacing: 0.5px;    /* adds clarity */
-  text-transform: none;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
-}
-
->>>>>>> 5322b8201772654c5fe107a5aa49638be71389d7
 /* -----------------------
    Responsive Adjustments
    ----------------------- */
@@ -4755,18 +4720,6 @@ td:last-child {
 }
 /* /\* =================== Autoplay Carousel =================== *\/ */
 
-<<<<<<< HEAD
-/* .slider { */
-/*   background: #fffff; */
-/*   box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.5), */
-/*               inset 0px 2px 4px rgba(255, 255, 255, 0.5), */
-/*               0 8px 32px rgba(255,255,255,0.2);  height: 100px; /\* adjust as needed *\/ */
-/*   margin: auto; */
-/*   overflow: hidden; */
-/*   position: relative; */
-/*   width: 100%; */
-/* } */
-||||||| 4fa1d65
 .slider {
   background: #fffff;
   box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.5),
@@ -4777,57 +4730,7 @@ td:last-child {
   position: relative;
   width: 100%;
 }
-=======
-.slider {
-  background: #fff;
-  box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.5),
-              inset 0px 2px 4px rgba(255, 255, 255, 0.5),
-              0 8px 32px rgba(255,255,255,0.2);  height: 100px; /* adjust as needed */
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
->>>>>>> 5322b8201772654c5fe107a5aa49638be71389d7
 
-/* .slider::before, */
-/* .slider::after { */
-/*   content: ""; */
-/*   position: absolute; */
-/*   top: 0; */
-/*   width: 200px; */
-/*   height: 100px; */
-/*   background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); */
-/*   z-index: 2; */
-/* } */
-
-/* .slider::after { */
-/*   right: 0; */
-/*   transform: rotateZ(180deg); */
-/* } */
-
-/* .slider::before { */
-/*   left: 0; */
-/* } */
-
-/* .slide-track { */
-/*   display: flex; */
-/*   width: calc(250px * 14); /\* number_of_slides * single_slide_width * duplicated *\/ */
-/*   animation: scroll 40s linear infinite; /\* speed & smoothness *\/ */
-/* } */
-
-/* .slide { */
-/*   height: 100px; */
-/*   width: 250px; */
-/* } */
-
-/* .slide img { */
-/*   width: 100%; */
-/*   height: 100%; */
-/*   object-fit: contain; */
-/* } */
-
-/* Keyframes for scroll animation */
 
 @keyframes scroll {
   0% { transform: translateX(0); }
@@ -5061,12 +4964,7 @@ td:last-child {
 .s-services {
     position: relative; 
     padding: 6rem 0;
-<<<<<<< HEAD
     background-color: #000000; /* dark background */
-||||||| 4fa1d65
-    background-color: #282828; /* dark background */
-=======
->>>>>>> 5322b8201772654c5fe107a5aa49638be71389d7
     text-align: center;
     overflow: hidden; 
     background: url("../images/blob-bg.svg") no-repeat center center;
@@ -5106,13 +5004,7 @@ td:last-child {
 .service-items__item {
     flex: 1 1 250px;
     max-width: 300px;
-<<<<<<< HEAD
-    background-color: #282c34;
-||||||| 4fa1d65
     background-color: rgba(255, 255, 255, 0.08);
-=======
-    background-color: #fff;
->>>>>>> 5322b8201772654c5fe107a5aa49638be71389d7
     border-radius: 12px;
     padding: 2rem 1.5rem;
     box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
