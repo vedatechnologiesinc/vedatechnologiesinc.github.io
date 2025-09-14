@@ -2076,6 +2076,7 @@ input[type=button] {
     transition             : all 0.3s;
     background-color       : var(--color-btn);
     border                 : 2px solid var(--color-btn);
+    border-radius:3rem;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2153,6 +2154,7 @@ button.btn--stroke {
     font-weight: 700;
     border     : 2px solid var(--color-btn-stroke);
     color      : var(--color-btn-stroke-text);
+    border-radius: 3rem;
 }
 
 .btn--stroke:focus,
@@ -3453,6 +3455,7 @@ td:last-child {
 
 .s-intro__content-btns .btn {
     margin-right: var(--vspace-0_375);
+    border-radius: 0.5rem !important;
 }
 
 .s-intro__content-btns .btn:last-child {
