@@ -4631,10 +4631,9 @@ td:last-child {
 
 /* Icon container */
 .dev-stack-item {
-  flex: wrap;
   position: relative;
-  max-width: 336px;
-  height: 386;
+  flex: 1 1 250px;
+  max-width: 300px;
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow:
