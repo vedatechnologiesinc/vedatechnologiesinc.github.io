@@ -62,7 +62,7 @@
  * ------------------------------------------------------------------ */
 
 :root {
---font-1: "Public Sans", Sans-serif;
+    --font-1: "Public Sans", Sans-serif;
     --font-2: "Castoro", Serif;
 
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
@@ -390,7 +390,7 @@ video {
     padding       : 0;
     border        : 0;
     font-size     : 100%;
-    font          : inherit;
+    font          : var(--font-1);
     vertical-align: baseline;
 }
 
@@ -1163,7 +1163,7 @@ body {
 
 /* links
  */
-a {
+{
     color     : var(--color-link);
     transition: all 0.3s ease-in-out;
 }
@@ -1470,7 +1470,7 @@ hr.fancy::before {
  * -------------------------------------------------------------------- */
 .lead,
 .attention-getter {
-    font-family: var(--font-1);
+    font-family: var(--font-2);
     font-size  : var(--text-md);
     line-height: var(--vspace-1_25);
 }
@@ -2915,8 +2915,7 @@ td:last-child {
 
     .section-header::before {
         font-size: 7em;
-        left     : 0;
-    }
+        left     : 0;    }
 }
 
 
@@ -3431,7 +3430,7 @@ td:last-child {
 .s-intro__content-text {
     z-index    : 2;
     grid-column: 1/span 8;
-    margin-top: -4rem; /* move block higher */
+    margin-top: -4rem;
 }
 
 .s-intro__content-pretitle {
@@ -4269,6 +4268,7 @@ td:last-child {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+  font-family: var(--font-2);
 }
 
 
@@ -4329,20 +4329,6 @@ td:last-child {
   object-position: bottom center;
 }
 
-/* .founder-image {
-  width: 50%;
-  min-height: 550px;
-  background: #e9eeee;
-  overflow: hidden;
-  position: relative;
-}
-
-.founder-image img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom;
-} */
 
 /* Text Section */
 
@@ -4352,6 +4338,7 @@ td:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: var(--font-2);
 }
 
 /* .founder-content {
@@ -4368,6 +4355,8 @@ td:last-child {
   margin-bottom: 1rem;
   color: #111;
   line-height: 1.2;
+  font-family: var(--font-2);
+
 }
 
 .founder-content h4 {
@@ -4375,12 +4364,15 @@ td:last-child {
   font-weight: 700;
   color: #222;
   margin-bottom: 1.5rem; /*2rem*/
+  font-family: var(--font-2);
+
 }
 
 .founder-content p {
   font-size: 1.4rem; /*1.8*/
   line-height: 1.6; /*2*/
   color: #444;
+  font-family: var(--font-2);
 }
 
 /* =================== Development Team =================== */
@@ -4467,6 +4459,7 @@ td:last-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  font-family: var(--font-2);i
 }
 
 
@@ -4476,13 +4469,15 @@ td:last-child {
   font-weight: 700;
   margin: 0.2rem 0; 
   color: #111;
+  font-family: var(--font-2);
 }
 
 .team-content h4 {
   font-weight: 400;
   font-size: 1.75rem;
   color: #444;
-  margin: 0.2rem 0 0.4rem 0; 
+  margin: 0.2rem 0 0.4rem 0;
+  font-family: var(--font-2);
 }
 
 .team-content p {
@@ -4494,6 +4489,7 @@ td:last-child {
   overflow: hidden;
   text-overflow: ellipsis;
   font-style: italic;
+  font-family: var(--font-2);
 }
 
 /* =================== Development Stack =================== */
@@ -4671,7 +4667,7 @@ td:last-child {
 
 /* Card title */
 .dev-stack-item h5 {
-  font-family: "Domine-Bold", Helvetica, sans-serif;
+  font-family: "Domine-Bold", Helvetica,i sans-serif;
   font-size: 3rem;       /* slightly larger */
   font-weight: 700;         /* stronger bold */
   margin: 0.5rem 0;         /* more breathing room */
@@ -5026,11 +5022,13 @@ td:last-child {
 }
 
 .service-items__item h5 {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #000;
     text-align: center;
+    font-family: var(--font-2);
+
 }
 
 .service-items__item p {
