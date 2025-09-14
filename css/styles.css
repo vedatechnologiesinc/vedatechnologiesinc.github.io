@@ -4895,47 +4895,24 @@ td:last-child {
   }
 }
 
+
+
 /* ==================================================
  * Products and Services Section
  * ================================================== */
 .s-services {
     position: relative; 
     padding: 6rem 0;
-    background-color: #282828; /* dark background */
     text-align: center;
     overflow: hidden; 
+    background: url("../images/blob-bg.svg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;   
+    min-height: 700px; 
 }
-
-.s-services::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 266.44px;   
-    height: 267px;
-    background: url("../images/design-3.png") no-repeat;
-    background-size: contain;
-    pointer-events: none;
-    z-index: -1;
-}
-
-
-.s-services::after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 531.89px;   
-    height: 267px;
-    background: url("/mockup-vti/images/design-2.png") no-repeat;
-    background-size: contain;
-    pointer-events: none;
-    z-index: -1;
-}
-
 
 .service-icon-container {
-    background-color: rgba(58, 58, 58, 0.6); 
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     margin: 1rem 0;
@@ -4951,6 +4928,8 @@ td:last-child {
 .service-icon-container img {
     max-width: 100px;
     height: auto;
+    display: block;     
+    margin: 0 auto; 
 }
 
 .service-items {
@@ -4963,10 +4942,9 @@ td:last-child {
 .service-items__item {
     flex: 1 1 250px;
     max-width: 300px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #fff;
     border-radius: 12px;
     padding: 2rem 1.5rem;
-    color: #ffffff;
     box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
                 inset 0px -2px 4px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
@@ -4979,17 +4957,17 @@ td:last-child {
 }
 
 .service-items__item h5 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #000;
     text-align: center;
 }
 
 .service-items__item p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.6;
-    color: #ddd;
+    color: #000;
     text-align: center; 
 }
 
@@ -5000,6 +4978,58 @@ td:last-child {
     margin: 0 auto 1rem;
     display: block;
 }
+
+
+/* =================== Responsive =================== */
+
+/* medium screen */
+@media (max-width: 1024px) {
+  .s-services {
+    background: #ECEEEC; 
+  }
+
+  /* top-left blob */
+  .s-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;  
+    height: 350px;
+    background: url("../images/top-left-blob.svg") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  /* bottom-right blob */
+  .s-services::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/bottom-right-blob.svg") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .s-services > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* smaller screen */
+@media (max-width: 768px) {
+  .s-services::before,
+  .s-services::after {
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+  }
+}
+
 
 
 /* ===================================================================
