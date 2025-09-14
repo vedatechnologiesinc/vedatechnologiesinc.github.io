@@ -1154,7 +1154,7 @@ textarea {
  * ## base type styles
  * -------------------------------------------------------------------- */
 body {
-    font-family: var(--font-1);
+    font-family: var(--font-2);
     font-size  : var(--base-font-size);
     font-weight: 400;
     line-height: var(--vspace-1);
@@ -1193,7 +1193,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family           : var(--font-2);
+    font-family           : var(--font-1);
     font-weight           : 400;
     color                 : var(--color-text-dark);
     font-variant-ligatures: common-ligatures;
