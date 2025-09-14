@@ -4566,7 +4566,7 @@ td:last-child {
 
 /* Card title */
 .dev-stack-item h5 {
-  font-family: "Domine-Bold", Helvetica, sans-serif;
+  font-family: var(--font-1);
   font-size: 3rem;       /* slightly larger */
   font-weight: 700;         /* stronger bold */
   margin: 0.5rem 0;         /* more breathing room */
