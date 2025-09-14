@@ -15,7 +15,7 @@
     <!-- change this to our actual link nyan -->
     <meta property="og:url" content="https://vedatechnologiesinc.github.io/">
     <!-- change this to our logo without the text and on a smaller scale -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/stack.svg" type="image/x-icon">
     <script>
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
@@ -46,10 +46,19 @@
                 <div class="s-header__block">
                     <div class="s-header__logo">
                         <a class="logo" href="#intro">
-                            <!-- change this  -->
-                            <img src="images/veda-no-bg.png" alt="Homepage">
+                          <svg 
+                            width="60" height="60"
+                            viewBox="0 0 150 150" 
+                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M75.316 116.367C75.05 116.527 74.753 116.609 74.461 116.609C74.165 116.609 73.868 116.527 73.606 116.367L18.9232 82.7285C17.9596 82.1357 16.7443 82.1355 15.7804 82.728L9.96843 86.3003C8.06342 87.4712 8.06289 90.2397 9.96745 91.4113L72.8891 130.119C73.8531 130.712 75.0689 130.712 76.0329 130.119L138.951 91.4108C140.855 90.2393 140.855 87.4712 138.95 86.3001L133.142 82.7285C132.178 82.1357 130.962 82.1358 129.998 82.7287L75.316 116.367Z" fill="black"/>
+                            <path d="M75.316 98.352C75.05 98.512 74.758 98.59 74.461 98.59C74.165 98.59 73.868 98.512 73.606 98.352L18.9022 64.7272C17.939 64.1351 16.7248 64.1349 15.7613 64.7266L9.97175 68.282C8.06597 69.4524 8.06478 72.2215 9.96956 73.3935L18.168 78.438L72.8849 112.095C73.849 112.688 75.0649 112.688 76.0289 112.095L130.703 78.453L138.94 73.3917C140.846 72.2205 140.846 69.4501 138.939 68.2793L133.153 64.7256C132.189 64.1339 130.975 64.1342 130.012 64.7264L75.316 98.352Z" fill="#0B6E4F"/>
+                            <path d="M9.96414 50.284C8.05963 51.4556 8.05996 54.2239 9.96476 55.3949L72.8898 94.081C73.8535 94.6735 75.0685 94.6735 76.0322 94.081L138.954 55.3949C140.859 54.2238 140.86 51.4556 138.955 50.2841L76.0328 11.5769C75.0688 10.9839 73.8531 10.9839 72.8891 11.5769L9.96414 50.284Z" fill="black"/>
+                          </svg>
+
                         </a>
                     </div>
+
 
                     <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
                 </div> <!-- end s-header__block -->
@@ -222,38 +231,6 @@
                </div> <!--end s-about__content -->
         </section> <!-- end s-about -->   
 
-        <!-- mission and vission section -->
-        <section class="mission-vision-section">
-          <h2>Our Mission & Vision</h2>
-          <p class="subtitle">Guided by purpose, driven by innovation.</p>
-
-          <div class="content">
-            <div class="mission"> 
-              <img src="./assets/icons/design-3.png" alt="Mission Design" class="decor mission-decor">
-              <div class="text">
-                <p>To deliver scalable, reliable, and privacy-compliant software solutions tailored to real-world challenges in governance, commerce, and public service.</p>
-                <p>To uphold excellence in development by embedding international standards such as ISO/IEC 27001, RA 10173 compliance, and user-centric design principles.</p>
-                <p>To foster strategic partnerships that champion sustainability, automation, and digital empowerment across all sectors.</p>
-              </div>
-            </div>
-
-            <div class="circle-container">
-              <div class="circle mission-circle">MISSION</div>
-              <div class="circle vision-circle">VISION</div>
-            </div>
-            
-
-            <div class="vision">
-                    <div class="text">        
-                <img src="./assets/icons/design-3-blk.png" alt="Vision Design" class="decor vision-decor">
-                <p>To be the Philippines's leading developer of secure and intelligent software platforms that empower businesses, uplift communities, and drive digital transformation with integrity and innovation.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end of mis-vis -->
-
-
         <!-- # services
         ================================================== -->
         <section id="services" class="s-services" style="color: #fff; background-color:#282828;">
@@ -320,11 +297,73 @@
 
         </section>
 
+        <!-- Development Stack -->
+        <section id="stack" class="s-stack target-section">
+        <div class="row">
+            <div class="column xl-12">
+        <div class="section-header" data-num="03">
+        <h2 class="text-display-title">Our Development Stack</h2>
+        </div> <!-- end section-header -->
+
+        <p class="attention-getter">
+        The tools and technologies powering our innovation and delivery.
+        </p>
+            </div>
+        </div>
+
+        <!-- Cards container -->
+        <div class="stack-row">
+
+          <!-- Lisp Card -->
+          <div class="dev-stack-item">
+            <h5>Lisp</h5>
+            <div class="stack-icon-container">
+              <img src="./images/lisp.png" alt="Lisp">
+            </div>
+          </div>
+
+
+
+          <!-- Haskell Card -->
+          <div class="dev-stack-item">
+            <h5>Haskell</h5>
+            <div class="stack-icon-container">
+              <img src="./images/haskell.png" alt="Haskell">
+            </div>
+          </div>
+
+          <!-- NixOS Card -->
+          <div class="dev-stack-item">
+            <h5>NixOS</h5>
+            <div class="stack-icon-container">
+              <img src="./images/nix.svg" alt="NixOS">
+            </div>
+          </div>
+
+          <!-- Linux Card -->
+          <div class="dev-stack-item">
+            <h5>GNU/Linux</h5>
+            <div class="stack-icon-container">
+              <img src="./images/linux.png" alt="GNU/Linux">
+            </div>
+          </div>
+
+          <!-- Darwin Card -->
+          <div class="dev-stack-item">
+            <h5>Darwin</h5>
+            <div class="stack-icon-container">
+              <img src="./images/darwin.png" alt="Darwin">
+            </div>
+          </div>
+
+        </div>
+        </section>
+
         <!-- Founders -->
         <section id="founders" class="s-founders target-section">
           <div class="row">
             <div class="column xl-12">
-              <div class="section-header" data-num="03">
+              <div class="section-header" data-num="04">
                 <h2 class="text-display-title">Our Founders</h2>
               </div>
                 <p class="attention-getter">
@@ -353,7 +392,7 @@
             <div class="founder-card">
               
               <div class="founder-content">
-                <h3>Dr. Jeanne Marie Ciño Martinez</h3>
+                <h3>Dr. Jeanne Marie Ciño Martínez</h3>
                 <h4>Chief Financial Officer (CFO)</h4>
                 <p>
                   Co-Founder of Veda Technologies, Inc. Leading operations, partnerships, and strategic
@@ -371,7 +410,7 @@
         <section id="team" class="s-team target-section">
           <div class="row">
             <div class="column xl-12">
-              <div class="section-header" data-num="04">
+              <div class="section-header" data-num="05">
                 <h2 class="text-display-title">Development Team</h2>
               </div>
                 <p class="attention-getter">
@@ -423,67 +462,7 @@
           </div>
         </section>
 
-        <!-- Development Stack -->
-        <section id="stack" class="s-stack target-section">
-        <div class="row">
-            <div class="column xl-12">
-        <div class="section-header" data-num="04">
-        <h2 class="text-display-title">Our Development Stack</h2>
-        </div> <!-- end section-header -->
 
-        <p class="attention-getter">
-        The tools and technologies powering our innovation and delivery.
-        </p>
-            </div>
-        </div>
-
-        <!-- Cards container -->
-        <div class="stack-row">
-
-     <!-- Lisp Card -->
-    <div class="dev-stack-item">
-      <h5>Lisp</h5>
-      <div class="stack-icon-container">
-        <img src="./images/lisp.png" alt="Lisp">
-      </div>
-    </div>
-
-
-
-    <!-- Haskell Card -->
-    <div class="dev-stack-item">
-      <h5>Haskell</h5>
-      <div class="stack-icon-container">
-        <img src="./images/haskell.png" alt="Haskell">
-      </div>
-    </div>
-
-     <!-- NixOS Card -->
-    <div class="dev-stack-item">
-      <h5>NixOS</h5>
-      <div class="stack-icon-container">
-        <img src="./images/nix.svg" alt="NixOS">
-      </div>
-    </div>
-
-    <!-- Linux Card -->
-    <div class="dev-stack-item">
-      <h5>GNU/Linux</h5>
-      <div class="stack-icon-container">
-        <img src="./images/linux.png" alt="GNU/Linux">
-      </div>
-    </div>
-
-    <!-- Darwin Card -->
-    <div class="dev-stack-item">
-      <h5>Darwin</h5>
-      <div class="stack-icon-container">
-        <img src="./images/darwin.png" alt="Darwin">
-      </div>
-    </div>
-
-  </div>
-</section>
 
        <footer id="footer" class="s-footer target-section">
 
@@ -611,7 +590,7 @@
                 <span>Back To Top</span>   
             </div> <!-- end ss-go-top -->
             
-        </footer> <!-- end s-footer -->
+       </footer> <!-- end s-footer -->
 
     </div> <!-- end page-wrap -->
 
