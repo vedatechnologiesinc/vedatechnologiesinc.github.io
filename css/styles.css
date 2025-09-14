@@ -4467,31 +4467,44 @@ td:last-child {
 }
 
 /* =================== Development Stack =================== */
-/* From Uiverse.io by Bastiennnn */
+/* Floaty attributes */
 .card {
-  width: 300px;
-  height: 400px;
-  margin: 0 auto;
-  background-color: #24233b;
-  border-radius: 8px;
-  z-index: 1;
-  box-shadow: 0px 10px 10px rgb(73, 70, 92);
-  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(163deg, #00ff75 0%, #014742 100%);
+  border-radius: 9px;
+  transition: all .3s;
+}
+
+.card2 {
+  width: 100%;
+  height: 100%;
+  background-color: #282c34; /* Match the original card background */
+  border-radius: 9px;
+  transition: all .2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 9px;
 }
 
 .card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0px 10px 10px black;
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
+/* Tab design attributes */
 .top {
   display: flex;
   align-items: center;
-  padding-left: auto;
+  padding-left: 10px;
 }
 
 .circle {
   padding: 0 2px;
+  margin 0;
 }
 
 .circle2 {
@@ -4504,15 +4517,15 @@ td:last-child {
 }
 
 .green1 {
-  background-color: #0b6e4f;
+  background-color: #0B6E4F;
 }
 
 .green2 {
-  background-color: #014742;
+  background-color: #005448;
 }
 
 .green3 {
-  background-color: #073b3a;
+  background-color: #014742;
 }
 
 .header {
@@ -4521,32 +4534,20 @@ td:last-child {
   border-radius: 5px;
 }
 
+
 #title2 {
   color: white;
-  padding-left: auto;
+  padding-left: 105px;
   font-size: 15px;
 }
 
-.code-container {
-  text-align: center;
-}
-#code {
-  width: 270px;
-  height: 350px;
-  resize: none;
-  background-color: rgb(73, 70, 92);
-  border-radius: 5px;
-  border: none;
-  color: white;
-  padding: 10px;
-}
-#code:focus {
-  outline: none !important;
-}
+
+/* ======================= */
+
 
 /* Actual components */
 .s-stack {
-  padding: 8rem 0;          /* breathing space */
+  padding: 8rem 0;
   margin-top: 4rem;
   margin-bottom: 6rem;
   text-align: center;
@@ -4560,70 +4561,59 @@ td:last-child {
   max-width: 700px;
   margin: 0 auto;
   position: relative;
-  z-index: 2;       /* above watermark */
+  z-index: 2;
 }
 
 /* Cards container */
 .stack-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem; /* spacing below header */
+  margin-top: 2rem;
 }
 
 /* Card */
 .dev-stack-item {
-  flex: 1 1 200px;
-  max-width: 200px;
-  height: 260px;
+  position: relative;
+  width: 336px;
+  height: 350px;
   border-radius: 9px;
-  background-color: #28213D;
-  /* box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.3), */
-  /*             inset 0px 2px 4px rgba(7, 59, 58, 0.3), */
-  /*             0 6px 20px rgba(0,0,0,0.15); */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15), 0 10px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  padding: 1rem;
+  padding: 0; /* Remove padding here, move it inside .card2 if needed */
+  transition: none; /* Disable original transition to prevent conflict */
+}
+
+.dev-stack-item:hover {
+  transform: none; /* Disable original hover transform */
+  box-shadow: none; /* Disable original hover shadow */
+}
+
+
+/* ======================= */
+
+
+/* Icon container */
+.dev-stack-item {
+  flex: wrap;
+  position: relative;
+  width: 336px;
+  height: 490px;
+  border-radius: 9px;
+  background-color: #282c34;
+  box-shadow:
+              0 6px 20px rgba(0,0,0,0.15),
+              0 10px 15px rgba(0,0,0,0.3);
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dev-stack-item:hover {
   transform: translateY(-10px);
-  box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.4),
-              inset 0px 2px 4px rgba(7, 59, 58, 0.4),
-              0px 8px 22px rgba(0, 0, 0, 0.25);
+  box-shadow:
+              0 28px 68px rgba(0,0,0,0.35); /* Outer shadow for lift */
 }
-
-/* Icon container */
-.stack-icon-container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.stack-icon-container img {
-  width: 100%;
-  height: auto;
-  max-width: 140px;
-  max-height: 160px;
-  object-fit: cover;
-  object-fit: contain;
-}
-
-/* Card title */
-.dev-stack-item h5 {
-  font-family: "Domine-Bold", Helvetica, sans-serif;
-  font-size: 3rem;       /* slightly larger */
-  font-weight: 700;         /* stronger bold */
-  margin: 0.5rem 0;         /* more breathing room */
-  color: #111;
-  letter-spacing: 0.5px;    /* adds clarity */
-  text-transform: none;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
-}
-
 /* -----------------------
    Responsive Adjustments
    ----------------------- */
@@ -5005,7 +4995,7 @@ td:last-child {
 .service-items__item {
     flex: 1 1 250px;
     max-width: 300px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: #282c34;
     border-radius: 12px;
     padding: 2rem 1.5rem;
     color: #ffffff;
