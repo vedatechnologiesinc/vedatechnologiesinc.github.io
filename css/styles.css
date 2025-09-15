@@ -2078,7 +2078,7 @@ input[type=button] {
     transition             : all 0.3s;
     background-color       : var(--color-btn);
     border                 : 2px solid var(--color-btn);
-    border-radius:3rem;
+    border-radius          : 0.5rem;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2156,7 +2156,6 @@ button.btn--stroke {
     font-weight: 700;
     border     : 2px solid var(--color-btn-stroke);
     color      : var(--color-btn-stroke-text);
-    border-radius: 3rem;
 }
 
 .btn--stroke:focus,
@@ -2666,7 +2665,7 @@ td:last-child {
     font-weight   : 600;
     font-size     : var(--text-size);
     line-height   : var(--vspace-1);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.15em;
     color         : var(--color-1);
     transform     : translate(0.2em, 0);
@@ -3457,7 +3456,7 @@ td:last-child {
 
 .s-intro__content-btns .btn {
     margin-right: var(--vspace-0_375);
-    border-radius: 0.5rem !important;
+    /* border-radius: 0.5rem !important; */
 }
 
 .s-intro__content-btns .btn:last-child {
@@ -3500,14 +3499,6 @@ td:last-child {
 }
 
 .s-intro__content-media .hero-wave-svg {
-    /* z-index       : 2;
-    -o-object-fit : cover;
-    object-fit    : cover;
-    vertical-align: bottom;
-    width         : 100%;
-    height        : 100%;
-    margin        : 0;
-    padding       : 0; */
     z-index: 0;
     position: absolute;
     top: 0;
@@ -4723,7 +4714,7 @@ td:last-child {
 /* /\* =================== Autoplay Carousel =================== *\/ */
 
 .slider {
-  background: #fffff;
+  background: #fff;
   box-shadow: inset 0px -2px 4px rgba(255, 255, 255, 0.5),
               inset 0px 2px 4px rgba(255, 255, 255, 0.5),
               0 8px 32px rgba(255,255,255,0.2);  height: 100px; /* adjust as needed */
@@ -4745,7 +4736,7 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
-.s-footer {
+/* .s-footer {
     --bottom-padding: var(--vspace-2_5);
     background-color: var(--color-3);
     margin-top      : auto;
@@ -4831,7 +4822,7 @@ td:last-child {
 .s-footer .link-list a:focus,
 .s-footer .link-list a:hover {
     color: white;
-}
+} */
 
 
 /* =================== Responsive =================== */
@@ -5007,7 +4998,7 @@ td:last-child {
 .service-items__item {
     flex: 1 1 250px;
     max-width: 300px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     padding: 2rem 1.5rem;
     box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
@@ -5022,7 +5013,7 @@ td:last-child {
 }
 
 .service-items__item h5 {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #000;
@@ -5106,11 +5097,17 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-footer {
     --bottom-padding: var(--vspace-2_5);
-    background-color: var(--color-3);
+    background-color: var(--color-gray-10);
     margin-top      : auto;
     padding-top     : var(--vspace-6);
     padding-bottom  : var(--bottom-padding);
-    color           : var(--color-gray-15);
+    /* color           : var(--color-gray-15); */
+    color: #000;
+
+     background-image: url("../images/footer-frames-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;       
+    background-position: right;
 }
 
 .s-footer h5 {
@@ -5154,6 +5151,7 @@ td:last-child {
     padding-top: var(--vspace-1_25);
     margin-top : var(--vspace-0_75);
     position   : relative;
+    
 }
 
 .s-footer__bottom::before {
@@ -5161,7 +5159,7 @@ td:last-child {
     display         : block;
     height          : 1px;
     width           : calc(100% - 2 * var(--gutter));
-    background-color: rgba(255, 255, 255, 0.04);
+    /* background-color: rgba(255, 255, 255, 0.04); */
     position        : absolute;
     top             : 0;
     left            : var(--gutter);
@@ -5202,15 +5200,17 @@ td:last-child {
 
 .ss-copyright a {
     color: var(--color-gray-5);
+    color: red;
 }
 
 .ss-copyright a:focus,
 .ss-copyright a:hover {
-    color: var(--color-1);
+    color: var(--color-3);
 }
 
 .ss-copyright span {
     display: inline-block;
+    color: var(--color-3-dark);
 }
 
 .ss-copyright span::after {
@@ -5218,6 +5218,7 @@ td:last-child {
     display: inline-block;
     padding: 0 0.8rem 0 1rem;
     color  : rgba(255, 255, 255, 0.04);
+    color: red;
 }
 
 .ss-copyright span:last-child::after {
@@ -5246,7 +5247,8 @@ td:last-child {
     font-weight   : 300;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    color         : var(--color-gray-15);
+    /* color         : var(--color-gray-15);  */
+    color: white;
     position      : relative;
 }
 
@@ -5321,6 +5323,10 @@ td:last-child {
 }
 
 @media screen and (max-width: 800px) {
+    .s-footer {
+    background-size: cover;
+    background-position: center top ; 
+  }
     .ss-copyright span {
         display: block;
     }
@@ -5335,13 +5341,21 @@ td:last-child {
 }
 
 @media screen and (max-width: 600px) {
-    .ss-go-top {
+     .ss-go-top {
         right: calc(var(--vspace-0_25) * -1);
     }
+    .s-footer {
+    background-size: cover ; 
+    background-position: center top ; 
+  }
 }
 
 @media screen and (max-width: 400px) {
     .ss-go-top {
         right: -2rem;
     }
+    .s-footer {
+    background-size: cover; 
+    background-position: center top ; 
+  }
 }
