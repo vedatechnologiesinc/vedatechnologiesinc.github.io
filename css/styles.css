@@ -1474,7 +1474,15 @@ hr.fancy::before {
     font-size  : var(--text-md);
     line-height: var(--vspace-1_25);
 }
+.attention-getter a {
+  color: var(--color-1); /* choose any color you like */
+  text-decoration: none; /* optional: remove underline */
+}
 
+.attention-getter a:hover {
+  color: var(--color-2) ; /* color when hovering */
+  text-decoration: underline; /* optional hover effect */
+}
 @media screen and (max-width: 800px) {
 
     .lead,
@@ -4246,7 +4254,7 @@ td:last-child {
 /* =================== Section Styling =================== */
 .s-team,
 .s-founders {
-  padding: 140px 3rem;
+  padding: 80px 3rem;
   text-align: center;
   background: transparent;
 }
