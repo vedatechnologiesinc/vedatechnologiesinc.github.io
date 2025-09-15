@@ -4486,7 +4486,7 @@ td:last-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: var(--font-2);i
+  font-family: var(--font-2);
 }
 
 
@@ -4518,6 +4518,34 @@ td:last-child {
   font-style: italic;
   font-family: var(--font-2);
 }
+
+/* LinkedIn icon */
+.linkedin-icon {
+  position: absolute;
+  top: -50px;   /* pushes it UP, overlapping the image */
+  right: 15px;
+  background: #0B6E4F;
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 5;
+}
+
+.linkedin-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.linkedin-icon:hover {
+  background: #004C44;
+  transform: scale(1.1);
+}
+
 
 /* =================== Development Stack =================== */
 /* Floaty attributes */
