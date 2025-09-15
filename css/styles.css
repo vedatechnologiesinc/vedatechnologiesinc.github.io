@@ -4402,6 +4402,7 @@ td:last-child {
   font-family: var(--font-2);
 }
 
+
 /* =================== Development Team =================== */
 /* Row layout */
 .team-row {
@@ -4522,7 +4523,7 @@ td:last-child {
 /* LinkedIn icon */
 .linkedin-icon {
   position: absolute;
-  top: -50px;   /* pushes it UP, overlapping the image */
+  top: -45px;  
   right: 15px;
   background: #0B6E4F;
   border-radius: 50%;
