@@ -4661,15 +4661,6 @@ td:last-child {
 }
 
 
-/* Card */
-.dev-stack-item {
-  flex: 1 1 calc(25% - 2rem); /* n per row ) */
-  min-width: 250px;           /* dont get smaller than this */
-  max-width: 300px;           /* dont get bigger than this */
-  height: 400px;
-  border-radius: 9px;
-}
-
 .dev-stack-item:hover {
   background-color: rgba(255, 255, 255, 1);
   transform: translateY(-10px);
@@ -4681,11 +4672,13 @@ td:last-child {
 /* ======================= */
 
 
-/* Icon container */
+/* Card */
 .dev-stack-item {
   position: relative;
-  flex: 1 1 250px;
-  max-width: 300px;
+  flex: 1 1 calc(25% - 3rem);
+  min-width: 160px;  /* small 140 */
+  max-width: 200px;  /* tg */
+  height: 250px;
   border-radius: 9px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow:
@@ -4695,11 +4688,6 @@ td:last-child {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dev-stack-item:hover {
-  transform: translateY(-10px);
-  box-shadow:
-              0 28px 68px rgba(0,0,0,0.35); /* Outer shadow for lift */
-}
 
 /* Icon container */
 .stack-icon-container {
@@ -4710,28 +4698,26 @@ td:last-child {
   margin-bottom: 0.75rem;
 }
 
-
-
 .stack-icon-container img {
   width: 100%;
   height: auto;
   max-width: 180px;
   max-height: 300px;
-  object-fit: cover;
   object-fit: contain;
+  padding: 2rem;
 }
 
 /* Card title */
-.dev-stack-item h5 {
-  font-family: "Domine-Bold", Helvetica,i sans-serif;
-  font-size: 3rem;       /* slightly larger */
-  font-weight: 700;         /* stronger bold */
-  margin: 0.5rem 0;         /* more breathing room */
-  color: #111;
-  letter-spacing: 0.5px;    /* adds clarity */
-  text-transform: none;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
-}
+/* .dev-stack-item h5 { */
+/*   font-family: "Domine-Bold", Helvetica,i sans-serif; */
+/*   font-size: 3rem;       /\* slightly larger *\/ */
+/*   font-weight: 700;         /\* stronger bold *\/ */
+/*   margin: 0.5rem 0;         /\* more breathing room *\/ */
+/*   color: #111; */
+/*   letter-spacing: 0.5px;    /\* adds clarity *\/ */
+/*   text-transform: none; */
+/*   text-shadow: 0 1px 2px rgba(0,0,0,0.15); */
+/* } */
 
 /* -----------------------
    Responsive Adjustments
@@ -4776,7 +4762,7 @@ td:last-child {
     max-height: 150px;
   }
 }
-/* /\* =================== Autoplay Carousel =================== *\/ */
+/* =================== Autoplay Carousel =================== */
 
 .slider {
   background: #fff;
