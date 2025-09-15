@@ -3448,13 +3448,23 @@ td:last-child {
 }
 
 .s-intro__content-title {
-    font-size     : clamp(3.8rem, 4.8vw, 8.8rem);
-    line-height   : 1.045;
+    font-size     : clamp(4rem, 6vw, 8.8rem); /* always larger */
+    line-height   : 1.05;
     letter-spacing: -0.025em;
     margin-top    : 0;
-    margin-bottom : var(--vspace-1_25);
+    margin-bottom : 1rem; /* tighter spacing */
+    font-weight   : 800;
+    text-transform: uppercase;
 }
 
+.s-intro__content-title-sub {
+    font-size     : clamp(2.4rem, 3.5vw, 4.4rem); /* always smaller */
+    line-height   : 1.2;
+    letter-spacing: -0.015em; /* lighter tracking */
+    margin-top    : 0;
+    margin-bottom : var(--vspace-1_25);
+    font-weight   : 400;
+}
 .s-intro__content-btns {
     --color-btn           : var(--color-text-dark);
     --color-btn-text      : var(--color-white);
@@ -3649,6 +3659,7 @@ td:last-child {
 .s-header__inner,
 .s-intro__content-media,
 .s-intro__content-title,
+.s-intro__content-title-sub,
 .s-intro__content-pretitle,
 .s-intro__content-btns,
 .s-intro__btn-download,
@@ -3679,6 +3690,10 @@ td:last-child {
     transform          : translateY(150px);
 }
 
+.s-intro__content-title-sub{
+    transition-property: opacity, transform;
+    transform          : translateY(150px);
+}
 .s-intro__btn-download {
     transition-property: opacity, transform;
     transform          : translateX(-150px);
@@ -3704,7 +3719,9 @@ td:last-child {
 .no-js .s-intro__content-title,
 .no-js .s-intro__content-btns,
 .ss-show .s-intro__content-title,
-.ss-show .s-intro__content-btns {
+.ss-show .s-intro__content-btns
+.no-js .s-intro__content-title-sub,
+.ss-show .s-intro__content-title-sub{
     opacity  : 1;
     transform: translateY(0);
 }
@@ -3730,6 +3747,10 @@ td:last-child {
     transition-delay: 0.45s;
 }
 
+.no-js .s-intro__content-title-sub,
+.ss-show .s-intro__content-title-sub {
+    transition-delay: 0.55s;
+}
 .no-js .s-intro__content-btns,
 .ss-show .s-intro__content-btns {
     transition-delay: 0.6s;
@@ -3806,10 +3827,17 @@ td:last-child {
     }
 
     .s-intro__content-title {
-        font-size: clamp(4.2rem, 8.2vw, 8.8rem);
+        font-size: clamp(4.4rem, 9vw, 8.8rem);
         color    : black;
+        font-weight: 800;
+        text-transform: uppercase;
     }
 
+    .s-intro__content-title-sub {
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        color    : black;
+        font-weight: 400;
+    }
     .s-intro__content-title br {
         display: none;
     }
