@@ -4307,7 +4307,7 @@ body.founders-page .s-intro__scroll-down::before {
 .founders-detail__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -4449,6 +4449,7 @@ position: absolute;
 
   .founders-card {
     margin: 0 auto; 
+   
   }
 
   .founder-text-col {
@@ -4486,7 +4487,7 @@ position: absolute;
               0 8px 32px rgba(0,0,0,0.2);
   backdrop-filter: blur(25px) brightness(100%);
   -webkit-backdrop-filter: blur(25px) brightness(100%);
-  overflow: visible; 
+  overflow: visible;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1; 
 }
@@ -4510,6 +4511,7 @@ position: absolute;
   height: auto; 
   object-fit: contain; 
   object-position: top center; 
+   clip-path: inset(0 0 20% 0);
 }
 
 
@@ -4940,7 +4942,7 @@ position: absolute;
     max-height: 150px;
   }
 }
-=================== Autoplay Carousel ===================
+/* =================== Autoplay Carousel =================== */
 
 .slider {
   background: #fff;
