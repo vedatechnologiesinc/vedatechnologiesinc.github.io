@@ -4483,7 +4483,7 @@ body.founders-page .s-intro__scroll-down::before {
 
 .leader-card {
   position: relative;
-  width: 280px;      
+  width: 370px;
   height: 420px;
   border-radius: 20px;
   background-color: rgba(7, 59, 58, 0.1);
@@ -4500,7 +4500,7 @@ body.founders-page .s-intro__scroll-down::before {
 
 .leader-image {
   position: absolute;
-  top: -60px; 
+  top: -31px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -4516,7 +4516,7 @@ body.founders-page .s-intro__scroll-down::before {
   height: auto; 
   object-fit: contain; 
   object-position: top center; 
-   clip-path: inset(0 0 20% 0);
+  clip-path: inset(0 0 20% 0);
 }
 
 
@@ -4539,16 +4539,17 @@ body.founders-page .s-intro__scroll-down::before {
 
 .leader-content h3 {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   font-weight: 700;
-  margin: 0.2rem 0; 
+  margin: 0.2rem 0;
+  padding: 0 1rem;
   color: #111;
   font-family: var(--font-2);
 }
 
 .leader-content h4 {
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: #444;
   margin: 0.2rem 0 0.4rem 0;
   font-family: var(--font-2);
@@ -4585,7 +4586,6 @@ body.founders-page .s-intro__scroll-down::before {
   background: #073b3a;
   color: #fff;
 }
-
 
 
 /* =================== Development Team =================== */
@@ -4988,12 +4988,6 @@ body.founders-page .s-intro__scroll-down::before {
   .leader-row {
     gap: 6rem;
   }
-  .leader-card {
-    flex: 0 0 45%;
-  }
-  .leader-content h3 {
-    font-size: 2.2rem;
-  }
 
 }
 
@@ -5021,7 +5015,6 @@ body.founders-page .s-intro__scroll-down::before {
 
    .leader-card {
     flex: 0 0 90%;
-    max-width: 90%;
   }
   .leader-content h3 {
     font-size: 2rem;
