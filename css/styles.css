@@ -4485,6 +4485,7 @@ body.founders-page .s-intro__scroll-down::before {
   position: relative;
   width: 370px;
   height: 420px;
+  max-width: 400px;
   border-radius: 20px;
   background-color: rgba(7, 59, 58, 0.1);
   box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.5),
@@ -4497,10 +4498,33 @@ body.founders-page .s-intro__scroll-down::before {
   z-index: 1; 
 }
 
-
-.leader-image {
+.leader-image .ebzzry {
   position: absolute;
-  top: -31px;
+  max-width: 400px;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.leader-image .ebzzry {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  clip-path: inset(0 0 20% 0);
+}
+
+
+.leader-image .docjem {
+  position: absolute;
+  max-width: 400px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -4511,12 +4535,12 @@ body.founders-page .s-intro__scroll-down::before {
   overflow: visible; 
 }
 
-.leader-image img {
+.leader-image .docjem  {
   width: 100%;
-  height: auto; 
+  height: 100%;
   object-fit: contain; 
   object-position: top center; 
-  clip-path: inset(0 0 20% 0);
+  clip-path: inset(0 0 25% 0);
 }
 
 
@@ -4971,7 +4995,7 @@ body.founders-page .s-intro__scroll-down::before {
 /* =================== Responsive =================== */
 
 /* Medium screens */
-@media (max-width: 1200px) {
+@media (min-width: 820px) and (max-width: 1200px) {
   .team-row {
     gap: 5rem;
   }
@@ -4986,12 +5010,13 @@ body.founders-page .s-intro__scroll-down::before {
     gap: 6rem;
   }
 
+
 }
 
 /* Small screens */
 @media (max-width: 768px) {
     /* .founder-card, */
-    .team-row {
+  .team-row {
     flex-direction: column;
     align-items: center;
     gap: 5rem;
@@ -5012,15 +5037,6 @@ body.founders-page .s-intro__scroll-down::before {
 
    .leader-card {
     flex: 0 0 90%;
-  }
-  .leader-content h3 {
-    font-size: 2rem;
-  }
-  .leader-content h4 {
-    font-size: 1.4rem;
-  }
-  .leader-content p {
-    font-size: 1.3rem;
   }
 
 }
