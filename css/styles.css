@@ -5085,7 +5085,7 @@ body.founders-page .s-intro__scroll-down::before {
     background-color: #000000; /* dark background */
     text-align: center;
     overflow: hidden; 
-    background: url("../images/blob-bg.svg") no-repeat center center;
+    background: url("../images/backgrounds/blob-bg.svg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;   
     min-height: 700px; 
@@ -5178,7 +5178,7 @@ body.founders-page .s-intro__scroll-down::before {
     left: 0;
     width: 350px;  
     height: 350px;
-    background: url("../images/top-left-blob.svg") no-repeat;
+    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
     background-size: contain;
     z-index: 0;
   }
@@ -5191,7 +5191,7 @@ body.founders-page .s-intro__scroll-down::before {
     right: 0;
     width: 350px;
     height: 350px;
-    background: url("../images/bottom-right-blob.svg") no-repeat;
+    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
     background-size: contain;
     z-index: 0;
   }
@@ -5228,7 +5228,7 @@ body.founders-page .s-intro__scroll-down::before {
     /* color           : var(--color-gray-15); */
     color: #000;
 
-     background-image: url("../images/footer-frames-2.svg");
+     background-image: url("../images/backgrounds/footer-frames-2.svg");
     background-repeat: no-repeat;
     background-size: contain;       
     background-position: right;
