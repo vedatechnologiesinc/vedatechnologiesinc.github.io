@@ -3114,9 +3114,8 @@ td:last-child {
 } 
 
 .s-header__logo svg {
-  display: block;     
-  width: auto;        
-  opacity: 0.8;   
+    width: 60px;
+  height: 60px;     
 }
 
 /* --------------------------------------------------------------------
@@ -5026,7 +5025,7 @@ body.founders-page .s-intro__scroll-down::before {
   }
   .team-card {
     flex: 0 0 90%;
-    max-width: 90%;
+    max-width: 100%;
   }
   .team-content h3 {
     font-size: 2rem;
