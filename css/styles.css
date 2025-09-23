@@ -1163,7 +1163,7 @@ body {
 
 /* links
  */
-{
+a{
     color     : var(--color-link);
     transition: all 0.3s ease-in-out;
 }
@@ -3436,7 +3436,7 @@ td:last-child {
 .s-intro__content-text {
     z-index    : 2;
     grid-column: 1/span 8;
-    margin-top: -4rem;
+    margin-top: 1rem;
 }
 
 .s-intro__content-pretitle {
@@ -3450,7 +3450,7 @@ td:last-child {
     line-height   : 1.05;
     letter-spacing: -0.025em;
     margin-top    : 0;
-    margin-bottom : 1rem; /* tighter spacing */
+    margin-bottom : 1rem; /*tighter spacing*/
     font-weight   : 800;
     text-transform: uppercase;
 }
@@ -3473,7 +3473,6 @@ td:last-child {
 
 .s-intro__content-btns .btn {
     margin-right: var(--vspace-0_375);
-    /* border-radius: 0.5rem !important; */
 }
 
 .s-intro__content-btns .btn:last-child {
@@ -3620,13 +3619,13 @@ body.founders-page .s-intro__scroll-down::before {
     color      : var(--color-3);
 }
 
-/* .s-intro__scroll-down span {
+.s-intro__scroll-down span {
     display    : block;
     font-family: var(--font-1);
     font-size  : var(--text-size);
     font-weight: 300;
     line-height: var(--vspace-2);
-} */
+}
 
 .s-intro__scroll-down .scroll-icon {
     display        : flex;
@@ -3713,7 +3712,7 @@ body.founders-page .s-intro__scroll-down::before {
 .no-js .s-intro__content-title,
 .no-js .s-intro__content-btns,
 .ss-show .s-intro__content-title,
-.ss-show .s-intro__content-btns
+.ss-show .s-intro__content-btns,
 .no-js .s-intro__content-title-sub,
 .ss-show .s-intro__content-title-sub{
     opacity  : 1;
@@ -3848,7 +3847,9 @@ body.founders-page .s-intro__scroll-down::before {
         padding-right                : 0;
         max-width                    : 400px;
         margin                       : var(--vspace-1) auto 0;
-    }
+      }
+
+      
 
     .s-intro__content-btns .btn {
         margin-right: 0;
@@ -4452,7 +4453,7 @@ body.founders-page .s-intro__scroll-down::before {
 
   .founders-card {
     margin: 0 auto;
-    j
+    
    
   }
 
@@ -4799,7 +4800,7 @@ body.founders-page .s-intro__scroll-down::before {
 
 .circle {
   padding: 0 2px;
-  margin 0;
+  margin: 0;
 }
 
 .circle2 {
@@ -5214,6 +5215,33 @@ body.founders-page .s-intro__scroll-down::before {
 
 
 /* ===================================================================
+ * # WHITE PAPER 
+ *
+ *
+ * ------------------------------------------------------------------- */
+.s-whitepaper {
+    padding-top: var(--vspace-6);
+    padding-bottom: var(--vspace-6);
+}
+
+.s-whitepaper .section-header h2 {
+    color: #000;
+}
+
+.s-whitepaper__about {
+    padding-top: var(--vspace-0_5);
+}
+.s-whitepaper__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* ===================================================================
  * # FOOTER
  *
  *
@@ -5224,7 +5252,6 @@ body.founders-page .s-intro__scroll-down::before {
     margin-top      : auto;
     padding-top     : var(--vspace-6);
     padding-bottom  : var(--bottom-padding);
-    /* color           : var(--color-gray-15); */
     color: #000;
 
      background-image: url("../images/backgrounds/footer-frames-2.svg");
@@ -5274,7 +5301,6 @@ body.founders-page .s-intro__scroll-down::before {
     padding-top: var(--vspace-1_25);
     margin-top : var(--vspace-0_75);
     position   : relative;
-    
 }
 
 .s-footer__bottom::before {
@@ -5282,7 +5308,6 @@ body.founders-page .s-intro__scroll-down::before {
     display         : block;
     height          : 1px;
     width           : calc(100% - 2 * var(--gutter));
-    /* background-color: rgba(255, 255, 255, 0.04); */
     position        : absolute;
     top             : 0;
     left            : var(--gutter);
@@ -5322,8 +5347,7 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .ss-copyright a {
-    color: var(--color-gray-5);
-    color: red;
+    color: var(--color-3-dark);
 }
 
 .ss-copyright a:focus,
@@ -5340,13 +5364,23 @@ body.founders-page .s-intro__scroll-down::before {
     content: "|";
     display: inline-block;
     padding: 0 0.8rem 0 1rem;
-    color  : rgba(255, 255, 255, 0.04);
-    color: red;
+    color  : var(--color-3-dark);
 }
 
 .ss-copyright span:last-child::after {
     display: none;
 }
+
+/* ------------------------------------------------------------------- 
+ * ## SEC number
+ * ------------------------------------------------------------------- */
+.ss-sec {          
+    color: rgba(0, 0, 0, 0.6);      
+    margin-top: 0.3rem;   
+    margin-left: 0.3rem;          
+    display: block;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## go top
