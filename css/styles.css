@@ -5106,8 +5106,9 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .service-icon-container img {
-    max-width: 100px;
-    height: auto;
+    max-width: none;  
+    width: 180px;     
+    height: 180px;
     display: block;     
     margin: 0 auto; 
 }
@@ -5120,11 +5121,11 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .service-items__item {
-    flex: 1 1 250px;
-    max-width: 300px;
+    flex: 1 1 375px;
+    max-width: 450px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    padding: 2rem 1.5rem;
+    padding: 3rem 2.25rem;
     box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
                 inset 0px -2px 4px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
@@ -5137,7 +5138,7 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .service-items__item h5 {
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #000;
@@ -5147,15 +5148,13 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .service-items__item p {
-    font-size: 14px;
+    font-size: 21px;
     line-height: 1.6;
     color: #000;
     text-align: center; 
 }
 
 .service-icon img {
-    width: 80px;
-    height: 80px;
     object-fit: contain;
     margin: 0 auto 1rem;
     display: block;
@@ -5200,6 +5199,25 @@ body.founders-page .s-intro__scroll-down::before {
     position: relative;
     z-index: 1;
   }
+
+   .service-items__item {
+      flex: 1 1 300px;
+      max-width: 360px;
+      padding: 2.5rem 2rem;
+  }
+
+  .service-items__item h5 {
+      font-size: 20px;
+  }
+  .service-items__item p {
+      font-size: 18px;
+  }
+
+  .service-icon-container img {
+      width: 140px;
+      height: 140px;
+  }
+
 }
 
 /* smaller screen */
@@ -5209,6 +5227,24 @@ body.founders-page .s-intro__scroll-down::before {
     width: 280px;
     height: 280px;
     opacity: 0.9;
+  }
+
+  .service-items__item {
+      flex: 1 1 250px;
+      max-width: 300px;
+      padding: 2rem 1.5rem;
+  }
+
+  .service-items__item h5 {
+      font-size: 18px;
+  }
+  .service-items__item p {
+      font-size: 16px;
+  }
+
+  .service-icon-container img {
+      width: 100px;
+      height: 100px;
   }
 }
 
