@@ -4732,11 +4732,23 @@ body.founders-page .s-intro__scroll-down::before {
   font-weight: bold;
 }
 
-/* LinkedIn icon */
-.linkedin-icon {
+
+.team-icons .arrow-icon {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  pointer-events: none;
+  z-index: 10;
+  transform: rotate(-90deg) translateY(1px); 
+}
+
+
+.team-icons {
   position: absolute;
-  top: -45px;  
+  top: -50px;  
   right: 15px;
+  width: 45px;
+  height: 45px;
   background: #0B6E4F;
   border-radius: 50%;
   padding: 1rem;
@@ -4748,15 +4760,49 @@ body.founders-page .s-intro__scroll-down::before {
   z-index: 5;
 }
 
-.linkedin-icon svg {
-  width: 20px;
-  height: 20px;
+/* icon styles */
+.team-icons a {
+  position: absolute;
+  background: #333;
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(0);
+  z-index: 2;
+}
+
+.team-icons a svg {
+  width: 25px;
+  height: 25px;
   fill: #fff;
 }
 
-.linkedin-icon:hover {
-  background: #004C44;
-  transform: scale(1.1);
+.team-icons a.linkedin-icon {
+  background: #0B6E4F;
+}
+
+.team-icons a.github-icon {
+  background: #333;
+}
+
+/* animation */
+.team-icons:hover .linkedin-icon {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+
+.team-icons:hover .github-icon {
+  opacity: 1;
+  transform: translateY(-120px);
+}
+
+.team-icons a:hover {
+  transform: scale(1.1) translateY(-60px);
 }
 
 
