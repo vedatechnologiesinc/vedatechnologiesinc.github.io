@@ -5315,7 +5315,8 @@ body.founders-page .s-intro__scroll-down::before {
 
 .s-footer__social svg path,
 .s-footer__social svg circle {
-    fill      : var(--color-gray-15);
+    /* fill      : var(--color-gray-15); */
+    fill: black;
     transition: all 0.5s;
 }
 
