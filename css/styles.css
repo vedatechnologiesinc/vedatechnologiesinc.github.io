@@ -1153,6 +1153,25 @@ textarea {
 /* --------------------------------------------------------------------
  * ## base type styles
  * -------------------------------------------------------------------- */
+
+/* montserrat ace regular */
+@font-face {
+  font-family: 'Montserrat Ace';
+  src: url('../fonts/montserrat-ace-regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* saved by zero regular */
+@font-face {
+  font-family: 'Saved By Zero';
+  src: url('../fonts/SavedByZero-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 body {
     font-family: var(--font-2);
     font-size  : var(--base-font-size);
@@ -3440,12 +3459,14 @@ td:last-child {
 }
 
 .s-intro__content-pretitle {
+    font-family: 'Montserrat Ace', sans-serif;
     font-weight  : 600;
     margin-bottom: var(--vspace-0_125);
     color        : var(--color-1);
 }
 
 .s-intro__content-title {
+    font-family: 'Saved By Zero', cursive;
     font-size     : clamp(4rem, 6vw, 8.8rem); /* always larger */
     line-height   : 1.05;
     letter-spacing: -0.025em;
@@ -3456,13 +3477,32 @@ td:last-child {
 }
 
 .s-intro__content-title-sub {
-    font-size     : clamp(2.4rem, 3.5vw, 4.4rem); /* always smaller */
+    font-family: 'Montserrat Ace', sans-serif;
+    font-size     : clamp(1.8rem, 2.625vw, 3.3rem); /* always smaller */
     line-height   : 1.2;
     letter-spacing: -0.015em; /* lighter tracking */
     margin-top    : 0;
     margin-bottom : var(--vspace-1_25);
     font-weight   : 400;
 }
+
+.founders-title {
+  font-family: var(--font-1);  
+  font-weight: 600;
+  text-transform: none;
+}
+
+.s-intro__content-title-sub .veda {
+  font-family: 'Saved By Zero', cursive;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.s-intro__content-title-sub .tech {
+  font-family: 'Montserrat Ace', sans-serif;
+  font-weight: 400;
+}
+
 .s-intro__content-btns {
     --color-btn           : var(--color-text-dark);
     --color-btn-text      : var(--color-white);
@@ -4612,6 +4652,17 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 
+p .veda {
+  font-family: 'Saved By Zero', cursive;
+  font-weight: 200;
+}
+
+p .tech {
+  font-family: 'Montserrat Ace', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 /* =================== Development Team =================== */
 /* Row layout */
 .team-row {
@@ -5443,12 +5494,12 @@ body.founders-page .s-intro__scroll-down::before {
     color: var(--color-3-dark);
 }
 
-.ss-copyright span::after {
+/* .ss-copyright span::after {
     content: "|";
     display: inline-block;
     padding: 0 0.8rem 0 1rem;
     color  : var(--color-3-dark);
-}
+} */
 
 .ss-copyright span:last-child::after {
     display: none;
