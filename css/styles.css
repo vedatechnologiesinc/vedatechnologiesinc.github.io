@@ -4661,8 +4661,8 @@ p .tech {
 
 .team-image {
   position: absolute;
-  top: 20px;
-  left: 48%;
+  top: -60px;
+  left: 50%;
   transform: translateX(-50%);
   width: 100%;
   z-index: 2;
@@ -5059,9 +5059,6 @@ p .tech {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .team-image {
-    top: 90px;
-  }
   .team-content h3 {
     font-size: 2rem;
   }
@@ -5079,9 +5076,6 @@ p .tech {
 
 /* Extra small screens */
 @media (max-width: 480px) {
-  .team-image {
-    top: 10px;
-  }
   .team-content h3 {
     font-size: 1.8rem;
   }
