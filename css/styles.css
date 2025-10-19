@@ -4315,8 +4315,9 @@ body.founders-page .s-intro__scroll-down::before {
   font-family: var(--font-2);
 }
 
-/* ==================== Founders detailed container ============================= */
-.founders-detail__container {
+/* ==================== Founders and Partners detailed container ============================= */
+.founders-detail__container,
+.partners-detail__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem;
@@ -4325,7 +4326,8 @@ body.founders-page .s-intro__scroll-down::before {
   gap: 6rem;
 }
 
-.founder-row {
+.founder-row,
+.partner-row {
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -4336,11 +4338,13 @@ body.founders-page .s-intro__scroll-down::before {
   align-items: center;
 }
 
-.founder-card-col {
+.founder-card-col,
+.partner-card-col {
   flex: 0 0 340px;
 }
 
-.founders-card {
+.founders-card,
+.partners-card {
   position: relative;
   flex: 1 1 300px;
   max-width: 300px;
@@ -4356,12 +4360,14 @@ body.founders-page .s-intro__scroll-down::before {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
-.founders-card:hover {
+.founders-card:hover,
+.partners-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 28px 68px rgba(0, 0, 0, 0.35);
 }
 
-.founders-image {
+.founders-image,
+.partners-image {
   width: 100%;
 }
 
@@ -4378,8 +4384,26 @@ body.founders-page .s-intro__scroll-down::before {
   overflow: visible;
 }
 
+.partners-image img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-55%);
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+}
+
 .founders-image.ebzzry img {
   bottom: -31px;
+  left: 54%;
+}
+
+.partners-image.titus img {
+  bottom: -85px;
   left: 54%;
 }
 
@@ -4467,7 +4491,7 @@ body.founders-page .s-intro__scroll-down::before {
   }
 }
 
-/* =================== Founders =================== */
+/* =================== Founders and Partners =================== */
 /* Row layout */
 .leader-row,
 .partner-row {
