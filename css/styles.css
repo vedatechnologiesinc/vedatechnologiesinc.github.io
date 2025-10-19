@@ -4288,7 +4288,8 @@ body.founders-page .s-intro__scroll-down::before {
 
 /* =================== Section Styling =================== */
 .s-team,
-.s-founders {
+.s-founders,
+.s-partners {
   padding: 80px 3rem;
   text-align: center;
   background: transparent;
@@ -4468,7 +4469,8 @@ body.founders-page .s-intro__scroll-down::before {
 
 /* =================== Founders =================== */
 /* Row layout */
-.leader-row {
+.leader-row,
+.partner-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -4476,12 +4478,14 @@ body.founders-page .s-intro__scroll-down::before {
   margin-top: 3rem;
 }
 
-.leader-card:hover {
+.leader-card:hover,
+.partner-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 28px 68px rgba(0, 0, 0, 0.35);
 }
 
-.leader-card {
+.leader-card,
+.partner-card {
   position: relative;
   width: 370px;
   height: 420px;
@@ -4511,7 +4515,22 @@ body.founders-page .s-intro__scroll-down::before {
   overflow: visible;
 }
 
-.leader-image .ebzzry {
+.partner-image .titus {
+  position: absolute;
+  max-width: 400px;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+.leader-image .ebzzry,
+.partner-image .titus {
   width: 100%;
   height: 100%;
   object-fit: contain;
