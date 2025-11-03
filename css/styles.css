@@ -4268,7 +4268,7 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 .partners-image.titus img {
-  bottom: -98px;
+  bottom: -30px;
   left: 54%;
 }
 
@@ -4306,6 +4306,132 @@ body.founders-page .s-intro__scroll-down::before {
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-align: justify;
+}
+
+/* ==================== Careers Page ============================= */
+
+#careers {
+  padding: 40px;
+  font-family: var(--font-2);
+}
+
+/* Container */
+.careers-detail__container {
+  width: var(--width-full);
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each career block */
+.career {
+  background: #f5f5f5;
+  border-radius: 12px;
+  border: 2px solid var(--color-1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.career:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Career title */
+.career__title {
+  width: 100%;
+  text-align: left;
+  color: #111;
+  background-color: #fff;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.career__title:hover,
+.career__title.active {
+  background: var(--color-1);
+  color: #fff;
+}
+
+/* Title heading */
+.career__title h2 {
+  margin: 0;
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: inherit;
+  text-transform: none;
+}
+
+/* Details (collapsed by default) */
+.career__detail {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  background: #fff;
+  color: #1a1a1a;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+/* Expanded details */
+.career__detail.open {
+  max-height: 1000px; /* Enough to reveal content */
+  padding: 24px;
+}
+
+/* Divider */
+.career__detail hr {
+  margin: 16px 0;
+  border: none;
+  height: 2px;
+  background-color: var(--color-1);
+}
+
+/* Headings inside details */
+.career__detail h4 {
+  margin: 16px 0 8px;
+  font-size: var(--text-sm);
+  color: #073b3a;
+  font-weight: 600;
+}
+
+/* Lists & paragraphs */
+.career__detail ul,
+.career__detail p {
+  list-style: disc inside;
+  font-size: var(--text-sm);
+  color: #1a1a1a;
+  margin-bottom: 0;
+}
+
+.career__detail ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+/* Email link */
+.career__detail a {
+  color: #073b3a;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.career__detail a:hover {
+  opacity: 0.8;
+}
+
+/* Smooth transitions for nested elements */
+.career__detail,
+.career__detail * {
+  transition: all 0.3s ease;
 }
 
 /* Mobile stacking */
@@ -4407,7 +4533,7 @@ body.founders-page .s-intro__scroll-down::before {
 .partner-image .titus {
   position: absolute;
   max-width: 400px;
-  top: -90px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
