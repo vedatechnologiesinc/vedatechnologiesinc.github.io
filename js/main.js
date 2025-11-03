@@ -266,6 +266,25 @@
     });
   }; // end ssMoveTo
 
+  // careers page list animation
+  document.querySelectorAll(".career__title").forEach((title) => {
+    title.addEventListener("click", () => {
+      const detail = title.nextElementSibling;
+
+      // Close other open details
+      document.querySelectorAll(".career__detail").forEach((d) => {
+        if (d !== detail) d.classList.remove("open");
+      });
+      document.querySelectorAll(".career__title").forEach((t) => {
+        if (t !== title) t.classList.remove("active");
+      });
+
+      // Toggle current one
+      detail.classList.toggle("open");
+      title.classList.toggle("active");
+    });
+  });
+
   /* Initialize
    * ------------------------------------------------------ */
   (function ssInit() {
