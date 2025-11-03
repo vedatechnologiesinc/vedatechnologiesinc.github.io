@@ -4357,7 +4357,9 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 /* ==================== Careers Page ============================= */
-
+#careers {
+  padding: 40px 0;
+}
 /* Container */
 .careers-detail__container {
   width: var(--width-full);
@@ -4478,11 +4480,6 @@ body.founders-page .s-intro__scroll-down::before {
 }
 
 /* Mobile Stacking */
-@media (max-width: 1024px) {
-  #careers {
-    padding: 40px 0;
-  }
-}
 
 @media (max-width: 768px) {
   .careers-detail__container {
