@@ -4308,12 +4308,55 @@ body.founders-page .s-intro__scroll-down::before {
   text-align: justify;
 }
 
-/* ==================== Careers Page ============================= */
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .founders-image img {
+    bottom: 0;
+  }
 
-#careers {
-  padding: 40px;
-  font-family: var(--font-2);
+  .founders-image.ebzzry img {
+    bottom: -29px;
+    left: 54%;
+  }
+
+  .founders-image.docjem img {
+    bottom: -30px;
+    left: 50%;
+  }
+
+  .founder-row,
+  .founder-row.reverse {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-text-col,
+  .founder-row.reverse .founder-text-col {
+    margin-top: 2rem;
+    text-align: center !important;
+  }
+
+  .founder-card-col {
+    flex: unset;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .founders-card {
+    margin: 0 auto;
+  }
+
+  .founder-text-col {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
+
+/* ==================== Careers Page ============================= */
 
 /* Container */
 .careers-detail__container {
@@ -4434,51 +4477,25 @@ body.founders-page .s-intro__scroll-down::before {
   transition: all 0.3s ease;
 }
 
-/* Mobile stacking */
+/* Mobile Stacking */
+@media (max-width: 1024px) {
+  #careers {
+    padding: 40px 0;
+  }
+}
+
 @media (max-width: 768px) {
-  .founders-image img {
-    bottom: 0;
+  .careers-detail__container {
+    margin: 0;
   }
-
-  .founders-image.ebzzry img {
-    bottom: -29px;
-    left: 54%;
+  .career__title {
+    padding: 10px 12px;
   }
-
-  .founders-image.docjem img {
-    bottom: -30px;
-    left: 50%;
+  .career__detail.open {
+    padding: 10px;
   }
-
-  .founder-row,
-  .founder-row.reverse {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .founder-text-col,
-  .founder-row.reverse .founder-text-col {
-    margin-top: 2rem;
-    text-align: center !important;
-  }
-
-  .founder-card-col {
-    flex: unset;
-    max-width: 280px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .founders-card {
-    margin: 0 auto;
-  }
-
-  .founder-text-col {
-    margin-top: 2rem;
-    text-align: center;
+  .career__title h2 {
+    font-size: var(--text-sm);
   }
 }
 
