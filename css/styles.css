@@ -2764,13 +2764,13 @@ td:last-child {
   font-weight: 700;
 }
 
-.section-header .attention-getter {
+/* .section-header .attention-getter {
   font-size: 1.6rem;
   color: #555;
   max-width: 700px; /* ensures text doesn't stretch too wide */
-  margin: 0 auto; /* centers the description */
-  line-height: 1.6;
-}
+/* margin: 0 auto; centers the description */
+/* line-height: 1.6;
+} */
 
 @media screen and (max-width: 800px) {
   .testimonials__slide {
@@ -4171,14 +4171,14 @@ body.founders-page .s-intro__scroll-down::before {
   color: #111;
 }
 
-.section-header .attention-getter {
+/* .section-header .attention-getter {
   font-size: 2.2rem;
   color: #555;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
   font-family: var(--font-2);
-}
+} */
 
 /* ==================== Founders and Partners detailed container ============================= */
 .founders-detail__container,
@@ -4347,7 +4347,7 @@ body.founders-page .s-intro__scroll-down::before {
   }
 
   .founders-card {
-    margin: 0 auto;
+    margin: 30% auto 0 auto;
   }
 
   .founder-text-col {
@@ -4850,6 +4850,16 @@ p .tech {
   transform: scale(1.1) translateY(-60px);
 }
 
+/* =================== Product Showcase =================== */
+/* Components */
+.s-products {
+  padding: 12rem 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 /* =================== Development Stack =================== */
 /* Floaty attributes */
 .card {
@@ -4934,13 +4944,11 @@ p .tech {
 
 /* Actual components */
 .s-stack {
-  padding: 12rem 0;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding: 80px 3rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0);
 }
-
+/* 
 .s-stack .attention-getter {
   color: #555;
   font-size: 2.2rem;
@@ -4948,7 +4956,7 @@ p .tech {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-}
+} */
 
 /* Cards container */
 .stack-row {
