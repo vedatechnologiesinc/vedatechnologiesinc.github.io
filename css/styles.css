@@ -5189,6 +5189,11 @@ p .tech {
     inset 0px -2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.information-mapping img {
+  margin-top: -10px !important;
+  margin-bottom: 10px !important;
+}
+
 .service-icon-container img {
   max-width: none;
   width: 180px;
@@ -5235,6 +5240,7 @@ p .tech {
   line-height: 1.6;
   color: #000;
   text-align: center;
+  margin: 0;
 }
 
 .service-icon img {
@@ -5326,6 +5332,334 @@ p .tech {
   .service-icon-container img {
     width: 100px;
     height: 100px;
+  }
+}
+
+/* ===================================================================
+  Clients 
+===================================================================*/
+.s-clients {
+  position: relative;
+  padding: 6rem 0;
+  background-color: #000000; /* dark background */
+  text-align: center;
+  overflow: hidden;
+  background: url("../images/backgrounds/blob-bg.svg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.client-row {
+  display: flex;
+  flex-wrap: nowrap; /* no wrap on large screens */
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.logo-container {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Equal width distribution */
+  padding: 1rem;
+}
+
+.logo-container img {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.samsys-logo {
+  background-color: #23395d;
+  width: 100%;
+  height: auto;
+}
+
+.client-items {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.client-items__item {
+  flex: 1 1 375px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 3rem 2.25rem;
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0px -2px 4px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Add flex to parent */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.client-items__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.client-items__item h5 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
+  font-family: var(--font-2);
+}
+
+/* =================== Responsive =================== */
+
+/* medium screen */
+@media (max-width: 1024px) {
+  .s-clients {
+    background: #eceeec;
+  }
+
+  .client-row {
+    flex-wrap: wrap; /* wrap items into new lines */
+    justify-content: center;
+  }
+
+  .client-row .client-items__item {
+    flex: 1 1 45%; /* two items per row (roughly) */
+    max-width: 48%;
+  }
+
+  /* top-left blob */
+  .s-clients::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  /* bottom-right blob */
+  .s-clients::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .s-clients > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .clients-items__item h5 {
+    font-size: 20px;
+  }
+  .clients-items__item p {
+    font-size: 18px;
+  }
+
+  .logo-container img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* smaller screen */
+@media (max-width: 768px) {
+  .s-clients::before,
+  .s-clients::after {
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+  }
+
+  .client-row {
+    flex-direction: column; /* stack items vertically */
+    align-items: center;
+  }
+
+  .client-row .client-items__item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .client-items__item h5 {
+    font-size: 18px;
+  }
+  .client-items__item p {
+    font-size: 16px;
+  }
+
+  .logo-container img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ===================================================================
+  Partners and Affiliates
+===================================================================*/
+.s-affiliates {
+  position: relative;
+  padding: 6rem 0;
+  text-align: center;
+  overflow: hidden;
+  min-height: 700px;
+}
+
+.affiliates-row {
+  display: flex;
+  flex-wrap: nowrap; /* no wrap on large screens */
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.affiliates-items .logo-container img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.affiliates-items {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.affiliates-items__item {
+  flex: 1 1 375px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 3rem 2.25rem;
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0px -2px 4px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Add flex to parent */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.affiliates-items__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.affiliates-items__item h5 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
+  font-family: var(--font-2);
+}
+
+.pc4me-logo {
+  background-color: #1d1d1d;
+  width: 100%;
+  height: auto;
+}
+
+/* =================== Responsive =================== */
+
+/* medium screen */
+@media (max-width: 1024px) {
+  .affiliates-row {
+    flex-wrap: wrap; /* wrap items into new lines */
+    justify-content: center;
+  }
+
+  .affiliates-row .affiliates-items__item {
+    flex: 1 1 45%; /* two items per row (roughly) */
+    max-width: 48%;
+  }
+
+  /* top-left blob */
+  .s-affiliates::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  /* bottom-right blob */
+  .s-affiliates::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .s-affiliates > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .affiliates-items__item h5 {
+    font-size: 20px;
+  }
+
+  .logo-container img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* smaller screen */
+@media (max-width: 768px) {
+  .s-affiliates::before,
+  .s-affiliates::after {
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+  }
+
+  .affiliates-row {
+    flex-direction: column; /* stack items vertically */
+    align-items: center;
+  }
+
+  .affiliates-row .affiliates-items__item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .affiliates-items__item h5 {
+    font-size: 18px;
   }
 }
 
@@ -5629,4 +5963,154 @@ p .tech {
     background-size: cover;
     background-position: center top;
   }
+}
+/* =======================================================================
+Carousel 
+========================================================================== */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 3rem 2.25rem;
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0px -2px 4px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item h5 {
+  margin: 0px 0px 20px 0px;
+  font-family: var(--font-2);
+}
+
+.carousel-item p {
+  font-size: medium;
+  font-family: var(--font-2);
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-1) !important;
+  color: white !important;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%; /* fully rounded */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+  padding: 0;
+}
+
+/* Hover effect */
+.carousel-btn:hover {
+  background: var(--color-1-dark) !important;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Button positioning */
+.carousel-btn.prev {
+  left: -60px;
+}
+
+.carousel-btn.next {
+  right: -60px;
+}
+
+/* Larger screen adjustments */
+@media (min-width: 1440px) {
+  .carousel-btn.prev {
+    left: -120px;
+  }
+  .carousel-btn.next {
+    right: -120px;
+  }
+}
+
+/* Tablet view (2 columns per slide) */
+@media (max-width: 992px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+}
+
+/* Mobile view (1 column per slide) */
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+}
+
+/* Ensure vertical centering even if content height changes */
+.carousel-btn.prev,
+.carousel-btn.next {
+  top: 50%;
+  transform: translateY(-50%);
 }
