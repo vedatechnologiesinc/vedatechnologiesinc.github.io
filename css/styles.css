@@ -3304,7 +3304,7 @@ td:last-child {
 
 .s-intro__content-text {
   z-index: 2;
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 16;
   margin-top: 1rem;
 }
 
@@ -3325,6 +3325,19 @@ td:last-child {
   font-weight: 800;
   text-transform: uppercase;
 }
+.tagline {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 4.5vw, 6.5rem);
+  font-weight: bold;
+  background: linear-gradient(to right, #133c29 0%, #2d8659 50%, #2d8659 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  margin: 0;
+  display: inline-block;
+  line-height: 1;
+}
 
 .s-intro__content-title-sub {
   font-family: "Montserrat Ace", sans-serif;
@@ -3334,6 +3347,11 @@ td:last-child {
   margin-top: 0;
   margin-bottom: var(--vspace-1_25);
   font-weight: 400;
+}
+
+.sub-tagline {
+  font-size: clamp(0.5rem, 1.5vw, 2.5rem);
+  margin: 0;
 }
 
 .founders-title {
@@ -3682,6 +3700,13 @@ body.founders-page .s-intro__scroll-down::before {
     --hline-width: min(4rem, 4vw);
     left: calc(50% + var(--hline-width) - 2px);
   }
+
+  .tagline {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: var(--color-1-darkest);
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -3713,6 +3738,10 @@ body.founders-page .s-intro__scroll-down::before {
     font-size: clamp(2.4rem, 5vw, 4.2rem);
     color: black;
     font-weight: 400;
+  }
+
+  .sub-tagline {
+    font-size: clamp(1.3rem, 2.3vw, 2.3rem);
   }
   .s-intro__content-title br {
     display: none;
@@ -3832,7 +3861,7 @@ body.founders-page .s-intro__scroll-down::before {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: var(--vspace-7);
+  padding: var(--vspace-6) 0 var(--vspace-4) 0;
   color: var(--color-3);
   position: relative;
 }
@@ -4184,6 +4213,7 @@ body.founders-page .s-intro__scroll-down::before {
 .founders-detail__container,
 .partners-detail__container {
   max-width: 1200px;
+  height: auto;
   margin: 0 auto;
   padding: 4rem;
   display: flex;
@@ -4196,6 +4226,10 @@ body.founders-page .s-intro__scroll-down::before {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+
+.founder-row {
+  margin-top: 50px;
 }
 
 .founder-row.reverse {
@@ -4690,7 +4724,7 @@ p .tech {
 
 .team-card {
   position: relative;
-  width: 100%;
+  width: 370px;
   /* height: 510px; */
   height: auto;
   flex: 1 1 340px;
@@ -4848,16 +4882,6 @@ p .tech {
 
 .team-icons a:hover {
   transform: scale(1.1) translateY(-60px);
-}
-
-/* =================== Product Showcase =================== */
-/* Components */
-.s-products {
-  padding: 12rem 0;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0);
 }
 
 /* =================== Development Stack =================== */
@@ -5161,7 +5185,7 @@ p .tech {
 }
 
 /* ==================================================
- * Products and Services Section
+ * Services Section
  * ================================================== */
 .s-services {
   position: relative;
@@ -5189,9 +5213,15 @@ p .tech {
     inset 0px -2px 6px rgba(0, 0, 0, 0.3);
 }
 
+.information-mapping {
+  padding: 0 !important;
+}
+
 .information-mapping img {
-  margin-top: -10px !important;
-  margin-bottom: 10px !important;
+  height: 220px !important;
+  width: 365px !important;
+  object-fit: cover !important;
+  border-radius: 8px;
 }
 
 .service-icon-container img {
@@ -5305,6 +5335,10 @@ p .tech {
     width: 140px;
     height: 140px;
   }
+  .information-mapping img {
+    width: 100% !important;
+    height: 180px !important;
+  }
 }
 
 /* smaller screen */
@@ -5333,6 +5367,10 @@ p .tech {
     width: 100px;
     height: 100px;
   }
+
+  .information-mapping img {
+    height: 140px !important;
+  }
 }
 
 /* ===================================================================
@@ -5341,13 +5379,10 @@ p .tech {
 .s-clients {
   position: relative;
   padding: 6rem 0;
-  background-color: #000000; /* dark background */
   text-align: center;
   overflow: hidden;
-  background: url("../images/backgrounds/blob-bg.svg") no-repeat center center;
-  background-attachment: fixed;
   background-size: cover;
-  min-height: 700px;
+  min-height: 300px;
 }
 
 .client-row {
@@ -5371,20 +5406,48 @@ p .tech {
   padding: 1rem;
 }
 
-.logo-container img {
-  width: 100%;
-  max-width: 180px;
-  height: 180px;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
+.logo.ppdsi-logo,
+.logo.chi-phi-logo,
+.logo.samsys-logo {
+  min-height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.logo-container.ppc-logo,
+.logo-container.pcs-logo {
+  background-color: #fff;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 180px;
+  /* display: block; */
+  object-fit: contain;
+  margin-bottom: 0;
+}
+
+/* .chi-phi-logo,
 .samsys-logo {
   background-color: #23395d;
   width: 100%;
   height: auto;
+} */
+.logo-container {
+  background-color: #114a26;
+  width: 100%;
+  height: auto;
 }
+/* 
+.chi-phi-logo img,
+.samsys-logo img {
+  width: 300px !important;
+  height: 180px !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+} */
 
 .client-items {
   flex-wrap: wrap;
@@ -5418,16 +5481,13 @@ p .tech {
   color: #000;
   text-align: center;
   font-family: var(--font-2);
+  min-height: 60px;
 }
 
 /* =================== Responsive =================== */
 
 /* medium screen */
 @media (max-width: 1024px) {
-  .s-clients {
-    background: #eceeec;
-  }
-
   .client-row {
     flex-wrap: wrap; /* wrap items into new lines */
     justify-content: center;
@@ -5438,37 +5498,6 @@ p .tech {
     max-width: 48%;
   }
 
-  /* top-left blob */
-  .s-clients::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 350px;
-    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
-    background-size: contain;
-    z-index: 0;
-  }
-
-  /* bottom-right blob */
-  .s-clients::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 350px;
-    height: 350px;
-    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
-    background-size: contain;
-    z-index: 0;
-  }
-
-  .s-clients > * {
-    position: relative;
-    z-index: 1;
-  }
-
   .clients-items__item h5 {
     font-size: 20px;
   }
@@ -5477,39 +5506,29 @@ p .tech {
   }
 
   .logo-container img {
-    width: 140px;
+    width: 100% !important;
     height: 140px;
   }
 }
 
 /* smaller screen */
 @media (max-width: 768px) {
-  .s-clients::before,
-  .s-clients::after {
-    width: 280px;
-    height: 280px;
-    opacity: 0.9;
-  }
-
-  .client-row {
-    flex-direction: column; /* stack items vertically */
-    align-items: center;
-  }
-
   .client-row .client-items__item {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 0 0 auto;
+    width: 80vw;
+    max-width: 400px;
   }
 
   .client-items__item h5 {
     font-size: 18px;
   }
+
   .client-items__item p {
     font-size: 16px;
   }
 
   .logo-container img {
-    width: 100px;
+    width: 100%;
     height: 100px;
   }
 }
@@ -5598,32 +5617,6 @@ p .tech {
     max-width: 48%;
   }
 
-  /* top-left blob */
-  .s-affiliates::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 350px;
-    height: 350px;
-    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
-    background-size: contain;
-    z-index: 0;
-  }
-
-  /* bottom-right blob */
-  .s-affiliates::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 350px;
-    height: 350px;
-    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
-    background-size: contain;
-    z-index: 0;
-  }
-
   .s-affiliates > * {
     position: relative;
     z-index: 1;
@@ -5649,13 +5642,15 @@ p .tech {
   }
 
   .affiliates-row {
-    flex-direction: column; /* stack items vertically */
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .affiliates-row .affiliates-items__item {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 0 0 auto;
+    width: 80vw;
+    max-width: 400px;
   }
 
   .affiliates-items__item h5 {
@@ -5965,29 +5960,57 @@ p .tech {
   }
 }
 /* =======================================================================
-Carousel 
+Products Section
 ========================================================================== */
-.carousel {
+.s-products {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.carousel-track-container {
+  padding: 6rem 0;
+  background-color: #000000; /* dark background */
+  text-align: center;
   overflow: hidden;
-  position: relative;
+  background: url("../images/backgrounds/blob-bg.svg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
 }
 
-.carousel-track {
+.products-items {
   display: flex;
-  transition: transform 0.6s ease;
+  flex-wrap: nowrap; /* no wrap on large screens */
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
 }
 
-.carousel-item {
-  min-width: 100%;
-  /* justify-content: center;
-  align-items: center; */
+.product-icon-container {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Equal width distribution */
+}
+
+.product-icon-container img {
+  width: auto;
+  max-width: 450px;
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+  object-fit: cover;
+}
+
+.products-items {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.product-items__item {
+  flex: 1 1 375px;
+  max-width: 600px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   padding: 3rem 2.25rem;
@@ -5995,122 +6018,129 @@ Carousel
     inset 0px -2px 4px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex; /* Add flex to parent */
+  flex-direction: column; /* Stack children vertically */
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
+.product-items__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-.image-grid img {
-  width: 100%;
-  height: 250px;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.carousel-item h5 {
-  margin: 0px 0px 20px 0px;
+.product-items__item h5 {
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
   font-family: var(--font-2);
 }
 
-.carousel-item p {
-  font-size: medium;
-  font-family: var(--font-2);
+.product-items__item p {
+  margin-bottom: 0;
 }
 
-/* Carousel Buttons */
-.carousel-btn {
+@media (max-width: 1024px) {
+  .s-products {
+    background: #eceeec;
+  }
+  /* top-left blob */
+  .s-products::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/top-left-blob.svg ") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  /* bottom-right blob */
+  .s-products::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background: url("../images/backgrounds/bottom-right-blob.svg") no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .s-products > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-products::before,
+  .s-products::after {
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+  }
+}
+
+/* Modal container */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Modal image */
+.image-modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+/* Caption text */
+#imageModalCaption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* Close button */
+.image-modal-close {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--color-1) !important;
-  color: white !important;
-  border: none;
-  width: 48px;
-  height: 48px;
+  top: 25px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 50%; /* fully rounded */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background 0.3s ease, transform 0.2s ease;
-  z-index: 10;
-  padding: 0;
+  transition: 0.3s;
+}
+.image-modal-close:hover {
+  color: #ccc;
 }
 
-/* Hover effect */
-.carousel-btn:hover {
-  background: var(--color-1-dark) !important;
-  transform: translateY(-50%) scale(1.05);
-}
-
-/* Button positioning */
-.carousel-btn.prev {
-  left: -60px;
-}
-
-.carousel-btn.next {
-  right: -60px;
-}
-
-/* Larger screen adjustments */
-@media (min-width: 1440px) {
-  .carousel-btn.prev {
-    left: -120px;
+/* Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
   }
-  .carousel-btn.next {
-    right: -120px;
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
-}
-
-/* Tablet view (2 columns per slide) */
-@media (max-width: 992px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .carousel-btn.prev {
-    left: 10px;
-  }
-
-  .carousel-btn.next {
-    right: 10px;
-  }
-}
-
-/* Mobile view (1 column per slide) */
-@media (max-width: 600px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    padding: 0.5rem;
-  }
-
-  .carousel-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .carousel-btn.prev {
-    left: 10px;
-  }
-
-  .carousel-btn.next {
-    right: 10px;
-  }
-}
-
-/* Ensure vertical centering even if content height changes */
-.carousel-btn.prev,
-.carousel-btn.next {
-  top: 50%;
-  transform: translateY(-50%);
 }
