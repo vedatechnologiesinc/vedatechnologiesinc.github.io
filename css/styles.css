@@ -5213,15 +5213,9 @@ p .tech {
     inset 0px -2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.information-mapping {
-  padding: 0 !important;
-}
-
 .information-mapping img {
-  height: 220px !important;
-  width: 365px !important;
-  object-fit: cover !important;
-  border-radius: 8px;
+  margin-top: -10px !important;
+  margin-bottom: 10px !important;
 }
 
 .service-icon-container img {
@@ -5335,10 +5329,6 @@ p .tech {
     width: 140px;
     height: 140px;
   }
-  .information-mapping img {
-    width: 100% !important;
-    height: 180px !important;
-  }
 }
 
 /* smaller screen */
@@ -5366,10 +5356,6 @@ p .tech {
   .service-icon-container img {
     width: 100px;
     height: 100px;
-  }
-
-  .information-mapping img {
-    height: 140px !important;
   }
 }
 
