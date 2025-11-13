@@ -4547,7 +4547,22 @@ body.founders-page .s-intro__scroll-down::before {
   box-shadow: 0 28px 68px rgba(0, 0, 0, 0.35);
 }
 
-.leader-card,
+.leader-card {
+  position: relative;
+  width: 370px;
+  height: 420px;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: rgba(7, 59, 58, 0.1);
+  box-shadow: inset 0px -2px 4px rgba(7, 59, 58, 0.5),
+    inset 0px 2px 4px rgba(7, 59, 58, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(25px) brightness(100%);
+  -webkit-backdrop-filter: blur(25px) brightness(100%);
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
 .partner-card {
   position: relative;
   width: 370px;
@@ -5117,8 +5132,15 @@ p .tech {
     gap: 5rem;
   }
   .team-card {
+    width: auto;
     flex: 0 0 45%;
   }
+
+  .partner-card {
+    width: auto;
+    flex: 0 0 41%;
+  }
+
   .team-content h3 {
     font-size: 2.2rem;
   }
@@ -5135,8 +5157,13 @@ p .tech {
     align-items: center;
     gap: 5rem;
   }
+
   .team-card {
-    flex: 0 0 100%;
+    width: 90%;
+    max-width: 100%;
+  }
+  .partner-card {
+    width: 77%;
     max-width: 100%;
   }
   .team-content h3 {
