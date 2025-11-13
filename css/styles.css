@@ -5426,7 +5426,7 @@ p .tech {
   padding: 1rem;
 }
 
-.logo.ppdsi-logo,
+.logo.ppds-logo,
 .logo.chi-phi-logo,
 .logo.samsys-logo {
   min-height: 225px;
@@ -5442,7 +5442,7 @@ p .tech {
 
 .logo-container img {
   width: 100%;
-  height: 180px;
+  height: 110px;
   /* display: block; */
   object-fit: contain;
   margin-bottom: 0;
@@ -5457,7 +5457,7 @@ p .tech {
 .logo-container {
   background-color: #114a26;
   width: 100%;
-  height: auto;
+  min-height: 180px;
 }
 /* 
 .chi-phi-logo img,
