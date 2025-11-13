@@ -5650,6 +5650,11 @@ p .tech {
     width: 140px;
     height: 140px;
   }
+
+  .logo-container.ppdsi-logo img {
+    width: 140px;
+    height: 100px;
+  }
 }
 
 /* smaller screen */
@@ -6064,6 +6069,11 @@ Products Section
   .s-products {
     background: #eceeec;
   }
+  .product-items__item {
+    flex: 1 1 45%; /* 2 cards per row */
+    max-width: 500px;
+    padding: 2.5rem 2rem;
+  }
   /* top-left blob */
   .s-products::before {
     content: "";
@@ -6094,6 +6104,12 @@ Products Section
     position: relative;
     z-index: 1;
   }
+
+  .product-items__item {
+    flex: 1 1 40%; /* full width per card */
+    max-width: 50%;
+    padding: 2rem 1.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6102,6 +6118,18 @@ Products Section
     width: 280px;
     height: 280px;
     opacity: 0.9;
+  }
+
+  .product-icon-container img {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-items__item {
+    flex: 1 1 100%; /* full width per card */
+    max-width: 100%;
+    padding: 2rem 1.75rem;
   }
 }
 
