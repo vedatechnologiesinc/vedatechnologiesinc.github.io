@@ -5141,6 +5141,10 @@ p .tech {
     flex: 0 0 41%;
   }
 
+  .partner-card .titus {
+    width: 80%;
+  }
+
   .team-content h3 {
     font-size: 2.2rem;
   }
@@ -5165,6 +5169,9 @@ p .tech {
   .partner-card {
     width: 77%;
     max-width: 100%;
+  }
+  .partner-card .titus {
+    top: -5px;
   }
   .team-content h3 {
     font-size: 2rem;
