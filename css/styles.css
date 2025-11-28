@@ -2972,8 +2972,6 @@ td:last-child {
   z-index: 3;
   line-height: 1;
   transform: none;
-  width: auto;
-  height: auto;
 }
 
 .s-header__logo a {
@@ -2984,9 +2982,9 @@ td:last-child {
   border: none;
 }
 
-.s-header__logo svg {
-  width: 60px;
-  height: 60px;
+.s-header__logo img {
+  width: 80px;
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------------------
