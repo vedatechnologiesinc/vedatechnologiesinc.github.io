@@ -1,1510 +1,596 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VEDA Technologies, Inc.</title>
-    <meta
-      name="description"
-      content="VEDA Technologies, Inc. (VTI) builds Secure, Stable, and Scalable enterprise systems, project management tools, and knowledge base platforms that drive digital transformation in the Philippines."
-    />
+    <meta name="description" content="VEDA Technologies, Inc. (VTI) builds secure, stable, and scalable enterprise systems, project management tools, and knowledge base platforms that drive digital transformation in the Philippines.">
     <link rel="canonical" href="https://veda-tech.com/" />
 
     <!-- Open Graph -->
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://veda-tech.com/" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="VEDA Technologies, Inc. | We build platforms that power your business."
-    />
-    <meta
-      property="og:description"
-      content="We develop Secure, Stable, and Scalable platforms for businesses, non-government organizations, and government organizations in the Philippines."
-    />
-    <meta
-      property="og:image"
-      content="https://veda-tech.com/images/veda-tech-preview.webp"
-    />
+    <meta property="og:title" content="VEDA Technologies, Inc. | Secure Software and Digital Transformation" />
+    <meta property="og:description" content="We develop secure, stable, and scalable platforms for businesses, NGOs, and government organizations in the Philippines." />
+    <meta property="og:image" content="https://veda-tech.com/images/veda-preview.webp" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="veda-tech.com" />
     <meta property="twitter:url" content="https://veda-tech.com/" />
-    <meta
-      name="twitter:title"
-      content="VEDA Technologies, Inc. | We build platforms that power your business. "
-    />
-    <meta
-      name="twitter:description"
-      content="We develop Secure, Stable, and Scalable platforms for businesses, non-government organizations, and government organizations in the Philippines."
-    />
-    <meta
-      name="twitter:image"
-      content="https://veda-tech.com/images/veda-tech-preview.webp"
-    />
+    <meta name="twitter:title" content="VEDA Technologies, Inc. | Secure Software and Digital Transformation" />
+    <meta name="twitter:description" content="We develop secure, stable, and scalable platforms for businesses, NGOs, and government organizations in the Philippines." />
+    <meta name="twitter:image" content="https://veda-tech.com/images/veda-preview.webp" />
 
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/webp"
-      href="images/favicon/favicon-96x96.webp"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" sizes="any" />
-    <link
-      rel="icon"
-      type="image/webp"
-      sizes="16x16"
-      href="images/favicon/favicon-16x16.webp"
-    />
-    <link
-      rel="icon"
-      type="image/webp"
-      sizes="32x32"
-      href="images/favicon/favicon-32x32.webp"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.webp"
-    />
-    <meta name="apple-mobile-web-app-title" content="VTI" />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo/vti.webp" alt="VEDA Technologies">
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#team">Team</a>
+                <a href="careers/index.html">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <p class="hero-tagline">Secure, Stable, Scalable</p>
+            <h1>VEDA</h1>
+            <h2>TECHNOLOGIES, INC.</h2>
+            <p class="hero-description">We build platforms that power your business.</p>
+            
+            <div class="hero-buttons">
+                <a href="#who" class="btn btn-primary">WHO WE ARE</a>
+                <a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/vedatechnologiesinc" class="social-link" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/company/vedatechnologiesinc" class="social-link" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61584375296945" class="social-link" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="who-we-are" id="who">
+        <div class="container">
+            <h2 class="section-title">WHO WE <span>ARE</span></h2>
+            <p class="section-subtitle">
+                VEDA Technologies, Inc. (VTI) is a premier technology solutions provider specializing in the development of secure, scalable, and innovative digital platforms. We cater to businesses, educational institutions, non-government organizations (NGOs), and public sector agencies seeking to optimize operations, enhance information security, and accelerate digital transformation. VTI integrates the principles of people, process, and protocols into every solution.
+            </p>
+            
+            <div class="mission-vision-grid">
+                <div class="mission-vision-card">
+                    <h3>OUR <span>MISSION</span></h3>
+                    <p>
+                        Our mission is to deliver secure, stable, and scalable software systems that address real-world challenges while enforcing global standards of privacy and security; and to foster strategic partnerships that champion automation and digital empowerment across all sectors.
+                    </p>
+                </div>
+                
+                <div class="mission-vision-card">
+                    <h3>OUR <span>VISION</span></h3>
+                    <p>
+                        To be Southeast Asia's leading developer of secure and intelligent software platforms that empower businesses, uplift communities, and drive digital transformation with integrity and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section class="what-we-do" id="services">
+        <div class="container">
+            <h2 class="section-title">WHAT WE <span>DO</span></h2>
+            <p class="section-subtitle">
+                From tailored solutions to cutting-edge platforms, our offerings are designed to create lasting impact and drive 
+                meaningful results across industries.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/icons/information-mapping.webp" alt="Information Mapping Systems" class="service-image">
+                    <h3>Information Mapping Systems</h3>
+                    <p>Discover new ideas through context and meanings, creating dynamic networks from active information.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="images/icons/monitor.webp" alt="Enterprise Systems Development" class="service-image">
+                    <h3>Enterprise Systems Development</h3>
+                    <p>Fault-tolerant systems built to last, tailored for enterprise needs, helping organizations modernize and streamline operations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="images/icons/certificate.webp" alt="Training and Consultancy" class="service-image">
+                    <h3>Training and Consultancy</h3>
+                    <p>Empower teams with technical expertise, guidance, and digital transformation support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS WE'VE BUILT -->
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title">PRODUCTS WE'VE <span>BUILT</span></h2>
+        <p class="section-subtitle">
+            Secure, stable, and scalable platforms built for modern organizations.
+        </p>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>Modulo</h3>
+                <div class="product-image-container" onclick="openLightbox('images/products/modulo-dashboard.webp')">
+                    <img src="images/products/modulo-dashboard.webp" alt="Modulo" class="product-image">
+                    <div class="image-overlay">
+                        <span class="zoom-icon"></span>
+                    </div>
+                </div>
+                <p>A modular, responsive web app delivers tailor-made platform solutions built around each client's needs. Designed for flexibility and clarity, it features intuitive visuals with the option to explore deeper insights. Modulo adapts and scales to support evolving requirements.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>PPDSI Web Platform</h3>
+                <div class="product-image-container" onclick="openLightbox('images/products/ppdsi-execs.webp')">
+                    <img src="images/products/ppdsi-execs.webp" alt="PPDSI Web Platform" class="product-image">
+                    <div class="image-overlay">
+                        <span class="zoom-icon"></span>
+                    </div>
+                </div>
+                <p>A modern, responsive web app enhances the Philippine Pediatric Dental Society Inc.'s online presence. Built for accessibility and ease of use, it features an intuitive interface with engaging visuals while reinforcing the organization's professional identity.</p>
+            </div>
+            
+            <div class="product-card">
+                <h3>Chi-Phi Web Platform</h3>
+                <div class="product-image-container" onclick="openLightbox('images/products/chi-phi-home.webp')">
+                    <img src="images/products/chi-phi-home.webp" alt="Chi-Phi Web Platform" class="product-image">
+                    <div class="image-overlay">
+                        <span class="zoom-icon"></span>
+                    </div>
+                </div>
+                <p>A digital catalog connects businesses with reliable heavy equipment solutions between China and the Philippines. Built for efficient sourcing and clear inquiries, it streamlines partnerships while reinforcing trust and operational confidence.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+    <!-- OUR TECH STACK -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">OUR TECH <span>STACK</span></h2>
+            <p class="section-subtitle">The tools and technologies powering our innovation and delivery.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>Lisp</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/lisp.svg" alt="Lisp" class="tech-logo">
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>Haskell</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/haskell.svg" alt="Haskell" class="tech-logo">
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>TypeScript</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/typescript.svg" alt="TypeScript" class="tech-logo">
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>Nix</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/nix.svg" alt="Nix" class="tech-logo">
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>Postgres</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/postgres.svg" alt="Postgres" class="tech-logo">
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-header">
+                        <h4>Linux</h4>
+                        <div class="tech-dots">
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                            <span class="tech-dot"></span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-container">
+                        <img src="images/icons/linux.svg" alt="Linux" class="tech-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- DEVELOPMENT TEAM -->
+<section class="team" id="team">
+    <div class="container">
+        <h2 class="section-title">DEVELOPMENT <span>TEAM</span></h2>
+        <p class="section-subtitle">
+            Behind every solution is a team of passionate innovators. With decades of expertise, we deliver future-ready systems.
+        </p>
+
+        <div class="team-grid">
+            <!-- RONI -->
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="images/portrait/roni-profile-picture.webp" class="team-image">
+                    <div class="team-socials">
+                        <a href="https://github.com/keishouu" class="team-social-badge" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/roni-bueno-979705309/" class="team-social-badge" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Roni Jem Ailyn G. Bueno</h3>
+                    <p>UI/UX Designer</p>
+                    <p class="bio">
+                        Blending my love for arts and crafts into thoughtful, user-centered design.
+                    </p>
+                </div>
+            </div>
+
+            <!-- HENRY -->
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="images/portrait/henry-profile-picture.webp" class="team-image">
+                    <div class="team-socials">
+                        <a href="https://github.com/jhgalino" class="team-social-badge" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jhgalino" class="team-social-badge" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>John Henry A. Galino</h3>
+                    <p>Software Engineer</p>
+                    <p class="bio">
+                        Code with the future in mind.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ANNE -->
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="images/portrait/anne-profile-picture.webp" class="team-image">
+                    <div class="team-socials">
+                        <a href="https://github.com/Awisse15" class="team-social-badge" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anne-louisse-echanes-5bb6772b5/" class="team-social-badge" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Anne Louisse C. Echanes</h3>
+                    <p>UI/UX Designer</p>
+                    <p class="bio">
+                        CreativITy in every click.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="founders" id="founders">
+    <div class="container">
+        <h2 class="section-title">OUR <span>FOUNDERS</span></h2>
+        <p class="section-subtitle">
+            Leading VTI with bold vision, innovation, and operational excellence.
+        </p>
+
+        <div class="founders-grid">
+            <!-- ROMMEL -->
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="images/portrait/ebzzry.webp" class="team-image">
+                    <div class="team-socials">
+                        <a href="https://github.com/ebzzry" class="team-social-badge" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ebzzry" class="team-social-badge" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Rommel Martínez</h3>
+                    <p>Chief Executive Officer | Chief Scientist</p>
+                    <p class="bio">
+                        Rom leads product vision and technical strategy with a focus on building state-of-the-art technologies.
+                    </p>
+                    <a href="founders/index.html" class="read-more-btn">Read more</a>
+                </div>
+            </div>
+
+            <!-- DOC JEM -->
+            <div class="team-card">
+                <div class="team-image-wrapper">
+                    <img src="images/portrait/docjem.webp" class="team-image">
+                    <div class="team-socials">
+                        <a href="https://www.linkedin.com/in/docjem/" class="team-social-badge" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>Dr. Jeanne Marie Ciño Martínez</h3>
+                    <p>Chief Operating Officer</p>
+                    <p class="bio">
+                        Dr. Jem leads operations, partnerships, and strategic growth initiatives.
+                    </p>
+                    <a href="founders/index.html" class="read-more-btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- START A CONVERSATION -->
+<section class="conversation">
+    <div class="container">
+        <h2 class="section-title">START A <span>CONVERSATION</span></h2>
+        <p class="section-subtitle">
+            Let's talk about your challenges and how we can help solve them.
+        </p>
+        
+        <div class="dialog-container">
+            <div class="dialog-item">
+                <div class="dialog-avatar">?</div>
+                <div class="dialog-bubble">
+                    <h4>You might be thinking...</h4>
+                    <p>"How do I know your team will understand our unique business processes?"</p>
+                </div>
+            </div>
+            
+            <div class="dialog-item right">
+                <div class="dialog-avatar">VTI</div>
+                <div class="dialog-bubble">
+                    <h4>Our answer</h4>
+                    <p>Discovery is our first priority. We spend time understanding your workflows, pain points, and goals before writing a single line of code. You're not just getting developers—you're getting strategic partners.</p>
+                </div>
+            </div>
+            
+            <div class="dialog-item">
+                <div class="dialog-avatar">?</div>
+                <div class="dialog-bubble">
+                    <h4>You might be thinking...</h4>
+                    <p>"How do you ensure our project delivers real value, not just features?"</p>
+                </div>
+            </div>
+            
+            <div class="dialog-item right">
+                <div class="dialog-avatar">VTI</div>
+                <div class="dialog-bubble">
+                    <h4>Our answer</h4>
+                    <p>We focus on measurable impact. Through innovation and secure digital empowerment, every solution we build protects your critical assets while delivering tangible results that strengthen your organization.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dialog-cta">
+            <a href="#contact" class="btn btn-primary">Got more questions? Let's chat</a>
+        </div>
+    </div>
+</section>
+
+<!-- WHITE PAPER -->
+<section class="white-paper">
+    <div class="container">
+        <h2 class="section-title">WHITE <span>PAPER</span></h2>
+        <div class="white-paper-content">
+            <p class="section-subtitle">
+                Our white paper outlines a data-driven approach to teaching time-varying ideas of general intelligence, grounded in 
+                the domain of spatial reasoning. It introduces a framework and system designs that explore how complex inductive 
+                biases can lead toward the systematic comprehension of abstract concepts.
+            </p>
+            <div class="white-paper-download">
+                <a href="docs/white-paper.pdf" class="btn btn-primary" download>DOWNLOAD WHITE PAPER</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners">
+    <div class="container">
+        <h2 class="section-title">OUR PARTNERS AND <span>AFFILIATES</span></h2>
+        <p class="section-subtitle">
+            Together with our partners, we drive innovation and deliver excellence
+        </p>
+
+        <div class="partners-grid">
+            <a href="https://poolpartycreatives.com.ph/" target="_blank" rel="noopener" class="partner-card">
+                <h3 class="partner-name">Pool Party Creatives</h3>
+                <img
+                    src="images/assets/ppc-logo 1.webp"
+                    alt="Pool Party Creatives"
+                    class="partner-logo"
+                >
+            </a>
+
+            <a href="https://pc4me.com.ph/" target="_blank" rel="noopener" class="partner-card">
+                <h3 class="partner-name">PC4Me</h3>
+                <img
+                    src="images/assets/pc4me-logo.webp"
+                    alt="PC4Me One-Stop Computer Corp"
+                    class="partner-logo"
+                >
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- GET IN TOUCH -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h2>GET IN TOUCH</h2>
+        <p>Many things in life are expensive but you can talk to us for free.</p>
+
+        <div class="contact-actions">
+            <a href="mailto:hello@veda-tech.com" class="btn btn-primary">
+                MESSAGE US
+            </a>
+            <a
+                href="https://forms.gle/E8JUiX6XKq9Ay7gSA"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener"
+            >
+                FILL OUT FORM
+            </a>
+        </div>
+
+        <div class="contact-socials">
+            <a href="https://github.com/vedatechnologiesinc" class="contact-social" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/company/vedatechnologiesinc" class="contact-social" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584375296945" class="contact-social" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="index-footer">
+    <div class="container">
+        <p>© VEDA Technologies, Inc. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
 
     <script>
-      document.documentElement.classList.remove("no-js");
-      document.documentElement.classList.add("js");
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
     </script>
-
-    <link rel="stylesheet" href="css/vendor.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-  <body id="top">
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader"></div>
-
-    <div id="page" class="s-pagewrap">
-      <!-- navbar -->
-      <header class="s-header">
-        <div class="row s-header__inner">
-          <div class="s-header__block">
-            <div class="s-header__logo">
-              <a class="logo smoothscroll" href="#intro">
-                <img src="images/logo/vti.webp" alt="" />
-              </a>
-            </div>
-
-            <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-          </div>
-          <!-- end s-header__block -->
-
-          <nav class="s-header__nav">
-            <ul class="s-header__menu-links">
-              <li class="current">
-                <a class="smoothscroll" href="#intro">Home</a>
-              </li>
-              <li><a class="smoothscroll" href="#services">Services</a></li>
-              <li><a class="smoothscroll" href="#products">Products</a></li>
-              <li><a class="smoothscroll" href="#team">Team</a></li>
-              <li><a href="/careers">Careers</a></li>
-              <li><a class="smoothscroll" href="#footer">Contact</a></li>
-            </ul>
-            <!-- s-header__menu-links -->
-          </nav>
-          <!-- end s-header__nav -->
-        </div>
-        <!-- end s-header__inner -->
-      </header>
-      <!-- end s-header -->
-
-      <main>
-        <!-- # Intro
-        ================================================== -->
-        <section id="intro" class="s-intro target-section">
-          <div class="row s-intro__content width-sixteen-col">
-            <div class="column lg-12 s-intro__content-inner grid-block grid-16">
-              <div class="s-intro__content-text">
-                <div class="s-intro__content-pretitle text-pretitle">
-                  (:vti)
-                </div>
-                <h1 class="s-intro__content-title">VEDA <br /></h1>
-
-                <h2 class="s-intro__content-title-sub">
-                  Technologies, Inc.<br />
-                </h2>
-
-                <h4 class="sub-tagline">
-                  <i>We build platforms that power your business.</i>
-                </h4>
-
-                <div class="s-intro__content-btns">
-                  <a class="smoothscroll btn" href="#about">Who we are</a>
-                  <a class="smoothscroll btn btn--stroke" href="#footer"
-                    >Get in Touch</a
-                  >
-                </div>
-                <!-- s-intro__content-btns -->
-              </div>
-              <!-- s-intro__content-text -->
-            </div>
-            <!-- s-intro__content-inner -->
-          </div>
-          <!-- s-intro__content -->
-
-          <ul class="s-intro__social social-list">
-            <!-- GitHub -->
-            <li>
-              <a
-                href="https://github.com/vedatechnologiesinc"
-                target="_blank"
-                rel="noopener"
-              >
-                <!-- GitHub SVG -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12
-                                0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                c1.018.005 2.043.138 3.003.404
-                                2.291-1.552 3.297-1.23 3.297-1.23
-                                .655 1.653.242 2.873.12 3.176
-                                .77.84 1.235 1.91 1.235 3.22
-                                0 4.61-2.803 5.628-5.475 5.922
-                                .43.372.823 1.102.823 2.222
-                                0 1.606-.015 2.898-.015 3.293
-                                0 .322.216.694.825.576C20.565 22.092
-                                24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  />
-                </svg>
-                <span class="u-screen-reader-text">GitHub</span>
-              </a>
-            </li>
-
-            <!-- LinkedIn -->
-            <li>
-              <a
-                href="https://linkedin.com/company/vedatechnologiesinc"
-                target="_blank"
-                rel="noopener"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                                          -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                                          c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                                          7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                                          1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                                          13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                                          1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                                          24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                  />
-                </svg>
-                <span class="u-screen-reader-text">LinkedIn</span>
-              </a>
-            </li>
-
-            <!-- Facebook -->
-            <li>
-              <a
-                href="https://www.facebook.com/profile.php?id=61584375296945"
-                target="_blank"
-                rel="noopener"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 
-           1.325 24h11.495v-9.294H9.691V11.01h3.129V8.414c0-3.1 1.893-4.788 
-           4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 
-           0-1.795.715-1.795 1.763v2.316h3.587l-.467 3.696h-3.12V24h6.116C23.406 
-           24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z"
-                  />
-                </svg>
-                <span class="u-screen-reader-text">Facebook</span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="s-intro__content-media">
-            <svg
-              id="visual"
-              viewBox="0 0 900 770"
-              width="900"
-              height="770"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              preserveAspectRatio="none"
-              class="hero-wave-svg"
-            >
-              <path
-                d="M570 770L562.7 751.7C555.3 733.3 540.7 696.7 547.3 660C554 623.3 582 586.7 587.3 550C592.7 513.3 575.3 476.7 567.2 440C559 403.3 560 366.7 561.7 330C563.3 293.3 565.7 256.7 580.5 220C595.3 183.3 622.7 146.7 632.5 110C642.3 73.3 634.7 36.7 630.8 18.3L627 0L900 0L900 18.3C900 36.7 900 73.3 900 110C900 146.7 900 183.3 900 220C900 256.7 900 293.3 900 330C900 366.7 900 403.3 900 440C900 476.7 900 513.3 900 550C900 586.7 900 623.3 900 660C900 696.7 900 733.3 900 751.7L900 770Z"
-                fill="#0b6e4f"
-              ></path>
-              <path
-                d="M674 770L676.2 751.7C678.3 733.3 682.7 696.7 684.3 660C686 623.3 685 586.7 690 550C695 513.3 706 476.7 711.8 440C717.7 403.3 718.3 366.7 699 330C679.7 293.3 640.3 256.7 639 220C637.7 183.3 674.3 146.7 676.2 110C678 73.3 645 36.7 628.5 18.3L612 0L900 0L900 18.3C900 36.7 900 73.3 900 110C900 146.7 900 183.3 900 220C900 256.7 900 293.3 900 330C900 366.7 900 403.3 900 440C900 476.7 900 513.3 900 550C900 586.7 900 623.3 900 660C900 696.7 900 733.3 900 751.7L900 770Z"
-                fill="#00614d"
-              ></path>
-              <path
-                d="M666 770L672.3 751.7C678.7 733.3 691.3 696.7 702.3 660C713.3 623.3 722.7 586.7 727.3 550C732 513.3 732 476.7 733.5 440C735 403.3 738 366.7 729 330C720 293.3 699 256.7 693 220C687 183.3 696 146.7 697.2 110C698.3 73.3 691.7 36.7 688.3 18.3L685 0L900 0L900 18.3C900 36.7 900 73.3 900 110C900 146.7 900 183.3 900 220C900 256.7 900 293.3 900 330C900 366.7 900 403.3 900 440C900 476.7 900 513.3 900 550C900 586.7 900 623.3 900 660C900 696.7 900 733.3 900 751.7L900 770Z"
-                fill="#005448"
-              ></path>
-            </svg>
-          </div>
-          <!-- s-intro__content-media -->
-
-          <div class="s-intro__scroll-down">
-            <a href="#about" class="smoothscroll">
-              <div class="scroll-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
-                  ></path>
-                </svg>
-              </div>
-              <span class="scroll-text u-screen-reader-text">Scroll Down</span>
-            </a>
-          </div>
-          <!-- s-intro__scroll-down -->
-        </section>
-        <!-- end s-intro -->
-
-        <!-- # About
-        ================================================== -->
-        <section id="about" class="s-about target-section">
-          <div class="row s-about__content">
-            <div class="column xl-12">
-              <div class="section-header" data-num="01">
-                <h2 class="text-display-title">Company Profile</h2>
-              </div>
-              <!-- end section-header -->
-
-              <p class="attention-getter">
-                Backed by three decades of research and development, VEDA
-                Technologies, Inc. (VTI) is a premier technology solutions
-                provider specializing in the development of
-                <a href="#services">secure, stable, and scalable platforms</a>.
-                We cater to businesses, educational institutions, non-government
-                organizations, and public sector agencies seeking to optimize
-                operations, enhance information security, and accelerate
-                <a href="#services">digital transformation</a>. Established to
-                bridge operational excellence and emerging technology, VTI
-                integrates the principles of
-                <a href="#services">people, process, and protocols</a>
-                into every solution.
-              </p>
-            </div>
-            <!--end column -->
-          </div>
-          <!--end s-about__content -->
-        </section>
-        <!-- end s-about -->
-
-        <!-- # Services
-        ================================================== -->
-        <section id="services" class="s-services">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="02">
-                <h2 class="text-display-title">Products and Services</h2>
-              </div>
-              <p class="attention-getter">
-                From tailored solutions to cutting-edge platforms, our offerings
-                are designed to create lasting impact and drive meaningful
-                results across industries.
-              </p>
-            </div>
-          </div>
-
-          <div class="row service-items">
-            <!-- Card 1 -->
-            <div class="column service-items__item">
-              <h5>Information Mapping Systems</h5>
-              <div class="service-icon-container information-mapping">
-                <img
-                  src="images/icons/information-mapping.webp"
-                  alt="Information Mapping Systems"
-                />
-              </div>
-              <p>
-                Discover new ideas through context and meanings, creating
-                dynamic networks from active information.
-              </p>
-            </div>
-            <!-- Card 2 -->
-            <div class="column service-items__item">
-              <h5>Enterprise Systems Development</h5>
-              <div class="service-icon-container">
-                <img src="images/icons/monitor.webp" alt="Enterprise Systems" />
-              </div>
-              <p>
-                Fault-tolerant systems built to last, tailored for enterprise
-                needs, helping organizations modernize and streamline
-                operations.
-              </p>
-            </div>
-
-            <!-- Card 2 -->
-            <!-- <div class="column service-items__item">
-              <h5>Project Management Systems</h5>
-              <div class="service-icon-container">
-                <img src="images/icons/gantt-chart.webp" alt="Project Management">
-              </div>
-              <p>
-                Streamline workflows, improve collaboration, and enhance project efficiency with intelligent tools.
-              </p>
-            </div> -->
-
-            <!-- Card 3 -->
-            <!-- <div class="column service-items__item">
-              <h5>Knowledge Base Systems</h5>
-              <div class="service-icon-container">
-                <img src="images/icons/books.webp" alt="Knowledge Base">
-              </div>
-              <p>
-                Centralize and organize knowledge for better decision-making and accessibility across teams.
-              </p>
-            </div> -->
-
-            <!-- Card 3 -->
-            <div class="column service-items__item">
-              <h5>Training and Consultancy</h5>
-              <div class="service-icon-container">
-                <img
-                  src="images/icons/certificate.webp"
-                  alt="Training & Consultancy"
-                />
-              </div>
-              <p>
-                Empower teams with technical expertise, guidance, and digital
-                transformation support.
-              </p>
-            </div>
-          </div>
-          <!-- end service-items -->
-
-          <!-- <div class="row product-items"> -->
-          <!-- Card 1 -->
-          <!-- <div class="column service-items__item">
-              <h5>Enterprise Systems Development</h5>
-              <div class="service-icon-container">
-                <img src="images/icons/monitor.webp" alt="Enterprise Systems" />
-              </div>
-              <p>
-                Secure, stable, and scalable systems tailored for enterprise
-                needs, helping organizations modernize and streamline
-                operations.
-              </p>
-            </div>
-          </div> -->
-          <!--end of product showcase-->
-        </section>
-
-        <!-- Clients
-         ================================================== -->
-        <!-- <section id="clients" class="s-clients target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="03">
-                <h2 class="text-display-title">Our Valued Clients</h2>
-              </div>
-              <!-- end section-header -->
-        <!-- <p class="attention-getter">
-                Empowering enterprises, institutions, and agencies with secure,
-                reliable technology solutions.
-              </p>
-            </div>
-          </div> -->
-        <!-- Cards container -->
-        <!-- <div class="client-row">
-            <div class="column client-items__item">
-              <h5>Philippine Pediatric Dental Society, Inc.</h5>
-              <div class="logo-container ppdsi-logo">
-                <img
-                  src="images/assets/ppdsi-logo.webp"
-                  alt="Logo of our client Philippine Pediatric Dental Society, Inc. (PPDSI)"
-                />
-              </div>
-            </div>
-            <div class="column client-items__item">
-              <h5>Chi-Phi</h5>
-              <div class="logo-container chi-phi-logo">
-                <img
-                  src="images/assets/chi-phi-logo.webp"
-                  alt="Logo of our client Chi-Phi"
-                />
-              </div>
-            </div>
-            <div class="column client-items__item">
-              <h5>SAMSys</h5>
-              <div class="logo-container samsys-logo">
-                <img
-                  src="images/assets/samsys-logo.webp"
-                  alt="Logo of our client SAMSys"
-                />
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <!--Product Showcase
-        ================================================== -->
-        <section id="products" class="s-products target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="03">
-                <h2 class="text-display-title">Our Products</h2>
-              </div>
-              <!-- end section-header -->
-
-              <p class="attention-getter">
-                Secure, stable, and scalable platforms built for modern
-                organizations.
-              </p>
-            </div>
-          </div>
-          <div class="row products-items">
-            <!-- Card 1 -->
-            <div class="column product-items__item">
-              <h5>Modulo</h5>
-              <div class="product-icon-container modulo-dashboard">
-                <img
-                  src="images/products/modulo-dashboard.webp"
-                  alt="Modulo Platform Dashboard"
-                />
-              </div>
-              <p>
-                A modular, responsive web app delivers tailor-made platform
-                solutions built around each client’s needs. Designed for
-                flexibility and clarity, it features intuitive visuals with the
-                option to explore deeper insights. Modulo adapts and scales to
-                support evolving requirements.
-              </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="column product-items__item">
-              <h5>PPDSI Web Platform</h5>
-              <div class="product-icon-container ppdsi-executives">
-                <img
-                  src="images/products/ppdsi-execs.webp"
-                  alt="PPDSI Board of Executives"
-                />
-              </div>
-              <p>
-                A modern, responsive web app enhances the Philippine Pediatric
-                Dental Society Inc.’s online presence. Built for accessibility
-                and ease of use, it features an intuitive interface with
-                engaging visuals while reinforcing the organization’s
-                professional identity.
-              </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="column product-items__item">
-              <h5>Chi-Phi Web Platform</h5>
-              <div class="product-icon-container chi-phi-hero">
-                <img
-                  src="images/products/chi-phi-home.webp"
-                  alt="Chi-Phi Website Hero Banner"
-                />
-              </div>
-              <p>
-                A digital catalog connects businesses with reliable heavy
-                equipment solutions between China and the Philippines. Built for
-                efficient sourcing and clear inquiries, it streamlines
-                partnerships while reinforcing trust and operational confidence.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Development Stack
-         ================================================== -->
-        <section id="stack" class="s-stack target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="04">
-                <h2 class="text-display-title">Our Tech Stack</h2>
-              </div>
-              <!-- end section-header -->
-
-              <p class="attention-getter">
-                The tools and technologies powering our innovation and delivery.
-              </p>
-            </div>
-          </div>
-
-          <!-- Cards container -->
-          <div class="stack-row">
-            <!-- sample -->
-
-            <!-- Lisp Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">Lisp</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/lisp.svg" alt="Lisp" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Haskell Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">Haskell</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/haskell.svg" alt="haskell" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- TypeScript Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">TypeScript</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/typescript.svg" alt="typescript" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Nix Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">Nix</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/nix.svg" alt="Nix" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Postgres Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">Postgres</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/postgres.svg" alt="Postgres" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Linux Card -->
-            <div class="dev-stack-item">
-              <div class="card">
-                <div class="card2">
-                  <div class="top">
-                    <div class="title">
-                      <span id="title2">Linux</span>
-                    </div>
-                    <div class="circle">
-                      <span class="green1 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green2 circle2"></span>
-                    </div>
-                    <div class="circle">
-                      <span class="green3 circle2"></span>
-                    </div>
-                  </div>
-                  <div class="stack-icon-container">
-                    <img src="./images/icons/linux.svg" alt="Linux" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- <\!-- Darwin Card -\-> -->
-            <!-- <div class="dev-stack-item"> -->
-            <!--   <div class="card"> -->
-            <!--     <div class="card2"> -->
-            <!--       <div class="top"> -->
-            <!--         <div class="title"> -->
-            <!--           <span id="title2">Darwin</span> -->
-            <!--         </div> -->
-            <!--         <div class="circle"> -->
-            <!--           <span class="green1 circle2"></span> -->
-            <!--         </div> -->
-            <!--         <div class="circle"> -->
-            <!--           <span class="green2 circle2"></span> -->
-            <!--         </div> -->
-            <!--         <div class="circle"> -->
-            <!--           <span class="green3 circle2"></span> -->
-            <!--         </div> -->
-            <!--       </div> -->
-            <!--       <div class="stack-icon-container"> -->
-            <!--         <img src="./images/icons/darwin.svg" alt="Darwin" /> -->
-            <!--       </div> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-
-            <!-- Sample Card -->
-            <!-- <div class="dev-stack-item"> -->
-            <!--   <h5>GNU/Linux</h5> -->
-            <!--   <div class="stack-icon-container"> -->
-            <!--     <img src="./images/linux.webp" alt="GNU/Linux"> -->
-            <!--   </div> -->
-            <!-- </div> -->
-          </div>
-        </section>
-
-        <!-- Careers Section
-         ================================================= -->
-        <!-- <section id="team" class="s-team target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="06">
-                <h2 class="text-display-title">Join Our Team</h2>
-              </div>
-              <p class="attention-getter">
-                We’re looking for curious minds ready to take on new challenges,
-                push boundaries, and shape the future of technology.
-              </p>
-            </div>
-          </div>
-
-          <div class="row team-row"></div>
-        </section> -->
-
-        <!-- Development Team 
-         ================================================== -->
-        <section id="team" class="s-team target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="05">
-                <h2 class="text-display-title">Development Team</h2>
-              </div>
-              <p class="attention-getter">
-                Behind every solution is a team of passionate innovators. With
-                decades of expertise, we deliver future-ready systems.
-              </p>
-            </div>
-          </div>
-
-          <div class="row team-row">
-            <!-- Example card -->
-            <div class="team-card">
-              <div class="team-image">
-                <img
-                  src="./images/portrait/roni-profile-picture.webp"
-                  alt="Portrait of Roni Jem Ailyn G. Bueno"
-                />
-              </div>
-              <div class="team-content">
-                <div class="team-icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    class="arrow-icon"
-                  >
-                    <path
-                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-                    ></path>
-                  </svg>
-
-                  <a
-                    href="https://github.com/keishouu"
-                    target="_blank"
-                    class="github-icon"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12
-                                0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                c1.018.005 2.043.138 3.003.404
-                                2.291-1.552 3.297-1.23 3.297-1.23
-                                .655 1.653.242 2.873.12 3.176
-                                .77.84 1.235 1.91 1.235 3.22
-                                0 4.61-2.803 5.628-5.475 5.922
-                                .43.372.823 1.102.823 2.222
-                                0 1.606-.015 2.898-.015 3.293
-                                0 .322.216.694.825.576C20.565 22.092
-                                24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      />
-                    </svg>
-                  </a>
-
-                  <a
-                    href="https://www.linkedin.com/in/roni-bueno-979705309/"
-                    target="_blank"
-                    class="linkedin-icon"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path
-                        d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                              -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                              c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                              7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                              1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                              13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                              24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <h3>Roni Jem Ailyn G. Bueno</h3>
-                <h4 class="role">UI/UX Designer</h4>
-                <p class="tagline">
-                  Blending my love for arts and crafts into thoughtful,
-                  user-centered design.
-                </p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <div class="team-image">
-                <img
-                  src="./images/portrait/henry-profile-picture.webp"
-                  alt="Portrait of John Henry A. Galino"
-                />
-              </div>
-              <div class="team-content">
-                <div class="team-icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    class="arrow-icon"
-                  >
-                    <path
-                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-                    ></path>
-                  </svg>
-
-                  <a
-                    href="https://github.com/jhgalino"
-                    target="_blank"
-                    class="github-icon"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12
-                                0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                c1.018.005 2.043.138 3.003.404
-                                2.291-1.552 3.297-1.23 3.297-1.23
-                                .655 1.653.242 2.873.12 3.176
-                                .77.84 1.235 1.91 1.235 3.22
-                                0 4.61-2.803 5.628-5.475 5.922
-                                .43.372.823 1.102.823 2.222
-                                0 1.606-.015 2.898-.015 3.293
-                                0 .322.216.694.825.576C20.565 22.092
-                                24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      />
-                    </svg>
-                  </a>
-
-                  <a
-                    href="https://www.linkedin.com/in/jhgalino"
-                    target="_blank"
-                    class="linkedin-icon"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path
-                        d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                              -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                              c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                              7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                              1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                              13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                              24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <h3>John Henry A. Galino</h3>
-                <h4 class="role">Software Engineer</h4>
-
-                <p class="tagline">Code with the future in mind</p>
-              </div>
-            </div>
-
-            <div class="team-card">
-              <div class="team-image">
-                <img
-                  src="./images/portrait/anne-profile-picture.webp"
-                  alt="Portrait of Anne Louisse Echanes"
-                />
-              </div>
-              <div class="team-content">
-                <div class="team-icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    class="arrow-icon"
-                  >
-                    <path
-                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-                    ></path>
-                  </svg>
-
-                  <a
-                    href=" https://github.com/Awisse15"
-                    target="_blank"
-                    class="github-icon"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12
-                                0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                c1.018.005 2.043.138 3.003.404
-                                2.291-1.552 3.297-1.23 3.297-1.23
-                                .655 1.653.242 2.873.12 3.176
-                                .77.84 1.235 1.91 1.235 3.22
-                                0 4.61-2.803 5.628-5.475 5.922
-                                .43.372.823 1.102.823 2.222
-                                0 1.606-.015 2.898-.015 3.293
-                                0 .322.216.694.825.576C20.565 22.092
-                                24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      />
-                    </svg>
-                  </a>
-
-                  <a
-                    href=" https://www.linkedin.com/in/anne-louisse-echanes-5bb6772b5/"
-                    target="_blank"
-                    class="linkedin-icon"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path
-                        d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                              -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                              c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                              7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                              1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                              13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                              24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <h3>Anne Louisse C. Echanes</h3>
-                <h4 class="role">UI/UX Designer</h4>
-
-                <p class="tagline">CreativITy in every click.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Founders 
-         ================================================== -->
-        <section id="founders" class="s-founders target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="06">
-                <h2 class="text-display-title">Our Founders</h2>
-              </div>
-              <p class="attention-getter">
-                Leading VTI with bold vision, innovation, and operational
-                excellence.
-              </p>
-            </div>
-          </div>
-
-          <div class="row leader-row">
-            <!-- CEO -->
-            <div class="leader-card">
-              <div class="leader-image">
-                <img
-                  src="./images/portrait/ebzzry.webp"
-                  alt="Portrait of Rommel Martínez"
-                  class="ebzzry"
-                />
-              </div>
-              <div class="leader-content">
-                <div class="team-icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    class="arrow-icon"
-                  >
-                    <path
-                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-                    ></path>
-                  </svg>
-
-                  <a
-                    href="https://github.com/ebzzry"
-                    target="_blank"
-                    class="github-icon"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 .297c-6.63 0-12 5.373-12 12
-                                0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                c1.018.005 2.043.138 3.003.404
-                                2.291-1.552 3.297-1.23 3.297-1.23
-                                .655 1.653.242 2.873.12 3.176
-                                .77.84 1.235 1.91 1.235 3.22
-                                0 4.61-2.803 5.628-5.475 5.922
-                                .43.372.823 1.102.823 2.222
-                                0 1.606-.015 2.898-.015 3.293
-                                0 .322.216.694.825.576C20.565 22.092
-                                24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                      />
-                    </svg>
-                  </a>
-
-                  <a
-                    href="https://linkedin.com/in/ebzzry"
-                    target="_blank"
-                    class="linkedin-icon"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path
-                        d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                              -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                              c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                              7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                              1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                              13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                              24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <h3>Rommel Martínez</h3>
-                <h4>Chief Executive Officer | Chief Scientist</h4>
-                <p>
-                  Rom leads product vision and technical strategy with a focus
-                  on building state-of-the-art technologies.
-                </p>
-
-                <!-- NEW Read More button -->
-                <a href="./founders" class="read-more">Read&nbsp;more</a>
-              </div>
-            </div>
-
-            <!-- COO -->
-            <div class="leader-card">
-              <div class="leader-image">
-                <img
-                  src="./images/portrait/docjem.webp"
-                  alt="Portrait of Jeanne Marie Ciño Martínez"
-                  class="docjem"
-                />
-              </div>
-              <div class="leader-content">
-                <div class="team-icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    class="arrow-icon"
-                  >
-                    <path
-                      d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-                    ></path>
-                  </svg>
-
-                  <a
-                    href="https://www.linkedin.com/in/docjem/"
-                    target="_blank"
-                    class="linkedin-icon"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                      <path
-                        d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                              -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                              c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                              7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                              1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                              13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                              1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                              24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <h3>Dr. Jeanne Marie Ciño Martínez</h3>
-                <h4>Chief Operating Officer</h4>
-                <p>
-                  Dr. Jem leads operations, partnerships, and strategic growth
-                  initiatives.
-                </p>
-
-                <!-- NEW Read More button -->
-                <a href="./founders" class="read-more">Read&nbsp;more</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- White paper 
-          ================================================== -->
-        <section id="whitepaper" class="s-whitepaper target-section">
-          <div class="row">
-            <div class="column lg-12">
-              <div class="section-header" data-num="07">
-                <h2 class="text-display-title">White Paper</h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="row s-whitepaper__content">
-            <div class="column xl-8 md-12 s-whitepaper__about">
-              <p class="attention-getter">
-                Our white paper outlines some approaches to reaching low-hanging
-                fruits of general intelligence, grounded in computationalism. It
-                outlines principles, methodologies, and system designs that
-                explore how complex adaptive systems can lead toward true
-                synthetic comprehension and collective intelligence.
-              </p>
-            </div>
-
-            <div class="column xl-4 md-12 s-whitepaper__download">
-              <a
-                href="https://github.com/vedatechnologiesinc/white-paper/blob/main/white-paper.pdf?raw=true"
-                class="btn btn--primary btn--large u-fullwidth"
-              >
-                Download White Paper
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Partners and Affiliates
-          ================================================== -->
-        <sections id="affiliates" class="s-affiliates target-section">
-          <div class="row">
-            <div class="column xl-12">
-              <div class="section-header" data-num="08">
-                <h2 class="text-display-title">Partners and Affiliates</h2>
-              </div>
-              <p class="attention-getter">
-                Together with our partners, we drive innovation and deliver
-                excellence.
-              </p>
-            </div>
-          </div>
-
-          <div class="affiliates-row">
-            <div class="column affiliates-items__item">
-              <a href="https://poolpartycreatives.com.ph/">
-                <h5>Pool Party Creatives</h5>
-                <div class="logo-container ppc-logo">
-                  <img
-                    src="images/assets/ppc-logo.webp"
-                    alt="Logo of our Partner Philippine Computer Society"
-                  />
-                </div>
-              </a>
-            </div>
-
-            <div class="column affiliates-items__item">
-              <a href="https://pc4me.com.ph/">
-                <h5>PC4Me</h5>
-                <div class="logo-container pc4me-logo">
-                  <img
-                    src="images/assets/pc4me-logo.webp"
-                    alt="Logo of our Partner PC4Me"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-        </sections>
-      </main>
-
-      <!-- Footer
-        ================================================== -->
-      <footer id="footer" class="s-footer target-section">
-        <div class="row">
-          <div class="column lg-12">
-            <div class="section-header" data-num="09">
-              <h2 class="text-display-title">Get in Touch</h2>
-            </div>
-            <!-- end section-header -->
-          </div>
-        </div>
-
-        <div class="row s-footer__content">
-          <div class="column xl-6 md-12 s-footer__block s-footer__about">
-            <p class="attention-getter">
-              Many things in life are expensive but you can talk to us for free.
-            </p>
-          </div>
-          <!-- end section-footer__about -->
-
-          <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
-            <div class="row">
-              <!-- <div class="column xl-6 md-6 tab-12">
-                              <h5>Contact Us</h5>
-                              <ul class="link-list">
-                                  <li><a href="">@</a></li>
-                              </ul>
-                          </div> -->
-            </div>
-          </div>
-          <!-- end section-footer__site-links -->
-        </div>
-        <!-- end section-footer__content -->
-
-        <div class="row s-footer__buttons">
-          <div class="column xl-6 tab-12">
-            <a
-              href="mailto:hello@veda-tech.com"
-              class="btn btn--primary btn--large u-fullwidth"
-              >Message Us</a
-            >
-          </div>
-        </div>
-        <!-- end section-footer__buttons -->
-
-        <div class="row s-footer__bottom">
-          <div class="column xl-6 lg-12">
-            <ul class="s-footer__social social-list">
-              <!-- GitHub -->
-              <li>
-                <a
-                  href="https://github.com/vedatechnologiesinc"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <!-- GitHub SVG -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1)"
-                  >
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12
-                                          0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
-                                          0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61
-                                          -.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729
-                                          1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.807 1.305
-                                          3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93
-                                          0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176
-                                          0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404
-                                          c1.018.005 2.043.138 3.003.404
-                                          2.291-1.552 3.297-1.23 3.297-1.23
-                                          .655 1.653.242 2.873.12 3.176
-                                          .77.84 1.235 1.91 1.235 3.22
-                                          0 4.61-2.803 5.628-5.475 5.922
-                                          .43.372.823 1.102.823 2.222
-                                          0 1.606-.015 2.898-.015 3.293
-                                          0 .322.216.694.825.576C20.565 22.092
-                                          24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                  <span class="u-screen-reader-text">GitHub</span>
-                </a>
-              </li>
-
-              <!-- LinkedIn -->
-              <li>
-                <a
-                  href="https://linkedin.com/company/vedatechnologiesinc"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1)"
-                  >
-                    <path
-                      d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.041-1.852-3.041
-                                          -1.853 0-2.137 1.445-2.137 2.939v5.671H9.354V9h3.414v1.561h.049
-                                          c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.268 2.37 4.268 5.455v6.288zM5.337
-                                          7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.143.926-2.07 2.07-2.07
-                                          1.143 0 2.07.927 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zm1.777
-                                          13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0
-                                          1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2
-                                          24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                    />
-                  </svg>
-                  <span class="u-screen-reader-text">LinkedIn</span>
-                </a>
-              </li>
-
-              <!-- Facebook -->
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61584375296945"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    style="fill: rgba(0, 0, 0, 1)"
-                  >
-                    <path
-                      d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 
-           1.325 24h11.495v-9.294H9.691V11.01h3.129V8.414c0-3.1 1.893-4.788 
-           4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 
-           0-1.795.715-1.795 1.763v2.316h3.587l-.467 3.696h-3.12V24h6.116C23.406 
-           24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z"
-                    />
-                  </svg>
-                  <span class="u-screen-reader-text">Facebook</span>
-                </a>
-              </li>
-
-              <!-- YouTube -->
-              <!-- <li>
-                              <a href="https://youtube.com/@vedatechnologiesinc" target="_blank" rel="noopener">
-                                  
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                      viewBox="0 0 24 24" style="fill:rgba(0,0,0,1);">
-                                      <path d="M23.498 6.186a2.974 2.974 0 0 0-2.09-2.106C19.505
-                                          3.5 12 3.5 12 3.5s-7.505 0-9.408.58a2.974 2.974 0 0
-                                          0-2.09 2.106A31.533 31.533 0 0 0 .5 12a31.533 31.533 0
-                                          0 0 .002 5.814 2.974 2.974 0 0 0 2.09 2.106C4.495
-                                          20.5 12 20.5 12 20.5s7.505 0 9.408-.58a2.974 2.974 0
-                                          0 0 2.09-2.106A31.533 31.533 0 0 0 23.5 12a31.533
-                                          31.533 0 0 0-.002-5.814zM9.75 15.568V8.432L15.818
-                                          12l-6.068 3.568z"/>
-                                  </svg>
-                                  <span class="u-screen-reader-text">YouTube</span>
-                              </a>
-                          </li> -->
-            </ul>
-          </div>
-          <!-- end section-footer__social -->
-
-          <div class="column xl-6 lg-12">
-            <p class="ss-copyright">
-              <span>© VEDA Technologies, Inc.</span>
-            </p>
-          </div>
-        </div>
-        <!-- end section-footer__bottom -->
-
-        <div class="ss-go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              style="fill: rgba(0, 0, 0, 1)"
-            >
-              <path
-                d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"
-              ></path>
-            </svg>
-          </a>
-          <span>Back To Top</span>
-        </div>
-        <!-- end ss-go-top -->
-      </footer>
-      <!-- end s-footer -->
-      <!--Image Modal-->
-      <div id="imageModal" class="image-modal">
-        <span class="image-modal-close">&times;</span>
-        <img class="image-modal-content" id="modalImage" />
-        <div id="imageModalCaption"></div>
-      </div>
-    </div>
-    <!--end image modal-->
-    <!-- end page-wrap -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "VEDA Technologies, Inc.",
-        "url": "https://vedatechnologiesinc.github.io/",
-        "logo": "https://vedatechnologiesinc.github.io/images/veda.webp",
-        "sameAs": [
-          "https://github.com/vedatechnologiesinc",
-          "https://linkedin.com/company/vedatechnologiesinc",
-          "https://youtube.com/@vedatechnologiesinc"
-        ],
-        "founders": [
-          {
-            "@type": "Person",
-            "name": "Rommel Martínez",
-            "jobTitle": "CEO"
-          },
-          {
-            "@type": "Person",
-            "name": "Dr. Jeanne Marie Ciño Martínez",
-            "jobTitle": "CFO"
-          }
-        ]
-      }
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'flex';
+            lightboxImg.src = imageSrc;
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            }
+        });
     </script>
-  </body>
+</body>
 </html>
