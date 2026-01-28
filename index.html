@@ -31,6 +31,7 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -113,43 +114,82 @@
     </section>
 
     <!-- WHAT WE DO -->
-    <section class="what-we-do" id="services">
-        <div class="container">
-            <h2 class="section-title">WHAT WE <span>DO</span></h2>
-            <p class="section-subtitle">
-                From tailored solutions to cutting-edge platforms, our offerings are designed to create lasting impact and drive 
-                meaningful results across industries.
-            </p>
+<section class="what-we-do" id="services">
+    <div class="container">
+        <h2 class="section-title">WHAT WE <span>DO</span></h2>
+        <p class="section-subtitle">
+            We deliver secure, stable, and scalable software systems that address real-world challenges while enforcing 
+            global standards of privacy and security across all sectors.
+        </p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/icons/information-mapping.webp" alt="Platform as a Service" class="service-image">
+                <h3>Platform-as-a-Service (PaaS)</h3>
+                <p>Subscription-based access to secure, scalable software platforms via the cloud, enabling businesses to optimize operations and accelerate digital transformation.</p>
+            </div>
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="images/icons/information-mapping.webp" alt="Information Mapping Systems" class="service-image">
-                    <h3>Information Mapping Systems</h3>
-                    <p>Discover new ideas through context and meanings, creating dynamic networks from active information.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="images/icons/monitor.webp" alt="Enterprise Systems Development" class="service-image">
-                    <h3>Enterprise Systems Development</h3>
-                    <p>Fault-tolerant systems built to last, tailored for enterprise needs, helping organizations modernize and streamline operations.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="images/icons/certificate.webp" alt="Training and Consultancy" class="service-image">
-                    <h3>Training and Consultancy</h3>
-                    <p>Empower teams with technical expertise, guidance, and digital transformation support.</p>
-                </div>
+            <div class="service-card">
+                <img src="images/icons/monitor.webp" alt="On-Premises Software Licensing" class="service-image">
+                <h3>On-Premises Software Licensing</h3>
+                <p>One-time purchases for enterprises to run fault-tolerant, future-proof software on their own infrastructure with complete control and security.</p>
+            </div>
+            
+            <div class="service-card">
+                <img src="images/icons/certificate.webp" alt="Enterprise Consultancy" class="service-image">
+                <h3>Enterprise Consultancy</h3>
+                <p>Comprehensive enhancements, adoption strategies, and service delivery models tailored to your organization's unique needs and digital transformation goals.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- PRODUCTS WE'VE BUILT -->
 <section class="products" id="products">
     <div class="container">
         <h2 class="section-title">PRODUCTS WE'VE <span>BUILT</span></h2>
         <p class="section-subtitle">
-            Secure, stable, and scalable platforms built for modern organizations.
+            Powerful, enterprise-grade platforms engineered to transform how businesses operate. Built for scale, designed for impact.
         </p>
+        
+        <!-- SERVO - SPOTLIGHT PRODUCT -->
+        <div class="spotlight-product">
+            <div class="spotlight-badge">FEATURED SOLUTION</div>
+            <h3 class="spotlight-title">Servo</h3>
+            <p class="spotlight-tagline">The Ultimate Manpower Management System</p>
+            
+            <div class="spotlight-content-landscape">
+                <div class="spotlight-image-container-wide" onclick="openLightbox('images/products/servo.webp')">
+                    <img src="images/products/servo.webp" alt="Servo Dashboard" class="spotlight-image">
+                    <div class="image-overlay">
+                        <span class="zoom-icon"></span>
+                    </div>
+                </div>
+                
+                <div class="spotlight-description">
+                    <h4>Comprehensive. Integrated. Revolutionary.</h4>
+                    <p>Servo is a <strong>comprehensive and integrated system</strong> engineered for managing manpower across the service industry. This isn't just software—it's a complete operational transformation.</p>
+                    
+                    <div class="feature-highlights">
+                        <div class="feature-item">✓ Timekeeping & Attendance</div>
+                        <div class="feature-item">✓ Automated Invoicing</div>
+                        <div class="feature-item">✓ Compliance Management</div>
+                        <div class="feature-item">✓ Payroll Processing</div>
+                        <div class="feature-item">✓ Benefits Administration</div>
+                        <div class="feature-item">✓ Document Management</div>
+                        <div class="feature-item">✓ Real-time Notifications</div>
+                        <div class="feature-item">✓ Administrative Control</div>
+                    </div>
+                    
+                    <div class="spotlight-cta">
+                        <a href="#contact" class="btn btn-primary btn-large">Get Servo for Your Business</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- OTHER PRODUCTS -->
+        <h3 class="section-subtitle" style="margin-top: 5rem; margin-bottom: 2rem; font-size: 1.5rem;">More Solutions We've Delivered</h3>
         
         <div class="products-grid">
             <div class="product-card">
@@ -370,7 +410,7 @@
         </p>
 
         <div class="founders-grid">
-            <!-- ROMMEL -->
+            <!-- SIR ROM -->
             <div class="team-card">
                 <div class="team-image-wrapper">
                     <img src="images/portrait/ebzzry.webp" class="team-image">
@@ -512,6 +552,126 @@
     </div>
 </section>
 
+<!-- FREQUENTLY ASKED QUESTIONS -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <h2 class="section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+        <p class="section-subtitle">
+            Everything you need to know about working with VTI. Clear answers, no fluff.
+        </p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>What pricing models do you offer?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>We offer flexible options: <strong>Platform-as-a-Service (PaaS)</strong> with subscription-based cloud access, <strong>On-Premises Licensing</strong> for one-time purchases to run on your infrastructure, and <strong>Enterprise Consultancy</strong> for custom enhancements and adoption support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How long does implementation typically take?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Timelines vary by scope. We follow a phased approach: <strong>Alpha Testing</strong> with select partners, <strong>Beta Testing</strong> with pilot organizations, and <strong>Public Release</strong> for full commercial deployment. Core systems can be operational in 2-3 months, with enterprise solutions taking 4-6 months.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can you integrate with our existing systems?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Absolutely. Whether it's legacy systems, third-party APIs, or existing databases, we ensure seamless integration. Our solutions are built to work harmoniously with your current infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Do you provide training and ongoing support?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Yes. We provide comprehensive training for your team, complete documentation, and structured support packages. Your success is our priority—we're with you long after deployment through quarterly updates and dedicated assistance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Can we start with a pilot before full deployment?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Definitely. We recommend phased rollouts and pilot programs. Start small, validate the impact, then scale confidently. This approach minimizes risk and proves ROI before major investment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Where can we deploy your solutions?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Your choice: <strong>Cloud-based</strong> for flexibility and scalability, or <strong>On-Premises</strong> for complete control and security. We support hybrid deployments too, giving you the best of both worlds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>How secure are your systems?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Security is non-negotiable. We enforce <strong>global standards of privacy and security</strong> at every layer. Your sensitive data never touches third-party AI services—it stays airtight within your infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>What industries do you serve?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>We serve diverse sectors: <strong>Security Agencies, Utilities, Manufacturing, Healthcare, Government, NGOs, SMEs, Large Enterprises, Hotels, Restaurants, Power Distribution, and more</strong>. If you need secure, scalable systems, we've got you covered.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>Who has worked on your technology?</h3>
+                    <span class="faq-arrow">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <div>
+                        <p>Our Chief Scientist brings <strong>30 years of experience</strong> and has collaborated with scientists and engineers from <strong>MIT, Carnegie Mellon, University of Illinois CSL, and École Nationale Supérieure des Télécommunications</strong>. World-class expertise, Filipino innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- GET IN TOUCH -->
 <section class="contact-section" id="contact">
     <div class="container">
@@ -591,6 +751,21 @@
                 closeLightbox();
             }
         });
+
+        function toggleFAQ(questionElement) {
+        const faqItem = questionElement.closest('.faq-item');
+        const wasActive = faqItem.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Open clicked item if it wasn't already open
+        if (!wasActive) {
+            faqItem.classList.add('active');
+        }
+    }
     </script>
 </body>
 </html>
