@@ -1,3 +1,24 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Import Saved By Zero */
+@font-face {
+    font-family: 'Saved By Zero';
+    src: url('../fonts/saved-by-zero-webfont.woff2') format('woff2'),
+         url('../fonts/saved-by-zero-webfont.woff') format('woff'),
+         url('../fonts/saved-by-zero.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Import Montserrat (local) */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-ace-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -126,6 +147,7 @@ nav {
 }
 
 .hero h1 {
+    font-family: 'Saved By Zero', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
@@ -134,6 +156,7 @@ nav {
 }
 
 .hero h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: #14b8a6;
@@ -246,6 +269,7 @@ section {
 /* WHO WE ARE */
 .who-we-are {
     background: #1e2938;
+    padding: 2rem 0;
 }
 
 .mission-vision-grid {
@@ -281,6 +305,7 @@ section {
 /* WHAT WE DO */
 .what-we-do {
     background: #1a2332;
+    padding: 2rem 0;
 }
 
 .services-grid {
@@ -319,6 +344,7 @@ section {
 /* PRODUCTS WE'VE BUILT */
 .products {
     background: #1e2938;
+    padding: 2rem 0;
 }
 
 .products-grid {
@@ -367,9 +393,193 @@ section {
     line-height: 1.6;
 }
 
+/* SPOTLIGHT PRODUCT */
+.spotlight-product {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.15) 0%, rgba(20, 184, 166, 0.05) 100%);
+    border: 2px solid #14b8a6;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(20, 184, 166, 0.2);
+}
+
+.spotlight-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+}
+
+.spotlight-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #14b8a6;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.spotlight-tagline {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.spotlight-content-landscape {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.spotlight-image-container-wide {
+    background: rgba(20, 184, 166, 0.08);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    flex: 0 0 40%;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotlight-image-container-wide .spotlight-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.spotlight-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight-description h4 {
+    font-size: 1.25rem;
+    color: #14b8a6;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.spotlight-description p {
+    font-size: 0.938rem;
+    line-height: 1.5;
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+}
+
+.spotlight-cta {
+    margin-top: auto;
+    text-align: center;
+}
+
+.feature-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item {
+    background: rgba(20, 184, 166, 0.1);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.375rem;
+    font-size: 0.813rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.modular-message {
+    background: rgba(20, 184, 166, 0.2);
+    border-left: 4px solid #14b8a6;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.industries-served {
+    background: rgba(20, 184, 166, 0.05);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.industries-served h5 {
+    color: #14b8a6;
+    font-size: 0.938rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.industries-served p {
+    color: #cbd5e1;
+    font-size: 0.813rem;
+    margin: 0 !important;
+}
+
+.btn-large {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.938rem;
+    font-weight: 700;
+    box-shadow: 0 4px 16px rgba(20, 184, 166, 0.3);
+}
+
+.btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.4);
+}
+
+/* Responsive Spotlight */
+@media (max-width: 968px) {
+    .spotlight-title {
+        font-size: 2rem;
+    }
+    
+    .spotlight-content-landscape {
+        flex-direction: column;
+    }
+    
+    .spotlight-image-container-wide {
+        flex: 1;
+        max-width: 100%;
+    }
+    
+    .feature-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .feature-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* TECH STACK */
 .tech-stack {
     background: #1a2332;
+    padding: 2rem 0;
 }
 
 .tech-grid {
@@ -444,7 +654,7 @@ section {
 /* TEAM */
 .team {
     background: #1e2938;
-    padding-top: 6rem;
+    padding: 2rem 0;
 }
 
 .team-grid {
@@ -524,7 +734,7 @@ section {
 /* FOUNDERS */
 .founders {
     background: #1a2332;
-    padding-top: 6rem;
+    padding-top: 2rem 0;
 }
 
 .founders-grid {
@@ -559,6 +769,7 @@ section {
 /* CONVERSATION */
 .conversation {
     background: #1e2938;
+    padding: 2rem 0;
 }
 
 .dialog-container {
@@ -625,6 +836,7 @@ section {
 /* WHITE PAPER */
 .white-paper {
     background: #1a2332;
+    padding: 2rem 0;
 }
 
 .white-paper-content {
@@ -640,7 +852,7 @@ section {
 /* PARTNERS */
 .partners {
     background: #1e2938;
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .partners-grid {
@@ -691,8 +903,8 @@ section {
 
 /* GET IN TOUCH */
 .contact-section {
-    background: #1a2332;
-    padding: 6rem 0;
+    background: #1e2938;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -748,6 +960,120 @@ section {
     background: #14b8a6;
     color: #fff;
     transform: translateY(-2px);
+}
+
+/* FAQ SECTION */
+.faq-section {
+    background: #1a2332;
+    padding: 2rem 0;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.faq-item {
+    background: rgba(20, 184, 166, 0.05);
+    border: 1px solid rgba(20, 184, 166, 0.2);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    border-color: rgba(20, 184, 166, 0.4);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-question h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.faq-arrow {
+    color: #14b8a6;
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-item.active .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.25s ease;
+}
+
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-answer > div {
+    overflow: hidden;
+}
+
+.faq-answer p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin: 0;
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.faq-answer strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.faq-cta {
+    text-align: center;
+    background: rgba(20, 184, 166, 0.1);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+
+.faq-cta p {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive FAQ */
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 1.5rem 1.25rem 1.5rem;
+    }
 }
 
 /* Index Footer */
