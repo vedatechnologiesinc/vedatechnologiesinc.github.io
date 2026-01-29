@@ -138,6 +138,10 @@ nav {
 .hero {
     padding: 2rem 0;
     text-align: center;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .hero-tagline {
@@ -286,6 +290,17 @@ section {
     border-radius: 0.5rem;
     padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    transition: all 0.3s ease;
+}
+
+.mission-vision-card:hover {
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4),
+                0 0 40px rgba(20, 184, 166, 0.2);
+    transform: translateY(-5px);
 }
 
 .mission-vision-card h3 {
@@ -299,13 +314,28 @@ section {
 
 .mission-vision-card p {
     color: #cbd5e1;
-    line-height: 1.8;
+    line-height: 2;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.mission-vision-card:last-child p {
+    line-height: 2.5;
+    letter-spacing: 0.03em;
+    padding: 0 0.5rem;
 }
 
 /* WHAT WE DO */
 .what-we-do {
     background: #1a2332;
     padding: 2rem 0;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .services-grid {
@@ -320,6 +350,14 @@ section {
     border-radius: 0.5rem;
     padding: 2rem;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4),
+                0 0 40px rgba(20, 184, 166, 0.2);
+    transform: translateY(-5px);
 }
 
 .service-image {
@@ -361,6 +399,14 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4),
+                0 0 40px rgba(20, 184, 166, 0.2);
+    transform: translateY(-5px);
 }
 
 .product-card h3 {
@@ -377,6 +423,13 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 250px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-image-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
@@ -580,6 +633,10 @@ section {
 .tech-stack {
     background: #1a2332;
     padding: 2rem 0;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .tech-grid {
@@ -595,12 +652,14 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .tech-item:hover {
-    border-color: rgba(20, 184, 166, 0.4);
-    transform: translateY(-4px);
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4),
+                0 0 40px rgba(20, 184, 166, 0.2);
+    transform: translateY(-5px);
 }
 
 .tech-item-header {
@@ -669,6 +728,14 @@ section {
     border-radius: 0.5rem;
     overflow: hidden;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    border-color: #14b8a6;
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4),
+                0 0 40px rgba(20, 184, 166, 0.2);
+    transform: translateY(-5px);
 }
 
 .team-image-wrapper {
@@ -728,13 +795,17 @@ section {
 .team-info .bio {
     margin-top: 0.75rem;
     font-style: italic;
-    color: #cbd5e1;
+    color: #14b8a6;
 }
 
 /* FOUNDERS */
 .founders {
     background: #1a2332;
-    padding-top: 2rem 0;
+    padding: 2rem 0;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .founders-grid {
@@ -747,6 +818,10 @@ section {
 
 .founders .team-image-wrapper {
     height: 350px;
+}
+
+.founders .team-card {
+    background: #1a2332; /* Add solid background to team cards */
 }
 
 /* READ MORE BUTTON */
@@ -837,6 +912,10 @@ section {
 .white-paper {
     background: #1a2332;
     padding: 2rem 0;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .white-paper-content {
@@ -966,6 +1045,10 @@ section {
 .faq-section {
     background: #1a2332;
     padding: 2rem 0;
+    background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .faq-container {
@@ -974,7 +1057,7 @@ section {
 }
 
 .faq-item {
-    background: rgba(20, 184, 166, 0.05);
+    background: #1a2332;
     border: 1px solid rgba(20, 184, 166, 0.2);
     border-radius: 0.5rem;
     margin-bottom: 1rem;
@@ -984,6 +1067,7 @@ section {
 
 .faq-item:hover {
     border-color: rgba(20, 184, 166, 0.4);
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.3), 0 0 40px rgba(20, 184, 166, 0.1);
 }
 
 .faq-question {
@@ -1049,7 +1133,7 @@ section {
 
 .faq-cta {
     text-align: center;
-    background: rgba(20, 184, 166, 0.1);
+    background: #1a2332;
     border: 1px solid rgba(20, 184, 166, 0.3);
     border-radius: 0.5rem;
     padding: 3rem;
@@ -1814,36 +1898,6 @@ nav {
     padding: 1rem;
     text-align: center;
   }
-}
-
-/* Product Image Hover Effect */
-.product-image-container {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(20, 184, 166, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.product-image-container:hover .image-overlay {
-    opacity: 1;
-}
-
-.zoom-icon {
-    font-size: 3rem;
-    color: #fff;
 }
 
 /* Lightbox */
