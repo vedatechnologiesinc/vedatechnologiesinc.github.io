@@ -698,6 +698,7 @@
     </div>
 
         <script>
+        // Opens lightbox modal for full-size product images, disables body scroll
         function openLightbox(imageSrc) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
@@ -711,13 +712,13 @@
             lightbox.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
-
+        // Keyboard accessibility: ESC key closes lightbox
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 closeLightbox();
             }
         });
-
+        // Accordion behavior: closes all other FAQs when opening one
         function toggleFAQ(questionElement) {
             const faqItem = questionElement.closest('.faq-item');
             const wasActive = faqItem.classList.contains('active');

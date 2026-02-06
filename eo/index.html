@@ -118,38 +118,38 @@
     </section>
 
     <!-- WHAT WE DO -->
-<section class="what-we-do" id="services">
-    <div class="container">
-        <h2 class="section-title">WHAT WE <span>DO</span></h2>
-        <p class="section-subtitle">
-            We deliver secure, stable, and scalable software systems that address real-world challenges while enforcing 
-            global standards of privacy and security across all sectors.
-        </p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="../images/icons/information-mapping.webp" alt="Platform as a Service" class="service-image">
-                <h3>Software-as-a-Service (SaaS)</h3>
-                <p>Subscription-based access to secure, scalable software platforms via the cloud, enabling businesses to optimize operations and accelerate digital transformation.</p>
-            </div>
+    <section class="what-we-do" id="services">
+        <div class="container">
+            <h2 class="section-title">WHAT WE <span>DO</span></h2>
+            <p class="section-subtitle">
+                We deliver secure, stable, and scalable software systems that address real-world challenges while enforcing 
+                global standards of privacy and security across all sectors.
+            </p>
             
-            <div class="service-card">
-                <img src="../images/icons/monitor.webp" alt="On-Premises Software Licensing" class="service-image">
-                <h3>On-Premises Software Licensing</h3>
-                <p>One-time purchases for enterprises to run fault-tolerant, future-proof software on their own infrastructure with complete control and security.</p>
-            </div>
-            
-            <div class="service-card">
-                <img src="../images/icons/certificate.webp" alt="Enterprise Consultancy" class="service-image">
-                <h3>Enterprise Consultancy</h3>
-                <p>Comprehensive enhancements, adoption strategies, and service delivery models tailored to your organization's unique needs and digital transformation goals.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="../images/icons/information-mapping.webp" alt="Platform as a Service" class="service-image">
+                    <h3>Software-as-a-Service (SaaS)</h3>
+                    <p>Subscription-based access to secure, scalable software platforms via the cloud, enabling businesses to optimize operations and accelerate digital transformation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="../images/icons/monitor.webp" alt="On-Premises Software Licensing" class="service-image">
+                    <h3>On-Premises Software Licensing</h3>
+                    <p>One-time purchases for enterprises to run fault-tolerant, future-proof software on their own infrastructure with complete control and security.</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="../images/icons/certificate.webp" alt="Enterprise Consultancy" class="service-image">
+                    <h3>Enterprise Consultancy</h3>
+                    <p>Comprehensive enhancements, adoption strategies, and service delivery models tailored to your organization's unique needs and digital transformation goals.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- PRODUCTS WE'VE BUILT -->
-<section class="products" id="products">
+    <section class="products" id="products">
     <div class="container">
         <h2 class="section-title">PRODUCTS WE'VE <span>BUILT</span></h2>
         <p class="section-subtitle">
@@ -698,6 +698,7 @@
     </div>
 
         <script>
+        // Opens lightbox modal for full-size product images, disables body scroll
         function openLightbox(imageSrc) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
@@ -711,13 +712,13 @@
             lightbox.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
-
+        // Keyboard accessibility: ESC key closes lightbox
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 closeLightbox();
             }
         });
-
+        // Accordion behavior: closes all other FAQs when opening one
         function toggleFAQ(questionElement) {
             const faqItem = questionElement.closest('.faq-item');
             const wasActive = faqItem.classList.contains('active');
