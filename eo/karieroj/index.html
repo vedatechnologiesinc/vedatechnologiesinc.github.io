@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="eo">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VEDA Technologies, Inc.</title>
+    <title>VEDA Teĥnologioj, Ink.</title>
     <meta
       name="description"
-      content="Meet the founders of VEDA Technologies, Inc."
+      content="Aliĝu VEDA Teĥnologioj, Ink. kaj kreu la estontecon de programaro."
     />
 
     <!-- Favicon -->
@@ -23,103 +23,89 @@
     />
 
     <link rel="stylesheet" href="../../css/styles.css" />
-    <link rel="stylesheet" href="../../css/founders.css" />
   </head>
   <body>
     <!-- SIMPLIFIED NAVIGATION -->
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <a href="../../index.html">
+          <a href="../index.html">
             <img
               src="../../images/logo/vti.webp"
-              alt="VEDA Technologies, Inc."
+              alt="VEDA Teĥnologioj, Ink."
             />
           </a>
         </div>
 
         <div class="nav-links">
-          <a href="../index.html#home">Home</a>
-          <a href="#" class="active">Founders</a>
-          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html#hejmo">Hejmo</a>
+          <a href="../index.html#produktoj">Produktoj</a>
+          <a href="#" class="active">Karieroj</a>
+          <a href="../index.html#kontakto">Kontakto</a>
         </div>
 
         <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
       </div>
     </nav>
 
-    <!-- FOUNDERS SECTION -->
-    <main class="founders-page container">
+    <!-- CAREERS SECTION -->
+    <main class="careers-page container">
       <!-- PAGE TITLE -->
       <h1 class="page-title">
-        Founders<br />
-        <span class="highlight">VEDA Technologies, Inc.</span>
+        Karieroj<br />
+        <span class="highlight">VEDA Teĥnologioj, Ink.</span>
       </h1>
 
-      <!-- ROMMEL -->
-      <div class="founder-card">
-        <div class="founder-image">
-          <img src="../../images/portrait/ebzzry.webp" alt="Rommel Martínez" />
+      <!-- JOB OPENING 1: Lisp Engineer -->
+      <div class="job-card">
+        <div class="job-header" onclick="toggleJobDetails(this)">
+          <div class="job-header-content">
+            <h2 class="job-title">Lispa Inĝeniero</h2>
+            <span class="job-type">Defore</span>
+          </div>
+          <span class="toggle-arrow">▼</span>
         </div>
-        <div class="founder-content">
-          <h2 class="founder-name">Rommel Martínez</h2>
-          <h3>Chief Executive Officer | Chief Scientist</h3>
-          <p>
-            Co-founder of VTI, Rommel leads product vision and technical
-            strategy with a focus on building secure, scalable, and innovative
-            technology platforms.
-          </p>
-          <p>
-            With thirty years of combined professional experience in software
-            engineering, systems administration, and programming language
-            theory, he merges his technical skills with his acumen in leading a
-            world-class software company.
-          </p>
-          <p>
-            His current research lies in understanding computationalism, the
-            mind, knowledge, and reasoning. He has previously worked with
-            scientists and engineers from the CSL, ENST, MIT, and CMU.
-          </p>
-          <p>
-            He is a polyglot who speaks and writes in five languages. In his
-            spare time, he plays golf with his wife and son, and competes in
-            sport shooting.
-          </p>
-        </div>
-      </div>
 
-      <!-- JEANNE -->
-      <div class="founder-card reverse">
-        <div class="founder-image">
-          <img
-            src="../../images/portrait/docjem-full.webp"
-            alt="Dr. Jeanne Marie Ciño Martínez"
-          />
-        </div>
-        <div class="founder-content">
-          <h2 class="founder-name">Dr. Jeanne Marie Ciño Martínez</h2>
-          <h3>Chief Operating Officer</h3>
-          <p>
-            Co-founder of VTI, Dr. Jem leads operations, partnerships, and
-            strategic growth initiatives.
-          </p>
-          <p>
-            She commenced her leadership journey at a young age and assumed
-            diverse and proficient management roles within her dental practice
-            and several esteemed dental organizations.
-          </p>
-          <p>
-            Her keen interest in software development fostered a strong affinity
-            for technology. Complementing her extensive experience in
-            organizational leadership, marketing acumen, financial proficiency,
-            and creative conceptualization, she positions herself as a valuable
-            asset in devising optimal strategies for the company's growth.
-          </p>
-          <p>
-            In her leisure time, she engages in activities such as playing golf
-            with her husband and son. Additionally, she pursues interests in
-            writing, voice acting, and graphics design.
-          </p>
+        <div class="job-content">
+          <div class="job-section">
+            <h3>🧑‍🚀 Minimumaj Kvalifikoj</h3>
+            <ul>
+              <li>Kompetenta per Komuna Lispo</li>
+              <li>Kompetenta per PostgreSQL kaj SQLite</li>
+              <li>Kompetenta per Makintoŝo</li>
+            </ul>
+          </div>
+
+          <div class="job-section">
+            <h3>🧙‍♂️ Preferataj Kvalifikoj</h3>
+            <ul>
+              <li>Kompetenta per C, Asembla (AArch64)</li>
+              <li>Kompetenta en retkonektado</li>
+              <li>Kompetenta per Ziŝo, Baŝo</li>
+              <li>Kompetenta per Podman-o</li>
+              <li>Kompetenta per Nginx-o</li>
+              <li>Kompetenta en grafado kaj bildigado</li>
+              <li>Kompetenta en CI/CD</li>
+            </ul>
+          </div>
+
+          <div class="job-section">
+            <h3>🚀 Komunaj Kvalifikoj</h3>
+            <ul>
+              <li>Memvolas lerni novaj kapablojn</li>
+              <li>Eblas labori kun premo</li>
+              <li>Forta kunteamludanto</li>
+              <li>Sendependa kaj eltrovema</li>
+            </ul>
+          </div>
+
+          <div class="job-section job-contact">
+            <h3>📧 Kiel kandidatiĝi</h3>
+            <p>
+              Sendu vian vivprotokolon al
+              <a href="mailto:postenoj@veda-tech.com">postenoj@veda-tech.com</a>
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -127,14 +113,15 @@
     <!-- GET IN TOUCH -->
     <section class="contact-section" id="contact">
       <div class="contact-container">
-        <h2>GET IN TOUCH</h2>
+        <h2 class="section-title">KONTAKTU <span>NIN</span></h2>
         <p>
-          Many things in life are expensive but you can talk to us for free.
+          Multaj aferoj en la vivo multekostas tamen oni povas paroli al ni
+          senpage.
         </p>
 
         <div class="contact-actions">
-          <a href="mailto:hello@veda-tech.com" class="btn btn-primary">
-            MESSAGE US
+          <a href="mailto:saluton@veda-tech.com" class="btn btn-primary">
+            KONTAKTU NIN
           </a>
           <a
             href="https://forms.gle/E8JUiX6XKq9Ay7gSA"
@@ -142,7 +129,7 @@
             target="_blank"
             rel="noopener"
           >
-            FILL OUT FORM
+            PLENIGU RESPONDILON
           </a>
         </div>
 
@@ -207,7 +194,9 @@
 
     <!-- FOOTER -->
     <footer class="main-footer">
-      <p>© VEDA Technologies, Inc. All rights reserved.</p>
+      <div class="footer-content">
+        <p>© VEDA Teĥnologioj, Ink. Ĉiom da rajtoj estas reservitaj.</p>
+      </div>
     </footer>
 
     <!-- Scroll to Top -->
@@ -218,12 +207,43 @@
       ↑
     </div>
 
-    <!-- MOBILE MENU TOGGLE -->
     <script>
       function toggleMenu() {
         const navLinks = document.querySelector(".nav-links");
         navLinks.classList.toggle("active");
       }
+
+      function toggleJobDetails(header) {
+        const jobCard = header.parentElement;
+        const content = jobCard.querySelector(".job-content");
+        const arrow = header.querySelector(".toggle-arrow");
+
+        jobCard.classList.toggle("collapsed");
+
+        if (jobCard.classList.contains("collapsed")) {
+          content.style.maxHeight = "0";
+          content.style.opacity = "0";
+          arrow.textContent = "▶";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.style.opacity = "1";
+          arrow.textContent = "▼";
+        }
+      }
+
+      // Initialize all job cards as collapsed
+      document.addEventListener("DOMContentLoaded", function () {
+        const jobCards = document.querySelectorAll(".job-card");
+        jobCards.forEach((card) => {
+          const content = card.querySelector(".job-content");
+          const arrow = card.querySelector(".toggle-arrow");
+
+          card.classList.add("collapsed");
+          content.style.maxHeight = "0";
+          content.style.opacity = "0";
+          arrow.textContent = "▶";
+        });
+      });
     </script>
   </body>
 </html>
