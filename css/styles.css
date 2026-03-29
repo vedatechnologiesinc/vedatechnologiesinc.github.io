@@ -1287,7 +1287,7 @@ body {
     padding: 1.5rem;
 }
 
-.funder-card.reverse {
+.founder-card.reverse {
     grid-template-columns: 1fr 400px;
 }
 
