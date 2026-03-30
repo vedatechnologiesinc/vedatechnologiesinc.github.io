@@ -2076,3 +2076,15 @@ body {
         font-size: 2.5rem;
     }
 }
+
+p span {
+    color: #14b8a6;
+}
+
+h3 span {
+    color: #14b8a6;
+}
+
+h4 span {
+    color: #14b8a6;
+}
