@@ -265,6 +265,7 @@ section {
 }
 
 .section-subtitle {
+    font-size: 1.2rem;
     text-align: center;
     color: #cbd5e1;
     margin-bottom: 3rem;
@@ -295,7 +296,7 @@ section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    min-height: 320px;
+    min-height: 200px;
     transition: all 0.3s ease;
 }
 
@@ -380,7 +381,7 @@ section {
 }
 
 .service-card p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #cbd5e1;
     line-height: 1.6;
 }
@@ -448,7 +449,7 @@ section {
 }
 
 .product-card p {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #cbd5e1;
     line-height: 1.6;
 }
