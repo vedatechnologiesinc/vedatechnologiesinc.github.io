@@ -648,6 +648,12 @@ section {
     object-fit: contain;
 }
 
+.tech-logo-big {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
 .tech-item p {
     display: none;
 }
