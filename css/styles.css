@@ -98,17 +98,17 @@ nav {
     background: #bedc7f1a;
 }
 
-.nav-links a[href="#contact"],
-.nav-links a[href*="#contact"] {
-    background: #112318;
-    color: #eeffcc;
-}
+/* .nav-links a[href="#contact"], */
+/* .nav-links a[href*="#contact"] { */
+/*     background: #112318; */
+/*     color: #eeffcc; */
+/* } */
 
-.nav-links a[href="#contact"]:hover,
-.nav-links a[href*="#contact"]:hover {
-    background: #112318;
-    color: #eeffcc;
-}
+/* .nav-links a[href="#contact"]:hover, */
+/* .nav-links a[href*="#contact"]:hover { */
+/*     background: #112318; */
+/*     color: #eeffcc; */
+/* } */
 
 .mobile-toggle {
     background: #bedc7f1a;
@@ -155,10 +155,10 @@ nav {
 .hero h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
-    text-transform: uppercase;
     font-weight: 700;
     color: #bedc7f;
     margin-bottom: 1.5rem;
+    font-variant: small-caps;
 }
 
 .hero-description {
@@ -1050,7 +1050,7 @@ section {
     justify-content: center;
 }
 
-.faq-item.active .faq-arrow {
+.faq-item.ctive .faq-arrow {
     transform: rotate(180deg);
 }
 
@@ -1289,6 +1289,11 @@ section {
     font-size: 0.875rem;
 }
 
+.s-header__nav.active {
+    background: #89a257;
+    color: #eeffcc;
+}
+
 .s-header__nav a {
     color: #eeffcc;
     text-decoration: none;
@@ -1304,17 +1309,17 @@ section {
     background: #bedc7f1a;
 }
 
-.s-header__nav a[href="#contact"],
-.s-header__nav a[href*="#contact"] {
-    background: #89a257;
-    color: #eeffcc;
-}
+/* .s-header__nav a[href="#contact"], */
+/* .s-header__nav a[href*="#contact"] { */
+/*     background: #89a257; */
+/*     color: #eeffcc; */
+/* } */
 
-.s-header__nav a[href="#contact"]:hover,
-.s-header__nav a[href*="#contact"]:hover {
-    background: #305d42;
-    color: #eeffcc;
-}
+/* .s-header__nav a[href="#contact"]:hover, */
+/* .s-header__nav a[href*="#contact"]:hover { */
+/*     background: #305d42; */
+/*     color: #eeffcc; */
+/* } */
 
 .mobile-toggle.is-clicked {
     background: #eeffcc1a;
@@ -1900,6 +1905,8 @@ h4 span {
     }
 
     .nav-links.active {
+        /*     background: #89a257; */
+        /*     color: #eeffcc; */
         display: flex;
         transform: translateY(0);
         opacity: 1;
