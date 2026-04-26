@@ -98,18 +98,6 @@ nav {
     background: #bedc7f1a;
 }
 
-/* .nav-links a[href="#contact"], */
-/* .nav-links a[href*="#contact"] { */
-/*     background: #112318; */
-/*     color: #eeffcc; */
-/* } */
-
-/* .nav-links a[href="#contact"]:hover, */
-/* .nav-links a[href*="#contact"]:hover { */
-/*     background: #112318; */
-/*     color: #eeffcc; */
-/* } */
-
 .mobile-toggle {
     background: #bedc7f1a;
     border: 1px solid #bedc7f4d;
@@ -1287,6 +1275,8 @@ section {
     display: flex;
     gap: 0.5rem;
     font-size: 0.875rem;
+    color: #89a257;
+    background: #bedc7f1a;
 }
 
 .s-header__nav.active {
@@ -1305,21 +1295,9 @@ section {
 }
 
 .s-header__nav a:hover {
-    color: #89a257;
-    background: #bedc7f1a;
+    color: #eeffcc;
+    background: #4d8061;
 }
-
-/* .s-header__nav a[href="#contact"], */
-/* .s-header__nav a[href*="#contact"] { */
-/*     background: #89a257; */
-/*     color: #eeffcc; */
-/* } */
-
-/* .s-header__nav a[href="#contact"]:hover, */
-/* .s-header__nav a[href*="#contact"]:hover { */
-/*     background: #305d42; */
-/*     color: #eeffcc; */
-/* } */
 
 .mobile-toggle.is-clicked {
     background: #eeffcc1a;
@@ -1742,6 +1720,11 @@ h4 span {
         font-size: 1rem;
     }
 
+    .s-header__nav a:hover {
+        color: #eeffcc;
+        background: #4d8061;
+    }
+
     body.menu-is-open {
         overflow: hidden;
     }
@@ -1761,6 +1744,11 @@ h4 span {
         border: none;
         flex-direction: row;
         min-height: auto;
+    }
+
+    .s-header__nav a:hover {
+        color: #eeffcc;
+        background: #4d8061;
     }
 
     .mobile-toggle {
