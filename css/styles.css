@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
-
 @font-face {
     font-family: "Saved By Zero";
     src:
@@ -28,7 +26,7 @@ body {
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
         Arial, sans-serif;
     background: #040c06;
-    color: #fbfcfa;
+    color: #eeffcc;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -44,7 +42,7 @@ body {
 }
 
 nav {
-    background: #040c06;
+    background: #112318;
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: sticky;
@@ -103,13 +101,13 @@ nav {
 .nav-links a[href="#contact"],
 .nav-links a[href*="#contact"] {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .nav-links a[href="#contact"]:hover,
 .nav-links a[href*="#contact"]:hover {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .mobile-toggle {
@@ -150,7 +148,7 @@ nav {
     font-size: 6rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
-    color: #fbfcfa;
+    color: #eeffcc;
     line-height: 1;
 }
 
@@ -194,7 +192,7 @@ nav {
 
 .btn-primary {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .btn-primary:hover {
@@ -204,8 +202,8 @@ nav {
 
 .btn-secondary {
     background: transparent;
-    color: #fbfcfa;
-    border: 1px solid #fbfcfa;
+    color: #eeffcc;
+    border: 1px solid #eeffcc;
 }
 
 .btn-secondary:hover {
@@ -221,7 +219,7 @@ nav {
 .social-link {
     width: 2.5rem;
     height: 2.5rem;
-    background: #fbfcfa;
+    background: #eeffcc;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -233,7 +231,7 @@ nav {
 
 .social-link:hover {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .social-link svg {
@@ -349,7 +347,7 @@ section {
 }
 
 .service-image {
-    background: #fbfcfa;
+    background: #eeffcc;
     width: 100%;
     height: 200px;
     object-fit: contain;
@@ -403,7 +401,7 @@ section {
 }
 
 .product-image-container {
-    background: #fbfcfa;
+    background: #eeffcc;
     border-radius: 0.5rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -450,7 +448,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, #89a257 0%, #0d9488 100%);
-    color: #fbfcfa;
+    color: #eeffcc;
     padding: 0.5rem 2rem;
     border-radius: 2rem;
     font-weight: 700;
@@ -545,7 +543,7 @@ section {
     border-radius: 0.375rem;
     font-size: 0.813rem;
     font-weight: 600;
-    color: #fbfcfa;
+    color: #eeffcc;
     text-align: center;
 }
 
@@ -630,7 +628,7 @@ section {
 .tech-item-header h4 {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #fbfcfa;
+    color: #eeffcc;
     margin: 0;
 }
 
@@ -648,7 +646,7 @@ section {
 }
 
 .tech-logo-container {
-    background: #fbfcfa;
+    background: #eeffcc;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
@@ -725,7 +723,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fbfcfa;
+    color: #eeffcc;
     font-size: 1.1rem;
     transition: all 0.3s;
 }
@@ -944,7 +942,7 @@ section {
 }
 
 .contact-section h2 {
-    color: #fbfcfa;
+    color: #eeffcc;
     margin-bottom: 0.75rem;
 }
 
@@ -969,7 +967,7 @@ section {
 
 .btn-outline:hover {
     background: #89a257;
-    color: #0f172a;
+    color: #040c06;
 }
 
 .contact-socials {
@@ -981,7 +979,7 @@ section {
 .contact-social {
     width: 44px;
     height: 44px;
-    background: #fbfcfa;
+    background: #eeffcc;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -993,7 +991,7 @@ section {
 
 .contact-social:hover {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .faq-section {
@@ -1034,7 +1032,7 @@ section {
 .faq-question h3 {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #fbfcfa;
+    color: #eeffcc;
     margin: 0;
     flex: 1;
     padding-right: 2rem;
@@ -1079,7 +1077,7 @@ section {
 }
 
 .faq-answer strong {
-    color: #fbfcfa;
+    color: #eeffcc;
     font-weight: 600;
 }
 
@@ -1122,8 +1120,8 @@ section {
     right: 2rem;
     width: 3rem;
     height: 3rem;
-    background: #fbfcfa;
-    border-radius: 50%;
+    background: #eeffcc;
+    border-radius: 0.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1136,14 +1134,14 @@ section {
 }
 
 .s-footer {
-    background: #0f172a;
+    background: #040c06;
     color: #eeffcc;
 }
 
 .s-footer .s-footer__social li a {
     width: 44px;
     height: 44px;
-    background: #fbfcfa;
+    background: #eeffcc;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -1154,7 +1152,7 @@ section {
 
 .s-footer .s-footer__social li a:hover {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .founders-page {
@@ -1208,7 +1206,7 @@ section {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .founder-content h3 {
@@ -1234,7 +1232,7 @@ section {
     font-weight: 800;
     text-align: left;
     margin-bottom: 3rem;
-    color: #fbfcfa;
+    color: #eeffcc;
     border-left: 5px solid #89a257;
     padding-left: 1rem;
     display: inline-block;
@@ -1285,6 +1283,7 @@ section {
 }
 
 .s-header__nav {
+    background: #040c06;
     display: flex;
     gap: 0.5rem;
     font-size: 0.875rem;
@@ -1308,13 +1307,13 @@ section {
 .s-header__nav a[href="#contact"],
 .s-header__nav a[href*="#contact"] {
     background: #89a257;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .s-header__nav a[href="#contact"]:hover,
 .s-header__nav a[href*="#contact"]:hover {
     background: #eeffcc;
-    color: #fbfcfa;
+    color: #eeffcc;
 }
 
 .mobile-toggle.is-clicked {
@@ -1390,7 +1389,7 @@ section {
 .job-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #fbfcfa;
+    color: #eeffcc;
     margin: 0;
 }
 
@@ -1538,7 +1537,7 @@ section {
     position: absolute;
     top: 2rem;
     right: 3rem;
-    color: #fbfcfa;
+    color: #eeffcc;
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
@@ -1717,7 +1716,7 @@ h4 span {
         left: 0;
         right: 0;
         width: 100%;
-        background: #152033fa;
+        background: #040c06;
         backdrop-filter: blur(20px);
         padding: 120px 2rem 2rem;
         transform: translateY(-100%);
@@ -1751,7 +1750,7 @@ h4 span {
     .s-header__nav {
         position: static;
         transform: none;
-        background: transparent;
+        background: #040c06;
         padding: 0;
         box-shadow: none;
         border: none;
@@ -1890,7 +1889,7 @@ h4 span {
         top: 100%;
         left: 0;
         right: 0;
-        background: #152033fa;
+        background: #040c06;
         flex-direction: column;
         padding: 1rem;
         border-bottom: 1px solid #bedc7f26;
