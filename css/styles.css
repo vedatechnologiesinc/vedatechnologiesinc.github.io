@@ -94,19 +94,19 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #89a257;
+    background: #112318;
     background: #bedc7f1a;
 }
 
 .nav-links a[href="#contact"],
 .nav-links a[href*="#contact"] {
-    background: #89a257;
+    background: #112318;
     color: #eeffcc;
 }
 
 .nav-links a[href="#contact"]:hover,
 .nav-links a[href*="#contact"]:hover {
-    background: #89a257;
+    background: #112318;
     color: #eeffcc;
 }
 
@@ -196,8 +196,8 @@ nav {
 }
 
 .btn-primary:hover {
-    color: #112318;
-    background: #bedc7f;
+    background: #4d8061;
+    color: #eeffcc;
 }
 
 .btn-secondary {
@@ -1118,8 +1118,8 @@ section {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background: #eeffcc;
     border-radius: 0.25rem;
     display: flex;
@@ -1128,7 +1128,7 @@ section {
     cursor: pointer;
     box-shadow: 0 4px 12px #0000004d;
     transition: transform 0.3s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #040c06;
     font-weight: 700;
 }
@@ -1312,7 +1312,7 @@ section {
 
 .s-header__nav a[href="#contact"]:hover,
 .s-header__nav a[href*="#contact"]:hover {
-    background: #eeffcc;
+    background: #305d42;
     color: #eeffcc;
 }
 
