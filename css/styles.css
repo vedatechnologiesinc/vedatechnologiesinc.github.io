@@ -1321,11 +1321,10 @@ section {
     background: #eeffcc1a;
     border-color: #eeffcc4d;
     color: #eeffcc;
-    font-size: 0;
+    font-size: 1rem;
 }
 
 .mobile-toggle.is-clicked::after {
-    content: "×";
     position: absolute;
     top: 50%;
     left: 50%;
